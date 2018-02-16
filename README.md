@@ -10,7 +10,8 @@ Mailing list announcement: <http://www.weidai.com/everything.html>. As
 mentioned on that page, the Google Groups archive is missing early emails,
 which is why I've made this repo.
 
-To obfuscate the email addresses, I ran:
+To obfuscate the email addresses, I ran (in the Hypermail output directory
+after producing the HTML files with Hypermail):
 
 ```bash
 find . -type f -exec sed -i 's/-AT_SYMBOL-[A-Za-z0-9.-]\+/.domain.name.hidden/g' {} \;
