@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Computational complexity of &quot;running&quot; the multiverse from Eric Hawthorne on 2004-01-17 (everything)</title>
+<meta name="Author" content="Eric Hawthorne (egh.domain.name.hidden)" />
+<meta name="Subject" content="Computational complexity of &quot;running&quot; the multiverse" />
+<meta name="Date" content="2004-01-17" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Computational complexity of &quot;running&quot; the multiverse</h1>
+<!-- received="Sat Jan 17 19:42:19 2004" -->
+<!-- isoreceived="20040118034219" -->
+<!-- sent="Sat, 17 Jan 2004 16:40:29 -0800" -->
+<!-- isosent="20040118004029" -->
+<!-- name="Eric Hawthorne" -->
+<!-- email="egh.domain.name.hidden" -->
+<!-- subject="Computational complexity of &quot;running&quot; the multiverse" -->
+<!-- id="4009D5FD.7010903.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- inreplyto="200401131806.i0DI64813505.domain.name.hidden" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start5138" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="5139.html" accesskey="d" title="Hal Finney: &quot;Re: Tegmark is too &#0034;physics-centric&#0034;&quot;">Next message</a> ]
+[ <a href="5137.html" title="Eric Hawthorne: &quot;Re: What difference it makes&quot;">Previous message</a> ]
+[ <a href="5087.html" title="Hal Finney: &quot;Re: Is the universe computable?&quot;">In reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="5140.html" accesskey="t" title="Hal Finney: &quot;Re: Computational complexity of &#0034;running&#0034; the multiverse&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg5138" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg5138" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg5138" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg5138" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Eric Hawthorne &lt;<a href="mailto:egh.domain.name.hidden?Subject=Re%3A%20Computational%20complexity%20of%20%22running%22%20the%20multiverse">egh.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Sat, 17 Jan 2004 16:40:29 -0800</span><br />
+</address>
+<br />
+Georges Quenot writes:
+<br />
+<br /><em class="quotelev2">&gt;&gt;I do not believe in either case that a simulation with this level
+</em><br />
+<em class="quotelev2">&gt;&gt;of detail can be conducted on any computer that can be built in
+</em><br />
+<em class="quotelev2">&gt;&gt;our universe (I mean a computer able to simulate a universe
+</em><br />
+<em class="quotelev2">&gt;&gt;containing a smaller computer doing the calculation you considered
+</em><br />
+<em class="quotelev2">&gt;&gt;with a level of accuracy sufficient to ensure that the simulation
+</em><br />
+<em class="quotelev2">&gt;&gt;of the behavior of the smaller computer would be meaningful).
+</em><br />
+<em class="quotelev2">&gt;&gt;This is only a theoretical speculation.
+</em><br />
+<em class="quotelev2">&gt;&gt;    
+</em><br />
+<em class="quotelev2">&gt;&gt;
+</em><br />
+<em class="quotelev1">&gt;Hal Finney responded:
+</em><br />
+<em class="quotelev1">&gt;What about the idea of simulating a universe with simpler laws using such
+</em><br />
+<em class="quotelev1">&gt;a technique?  For example, consider a 2-D or 1-D cellular automaton (CA)
+</em><br />
+<em class="quotelev1">&gt;system like Conway's &quot;Life&quot; or the various systems considered by Wolfram.
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<br />One of the issues is the computational complexity of &quot;running all the 
+<br />
+possible i.e. definable programs&quot; to
+<br />
+create an informational multiverse out of which consistent, metric, 
+<br />
+regular, observable info-universes
+<br />
+emerge. If computation takes energy (as it undeniably does WITHIN our 
+<br />
+universe), then an unfathomably
+<br />
+impossibly large amount of &quot;extra-universal&quot; energy would be required to 
+<br />
+compute all info-universes.
+<br />
+<br />(def'n qubitstring = a bitstring capable of simultaneously holding all 
+<br />
+of its possible values i.e. all possible
+<br />
+combinations of 1s and 0s in a bitstring of that length)
+<br />
+<br />For example, say that we have a relatively tiny info-multiverse 
+<br />
+consisting of a qubitstring
+<br />
+where the qubitstring is only 1 billion bits long. i.e. It 
+<br />
+simultaneously exhibits (if queried appropriately) any of
+<br />
+(2 raised to the power 1 billion) different information-states.
+<br />
+<br />Now lets imagine computation upon this qubitstring multiverse, in order 
+<br />
+for a god-computer to &quot;tour&quot; some
+<br />
+set of info-states of the qubitstring in some &quot;time-order&quot; in order to 
+<br />
+simulate the operation of some universe
+<br />
+within the qubitstring multiverse.
+<br />
+<br />Let's further imagine that the god-computer doesn't like to discriminate 
+<br />
+amongst its potential universes within
+<br />
+the multiverse qubitstring, so it wants to try (just the next 
+<br />
+computation step, for now,  in) all possible computations
+<br />
+upon the multiverse qubitstring.
+<br />
+<br />How many ways of choosing the next computational step are there? Again, 
+<br />
+there are 2 to the power 1 billion ways
+<br />
+at each step.
+<br />
+So if the god-computer wants to simulate only 1 million 
+<br />
+discrete-computing-steps
+<br />
+(defined as different-info-state-selecting steps) of each universe 
+<br />
+simulation, but to to do this for all possible
+<br />
+&quot;potential universes i.e. state-change traces&quot; in the billion-qubit 
+<br />
+multiverse, then the number of ways of
+<br />
+doing this (and we're saying all of these ways are going to get done, 
+<br />
+because the god-comp is non-favoring
+<br />
+of one potential universe over another), the number of ways of 
+<br />
+simulating a million comp-steps in each
+<br />
+universe is (2 to the power (1 million billion).)   (express as 2 ^ 
+<br />
+1,000,000,000,000,000)
+<br />
+<br />This &quot;number of possible computing-step-sequences to compute all of 
+<br />
+these million-step-old universes
+<br />
+is the same as the number of computing-steps NECESSARY to compute all 
+<br />
+these universes.
+<br />
+---------
+<br />
+Now lets make the numbers more realistic. Our current universe has the 
+<br />
+following statistics (roughly!)
+<br />
+# of protons = 10 ^ 78
+<br />
+# of material particles and photons = 10 ^ 88 (give or take)
+<br />
+<br />Entropy H = 10 ^ 88    = &quot;the log of the number of possible velocities 
+<br />
+and positions of the material particles and photons&quot;
+<br />
+<br />Bitstring length needed to represent a single &quot;instantaneous state&quot; of 
+<br />
+our universe
+<br />
+IS THE SAME AS THE ENTROPY, so the bitstring needed to represent a 
+<br />
+&quot;shortest distinguishable moment&quot; of
+<br />
+our universe is 10 ^ 88 bits long. So the qubitstring needed to 
+<br />
+&quot;simultaneously&quot; represent all possible moment-states
+<br />
+of our universe is also 10 ^ 88 bits long.
+<br />
+<br />So, how many &quot;shortest-distinguishable-moments&quot; have their been in our 
+<br />
+universe since the big bang anyway?
+<br />
+Well the shortest distinguishable moment of time is the Planck time unit 
+<br />
+= 10 ^ -43 seconds.
+<br />
+<br />And there have been 3 x 10 ^ 60 Planck time units in our own universe's 
+<br />
+lifetime so far.
+<br />
+<br />So, putting it all back together in the qubitstring-computational framework,
+<br />
+<br />The number of possible ways of choosing computing steps, to compute all 
+<br />
+possible info-universes up to those
+<br />
+universe evolution stages of the same age and particle+photon population 
+<br />
+and entropy as ours is: (+- fudge factors):
+<br />
+(Drum-roll please.....)  42 (just kidding, it is.....)
+<br />
+<br />2 to the power (Entropy  *  the number of distinguishable time moments) =
+<br />
+<br />2 to the power (bitstring-length  *  the number of distinguishable info 
+<br />
+states in each universe's sim. computation i.e. history) =
+<br />
+<br />2 to the power ( (10 ^ 88) * (3 * 10 ^ 60) )  = 
+<br />
+<br />======================================================================
+<br />
+2 to the power (10 ^ 148)          (approximately)
+<br />
+<br />Which is the number of computing steps that must be done to compute the 
+<br />
+simulations of
+<br />
+the histories of all possible universes of comparable age and particle 
+<br />
+population and entropy as our own.
+<br />
+======================================================================
+<br />
+&nbsp;
+<br />
+-------------------------
+<br />
+<br />So probably, the &quot;extra-universal&quot; notion of &quot;computing all the universe 
+<br />
+simulations&quot; is not traditional computation
+<br />
+at all. I prefer to think of the state of affairs as being that the 
+<br />
+multiverse substrate is just kind of like a
+<br />
+very large, passive qubitstring memory, capable of holding the qubits, 
+<br />
+that is of exhibiting, if appropriately
+<br />
+queried, the different bit values in the information states (all 10 ^ 
+<br />
+148 information-states in the histories of
+<br />
+universes as big and old as ours, that is.)
+<br />
+<br />So then the question becomes, ok, how do we get to ACTUAL computation 
+<br />
+happening in all this mess,
+<br />
+and dynamics happening, and time etc &quot;happening&quot;. If it's all just a 
+<br />
+really, really big static RAM, then nothing's
+<br />
+HAPPENING!! And that doesn't seem right.
+<br />
+<br />However..... (raw speculation here)....
+<br />
+<br />SPECULATION A: The god-computer is lazy. It actually just constructs (or 
+<br />
+initially constructs) selected universes in
+<br />
+&nbsp;the qubitstring multiverse, using the principle of their being just 1 
+<br />
+bit initially (entropy of 0) and then
+<br />
+expanding to 2 bits but only creating (or first creating) those info 
+<br />
+states which are minimally different from
+<br />
+each other (i.e. are 1-bit in 1 position different from each other). 
+<br />
+Then creating an info state with 3 bits, but again,
+<br />
+only evolving its state 1 local bit-change at a time, and so on and so 
+<br />
+on. So I guess this means something at least
+<br />
+akin to  &quot;do the shortest (or least entropy-changing) bit-flipping 
+<br />
+programs first, before any other info-states are realized.&quot;
+<br />
+That could perhaps define some kind of thermodynamic time arrow I 
+<br />
+suppose.And it would define a limited set of
+<br />
+(perhaps constrained to be sensible-form) universes initially emerging 
+<br />
+from the computation, as well.
+<br />
+<br />In other words, maybe entropy is increasing (due to longer and longer 
+<br />
+bitstrings being created as &quot;god-computation/mem generation&quot;
+<br />
+proceeds) but it is increasing AS SLOWLY AS POSSIBLE. By only 
+<br />
+least-entropy-changing next states of the bitstring
+<br />
+being selected by the lazy god-comp at each step of &quot;computed existence&quot;.
+<br />
+&nbsp;Maybe that's the constraint that allows order to temporarily beat back 
+<br />
+entropy in local areas of our universe?
+<br />
+<br />AND/OR
+<br />
+<br />SPECULATION B:
+<br />
+<br />What if.... Observers are things that are kind of like &quot;lazy computers&quot; 
+<br />
+with access (from within it??) to
+<br />
+&nbsp;the multiverse qubitstring RAM.    So observers all observe the same 
+<br />
+universe, and the same time arrow, because
+<br />
+they are constrained to do the &quot;least-entropy-changing&quot; i.e. 
+<br />
+laziest-computational tour through whatever locale
+<br />
+of info-state-space in the multiverse they inhabit. In this model, there 
+<br />
+is only one realizable universe, and some
+<br />
+kind of entropy-change-minimization computing direction constraint is 
+<br />
+what determines it.
+<br />
+<br />I'm basically halucinating this at this stage, so I'll stop.
+<br />
+<br />Eric
+<br />
+<span id="received"><dfn>Received on</dfn> Sat Jan 17 2004 - 19:42:19 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start5138">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="5139.html" title="Next message in the list">Hal Finney: "Re: Tegmark is too &#0034;physics-centric&#0034;"</a></li>
+<li><dfn>Previous message</dfn>: <a href="5137.html" title="Previous message in the list">Eric Hawthorne: "Re: What difference it makes"</a></li>
+<li><dfn>In reply to</dfn>: <a href="5087.html" title="Message to which this message replies">Hal Finney: "Re: Is the universe computable?"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="5140.html" title="Next message in this discussion thread">Hal Finney: "Re: Computational complexity of &#0034;running&#0034; the multiverse"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Maybe reply</dfn>: <a href="5140.html" title="Message sent in reply to this message">Hal Finney: "Re: Computational complexity of &#0034;running&#0034; the multiverse"</a></li>
+<li><dfn>Reply</dfn>: <a href="5141.html" title="Message sent in reply to this message">Eric Hawthorne: "Re: Computational complexity of &#0034;running&#0034; the multiverse - errata"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="5152.html" title="Message sent in reply to this message">scerir: "Re: Computational complexity of &#0034;running&#0034; the multiverse"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="5155.html" title="Message sent in reply to this message">John M: "Re: Computational complexity of &#0034;running&#0034; the multiverse"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg5138" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg5138" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg5138" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg5138" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:09 PST
+</em></small></p>
+</body>
+</html>

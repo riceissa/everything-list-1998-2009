@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>COMBINATORS IV from Bruno Marchal on 2005-02-14 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="COMBINATORS IV" />
+<meta name="Date" content="2005-02-14" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>COMBINATORS IV</h1>
+<!-- received="Mon Feb 14 07:11:24 2005" -->
+<!-- isoreceived="20050214151124" -->
+<!-- sent="Mon, 14 Feb 2005 13:10:44 +0100" -->
+<!-- isosent="20050214121044" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="COMBINATORS IV" -->
+<!-- id="5.1.0.14.2.20050214112222.00acdc00.domain.name.hidden" -->
+<!-- charset="iso-8859-1" -->
+<!-- inreplyto="5.1.0.14.2.20050208105511.03f256a0.domain.name.hidden" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start6116" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="6117.html" accesskey="d" title="Bruno Marchal: &quot;COMBINATORS V&quot;">Next message</a> ]
+[ <a href="6115.html" title="Bruno Marchal: &quot;COMBINATORS III&quot;">Previous message</a> ]
+[ <a href="6115.html" title="Bruno Marchal: &quot;COMBINATORS III&quot;">In reply to</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6116" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6116" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6116" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6116" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20COMBINATORS%20IV">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Mon, 14 Feb 2005 13:10:44 +0100</span><br />
+</address>
+<br />
+COMBINATORS I is
+<br />
+<a href="http://www.escribe.com/science/theory/m5913.html">http://www.escribe.com/science/theory/m5913.html</a>
+<br />
+COMBINATORS II is
+<br />
+<a href="http://www.escribe.com/science/theory/m5942.html">http://www.escribe.com/science/theory/m5942.html</a>
+<br />
+COMBINATORS III is
+<br />
+<a href="http://www.escribe.com/science/theory/m5946.html">http://www.escribe.com/science/theory/m5946.html</a>
+<br />
+<br />Resume:
+<br />
+<br />Kxy = x
+<br />
+Sxyz = xz(yz)
+<br />
+<br />You are supposed to remember also that
+<br />
+abc is an abbreviation of ((ab)c), and a(bc) is an abbreviation for (a(bc)), so
+<br />
+Kxy is put for ((K x) y), and Sxyz is put for (((S x) y) z), and xz(yz) is 
+<br />
+put for
+<br />
+((x z)(y z)). We just don't write the left parentheses).
+<br />
+<br />We have seen:
+<br />
+<br />Ix = x,   a solution for I is I = SKK
+<br />
+Mx = xx,  a solution for M is M = SII = S(SKK)(SKK)
+<br />
+Bxyz = x(yz), a solution for B is B = S(KS)K
+<br />
+<br />I recall the last exercises:
+<br />
+Find combinators W, L, T, C and INFINITY such that
+<br />
+<br />Wxy = xyy
+<br />
+Lxy = x(yy)
+<br />
+Txy = yx
+<br />
+Cxyz = xzy
+<br />
+INFINITY gives INFINITY (by the dynamical rules for K and S).
+<br />
+<br />SOLUTIONS:
+<br />
+<br />1) Wxy = xyy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (xy)y      because xyy abbreviates xyy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (xy)(Iy)    because y = Iy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= SxIy        dynamics of S
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (SxI)y        abbrev.
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Sx(KIx)y    because I = KIx
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (Sx(KIx))y  abbrev.
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (SS(KI)x)y    dynamics of S
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= SS(KI)xy    abbrev.
+<br />
+<br />Thus W = SS(KI) = SS(K(SKK))
+<br />
+<br />2) Lxy = x(yy)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= x(My)   because My = yy (Mx = xx).
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= BxMy  dynamics of B
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Bx(KMx)y  'cause KMx = M
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= SB(KM)xy  dyn. of S, on ((Bx)((KM)x)
+<br />
+<br />Thus L = SB(KM) = S(S(KS)K)(KS(SKK)(SKK))
+<br />
+<br />Od course SB(KM) is a better presentation, giving that we know already B 
+<br />
+and M.
+<br />
+But I give the (abbreviated) combinator (in term of S and K) to be sure you 
+<br />
+see it is
+<br />
+indeed a combinator (a combination of S and K).
+<br />
+<br />3) Txy = yx
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= y(Kxy)  'cause x = Kxy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (Iy)(Kxy) 'cause y = (Iy)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= SI(Kx)y   dyn. of S  (which explain the transformation just 
+<br />
+above btw)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= B(SI)Kxy  dyn. of B
+<br />
+<br />Thus T = B(SI)K = S(KS)K(S(SKK))K
+<br />
+<br />4) Cxyz = xzy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= xz(Kyz)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Sx(Ky)z
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= B(Sx)Kyz
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= BBSxKyz
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= BBSx(KKx)yz
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (BBS)x(KKx)yz
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= S(BBS)(KK)xyz
+<br />
+<br />Thus C = S(BBS)(KK)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= S((S(KS)K)(S(KS)K)S)(KK)    cf B = S(KS)K
+<br />
+<br />5) INFINITY   Well this one is easy!
+<br />
+<br />Mx = xx, thus MM gives MM which gives MM, etc.
+<br />
+<br />Thus INFINITY = MM = SII(SII) = S(SKK)(SKK)(S(SKK)(SKK))
+<br />
+<br />It is a simple example of a perpetually unstable molecule.
+<br />
+<br />All right so far? To find those programs, the heuristic has been
+<br />
+to use K and I to change some combination of variables (like xzy) into
+<br />
+a form such that a known dynamic can be used (in general the one of
+<br />
+S, or of B). B, for example, is useful to shift parentheses on the left.
+<br />
+Such exercises need a bit of training and a taste for programming or
+<br />
+puzzles. I hope that you are able to verify (at least) a solution.
+<br />
+Let us verify that L admits another solution based on the use of C:
+<br />
+<br />L = CBM  (by which I mean CBM behaves like it is aked for L to behave,
+<br />
+i.e. Lxy = x(yy)
+<br />
+<br />Indeed CBMxy = BxMy (because Cabc=acb, or Cxyz = xzy)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= x(My)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= x(yy).
+<br />
+<br />Such a sequence of application of the dynamical rules will be what I mean
+<br />
+by the term &quot;computation&quot;. This will be justify when we will see that the
+<br />
+combinators are Turing-equivalent. Any program can be matched by a
+<br />
+combinator.
+<br />
+<br />Note also this. We see that SB(KM) and CBM are two different programs
+<br />
+computing L. But SB(KM), that is  S(S(KS)K)(KS(SKK)(SKK)), and
+<br />
+CBM, that is S((S(KS)K)(S(KS)K)S)(KK)(S(KS)K)(S(SKK)(SKK)) are
+<br />
+different combinators doing the same things. We will use the (extensionality)
+<br />
+rule which identifies the combinators which have the same behavior. When two
+<br />
+combinators are syntactically identical, we will use the expression &quot;strictly
+<br />
+identical&quot; (written ==). A (more simple) example is:
+<br />
+<br />&nbsp;&nbsp;I = SKK = SKS = SK(KK) = ....
+<br />
+<br />They all give an identity combinator. But none can be obtained from this
+<br />
+other by a reduction, i.e. an application of the dynamical rule from left 
+<br />
+to right (like
+<br />
+in a computation).
+<br />
+<br />Finally, because the combinators we have met so far will play some
+<br />
+persisting role in the sequel, they deserve names.
+<br />
+I give you the (birdy) terminology of Smullyan:
+<br />
+<br />K is the kestrel. It is &quot;the&quot; eliminator. K(KK)(SSS) eliminates (SSS) for 
+<br />
+example.
+<br />
+S is the starling. S does many things at once: it duplicates, composes, and 
+<br />
+permutates
+<br />
+its arguments: Sxyz = xz(yz). Look carefully.
+<br />
+T is the trush. It is a crude permutator. It permutates its arguments: Txy 
+<br />
+= yx.
+<br />
+M is the mocking bird itself! It is just a crude duplicator: Mx = xx.
+<br />
+C is the cardinal. C is called the elementary or regular permutator.
+<br />
+It is less crude than the trush. Much more easy to use, like in general the 
+<br />
+regular
+<br />
+combinators, which by definition are those combinators which leaves 
+<br />
+unchanged they
+<br />
+first argument. All combinators seen so far are regular except the trush.
+<br />
+W is the warbler. It is the elementary duplicator (less crude thanb the 
+<br />
+mocking bird!).
+<br />
+B is the elementary compositor. Bxyz = x(yz). Suppose that f = log, and g = 
+<br />
+sin,
+<br />
+then Bfgx = log(sin x), so that Bfg gives f ° g. That is the composition of 
+<br />
+the functions
+<br />
+f and g. I forget to say that B is called the blue bird.
+<br />
+L is the lark: it is an hybrid of a warbler or a mocking bird and a compositor.
+<br />
+<br />Exercise:
+<br />
+We have seen how to program the blue bird B, the cardinal C and the Warbler W
+<br />
+with the kestrel K and the starling S. Could you define the starling S from 
+<br />
+B, W and C?
+<br />
+I give you the first line:     Sxyz = xz(yz)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Cx(yz)z
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= ...
+<br />
+<br />Bruno
+<br />
+<br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Mon Feb 14 2005 - 07:11:24 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start6116">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="6117.html" title="Next message in the list">Bruno Marchal: "COMBINATORS V"</a></li>
+<li><dfn>Previous message</dfn>: <a href="6115.html" title="Previous message in the list">Bruno Marchal: "COMBINATORS III"</a></li>
+<li><dfn>In reply to</dfn>: <a href="6115.html" title="Message to which this message replies">Bruno Marchal: "COMBINATORS III"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6116" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6116" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6116" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6116" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>

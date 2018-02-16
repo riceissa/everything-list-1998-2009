@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Absolute measure from Niclas Thisell on 2000-01-31 (everything)</title>
+<meta name="Author" content="Niclas Thisell (niclas.domain.name.hidden)" />
+<meta name="Subject" content="Absolute measure" />
+<meta name="Date" content="2000-01-31" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Absolute measure</h1>
+<!-- received="Mon Jan 31 07:57:58 2000" -->
+<!-- isoreceived="20000131155758" -->
+<!-- sent="Mon, 31 Jan 2000 16:55:55 +0100" -->
+<!-- isosent="20000131155555" -->
+<!-- name="Niclas Thisell" -->
+<!-- email="niclas.domain.name.hidden" -->
+<!-- subject="Absolute measure" -->
+<!-- id="307AD7BB2E01D211ACB40000F87AF5CF033EF0.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start1736" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="1737.html" accesskey="d" title="Alastair Malcolm: &quot;AUH/MWI/UDA (Was: Everything is Just a Memory)&quot;">Next message</a> ]
+[ <a href="1735.html" title="Marchal: &quot;Re: Everything is Just a Memory&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1736" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1736" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1736" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1736" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Niclas Thisell &lt;<a href="mailto:niclas.domain.name.hidden?Subject=Re%3A%20Absolute%20measure">niclas.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Mon, 31 Jan 2000 16:55:55 +0100</span><br />
+</address>
+<br />
+Here's a simple idea you might find interesting, or at least amusing.
+<br />
+<br />What is the measure of a transcript of The Phantom Menace? We can define
+<br />
+it to be its Solomonoff-Levin probability. The problem is that we must
+<br />
+decide on a UTM model (as opposed to a turing machine, which is its
+<br />
+bitstring + model). The compiler theorem saves the day by declaring that
+<br />
+we can prepend a bitstring to emulate other models. And the complexity
+<br />
+increase can not be greater than the length of this bitstring.
+<br />
+<br />Still, if I cook up a model that outputs the transcript of The Phantom
+<br />
+Menace if the first bit is '1', the measure can be said to be greater
+<br />
+than 1/2 (not with a straight face, though). Any hopes for an absolute
+<br />
+measure of a 'world', 'brain-state' or whatever are crushed. We could,
+<br />
+of course, stick with a 'normal' turing machine model and hope that it's
+<br />
+good enough. But this choice feels a bit arbitrary somehow.
+<br />
+<br />Perhaps one could assign a measure to the models? We could then hope
+<br />
+that models that are prone to output The Phantom Menace are given a low
+<br />
+measure. So, let us try:
+<br />
+O(p,m_A)=Output for model m_A, given a bitstring p.
+<br />
+M(m_A,m_B,N)=(number of bitstrings u~ of length N such that, for an
+<br />
+initial fraction u of u~, and for any bitstring p, O(u+p,m_B)=O(p,m_A)
+<br />
+)/1^2N
+<br />
+M(m_A,m_B)=lim(M(m_A,m_B,N),N-&gt;inf)
+<br />
+(1) sum(M(m_A,m_B)M(m_B)-M(m_B,m_A)M(m_A),m_B)=0
+<br />
+M(m_A)&gt;=0 for all m_A
+<br />
+sum(M(m_A),m_A)=1
+<br />
+<br />M(m_A,m_B) is roughly the 'ease' of having model m_B emulate model m_A.
+<br />
+Then we let the models 'rate' each other. That way, hopefully,
+<br />
+complicated models will get low measures. We could then truly define an
+<br />
+absolute measure
+<br />
+M(s,m_A)=Solomonoff-Levin probability of s, using the model m_A.
+<br />
+(2) M(s)=sum(M(s,m_A)M(m_A),m_A)
+<br />
+<br />Ok, but is there a unique non-trivial solution to the system of
+<br />
+equations (1)? It's an infinite order homogenous matrix equation. One
+<br />
+way of solving systems of linear equations is to let them define a set
+<br />
+of linear first order differential equations. A simple picture of this
+<br />
+is a graph with measure 'flowing' between the nodes. The structure of
+<br />
+(1) ensures that total measure is conserved. There's probably a plethora
+<br />
+of theorems on solvability of these types of systems in queue-theory and
+<br />
+even FEM analysis. I think it's a safe guess that there is at least one
+<br />
+solution. The problem is that it sounds plausible that there are several
+<br />
+solutions. Technically, we could still hope that (2) is well defined,
+<br />
+even if there are more than one solution, but it doesn't sound likely.
+<br />
+Also, this definition of measure could perhaps be claimed to be just as
+<br />
+arbitrary as simply sticking with a simple enough turing machine model.
+<br />
+<br />But let us pretend that the equations have a unique solution. Then we
+<br />
+can ask ourselves why we have to stick with universal turing machines.
+<br />
+These equations should work just as well/badly for general operators -
+<br />
+i.e. something that takes something and spits out something else. Well,
+<br />
+to make the definition of measure work without alteration, we should
+<br />
+perhaps stick with input as bitstrings. All we need is an equivalence
+<br />
+operator such that we can compare the output of two models, given a
+<br />
+bitstring. Etc...
+<br />
+<br />Disclaimer: Most of this stuff is probably old news/proven flawed, but I
+<br />
+plead incompetence.
+<br />
+<br />/Niclas
+<br />
+<span id="received"><dfn>Received on</dfn> Mon Jan 31 2000 - 07:57:58 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start1736">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="1737.html" title="Next message in the list">Alastair Malcolm: "AUH/MWI/UDA (Was: Everything is Just a Memory)"</a></li>
+<li><dfn>Previous message</dfn>: <a href="1735.html" title="Previous message in the list">Marchal: "Re: Everything is Just a Memory"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1736" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1736" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1736" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1736" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Attempt toward a systematic description from Bruno Marchal on 2007-05-16 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="Attempt toward a systematic description" />
+<meta name="Date" content="2007-05-16" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Attempt toward a systematic description</h1>
+<!-- received="Wed May 16 11:17:51 2007" -->
+<!-- isoreceived="20070516181751" -->
+<!-- sent="Wed, 16 May 2007 17:17:13 +0200" -->
+<!-- isosent="20070516151713" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="Attempt toward a systematic description" -->
+<!-- id="8ddf0e358914b1640dd8c1f71acb7e76.domain.name.hidden" -->
+<!-- charset="ISO-8859-1" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start13374" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="13375.html" accesskey="d" title="Russell Standish: &quot;Re: Theory of Nothing&quot;">Next message</a> ]
+[ <a href="13373.html" title="Bruno Marchal: &quot;Re: Meaning Fixed Point&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="13376.html" accesskey="t" title="Mohsen Ravanbakhsh: &quot;Re: Attempt toward a systematic description&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg13374" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg13374" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg13374" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg13374" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20Attempt%20toward%20a%20systematic%20description">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed, 16 May 2007 17:17:13 +0200</span><br />
+</address>
+<br />
+Hi,
+<br />
+<br />I take the opportunity that the list is calm to send a first 
+<br />
+approximation of a possibly extendable post which addresses the 
+<br />
+beginning of the background needed for the interview of the universal 
+<br />
+machine on the physical laws.
+<br />
+It also addresses some point relevant for discussing the link &quot;formal 
+<br />
+system&quot; &lt;======&gt; &quot;Computation&quot; as in Tegmark diagram page 18 of his 
+<br />
+paper &quot;the mathematical universe&quot; (cf a post by Mark Geddes).
+<br />
+<br />Although schematic, it could already help me if you can list the points 
+<br />
+for which you would like examples or more technical details, or just 
+<br />
+explanations. You can also ask for *less* technical details like an 
+<br />
+explanation in (pure) english, perhaps.
+<br />
+<br />I am building again from Robinson Arithmetic, but I could have use the 
+<br />
+combinators or any logical description of what a universal machine (a 
+<br />
+computer) can do. The adavantage of using Robinson Arithmetic (or its 
+<br />
+&quot;little&quot; variant) is that provability in Robinson Arithmetic 
+<br />
+corresponds to universal computability, but not of universal 
+<br />
+provability (which does not exist).
+<br />
+<br /><br />I am perhaps on the verge of not being able to explain the sequel in 
+<br />
+informal term, but I keep hope that non expert, but computer-open 
+<br />
+minded people, can learn and help me to be clearer or more pedagogical, 
+<br />
+without having us to study thoroughly mathematical logic.
+<br />
+Tell me perhaps if you don't understand what I call &quot;Searle's error&quot; in 
+<br />
+the comp setting below.
+<br />
+<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
+<br />
+<br /><br />0) historical background
+<br />
+<br />ARISTOTLE: reality = what you see
+<br />
+PLATO: what you see = shadows of shadows of shadows of shadows of  .... 
+<br />
+what perhaps could be.
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And would that be? nobody can say, but everybody can get 
+<br />
+glimpses by looking inward, even  (universal) machines.
+<br />
+<br />Twentieth century: two creative bombs:
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The Universal Machine (talks bits): UM (Babbage, Post, Turing, 
+<br />
+Church, Suze, von Neumann, ...)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The other universal machine (talks qubit):  QUM (Feynman, 
+<br />
+Deutsch, Kitaev, Freedman, ...)
+<br />
+<br />Comp = Milinda-Descartes Mechanism in a digital version. = (also) &quot;YES 
+<br />
+DOCTOR&quot; + CHURCH'S THESIS. (I suppress the arithmetical realism, 
+<br />
+because it is implicit in CHURCH'S THESIS).
+<br />
+<br /><br />UDA: a reasoning which shows that if comp is correct then the physical 
+<br />
+laws have to be derived by a measure on states (the measure being made 
+<br />
+up through their computational histories).
+<br />
+<br />Subgoal: extract QUM from UM's self-observation.
+<br />
+<br />Link with everything-list: search for the &quot;observer moments&quot; and the 
+<br />
+relevant structure operating on them (not yet solved).
+<br />
+<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
+<br />
+<br /><br />1) The ontic theory of everything: LRA (Little Robinson Arithmetic),
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASSICAL LOGIC (first order predicate logic axioms and inference 
+<br />
+rules)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF SUCCESSION
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF ADDITION
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF MULTIPLICATION
+<br />
+<br /><br />That's all. It is the &quot;Schroedinger&quot; equation of the comp-everything! 
+<br />
+The reason is that LRA is already as powerful as a universal machine.
+<br />
+LRA proves all verifiable sentences with the shape ExP(x), with P(x) 
+<br />
+decidable. It is equivalent with the universal dovetailer.
+<br />
+<br />Now we have to do with LRA  what Everett has done with QM. Embed the 
+<br />
+observer in the ontic reality.
+<br />
+For this we have to &quot;modelize&quot; the observer/knower/thinker.
+<br />
+<br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
+<br />
+<br /><br /><br />2) The epistemic theory, or the generic observer theory: PA (the lobian 
+<br />
+machine I will interview).
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASSICAL LOGIC (first order predicate logic axioms and inference 
+<br />
+rules)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF SUCCESSION
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF ADDITION
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF MULTIPLICATION
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AXIOMS OF INDUCTION
+<br />
+<br />Note: the observer extends the ontic reality! It extends it by its 
+<br />
+beliefs in the induction axioms. They are as many as they are formula 
+<br />
+F(x), and they have the shape:
+<br />
+<br />[F(0) &amp; Ax(F(x) -&gt; F(x+1))]  -&gt; AxF(x)
+<br />
+<br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
+<br />
+<br /><br /><br /><br /><br />OBVIOUS IMPORTANT QUESTION: How to interview PA when we dispose 
+<br />
+ontologically only of LRA?
+<br />
+<br />NOT OBVIOUS SOLUTION: just try to obviate the fundamental SEARLE ERROR 
+<br />
+(cf Mind's I, Hofstadter -Dennett describe it well) in front of the LRA 
+<br />
+theorems.
+<br />
+<br /><br />I explain: Searle's goal consisted in arguing against mechanism, that 
+<br />
+is arguing we are not machine, and in particular that a simulator is 
+<br />
+not the real thing. He accepts the idea that in principle a program can 
+<br />
+simulate a chinese speaker. Knowing the program, Searles accepts he can 
+<br />
+simulate it, and this without understanding chinese. He concludes that 
+<br />
+we have to distinguish between speaking chinese and simulating speaking 
+<br />
+chinese.
+<br />
+<br />True! but with comp you have to distinguish between the simulated 
+<br />
+chinese speaker and the simulator of the chinese speaker! By being able 
+<br />
+to simulate the chinese speaker, Searle can have a conversation with 
+<br />
+the chinese speaker (well assuming that the chinese speaker can talk 
+<br />
+english, or that Searle knows chinese).
+<br />
+<br />This is particularly important in our setting. LRA has the power of a 
+<br />
+universal turing machine, so it has universal computability power, and 
+<br />
+can act as a universal simulator. In particular LRA can simulate PA, 
+<br />
+and any recursively enumerable theory/machine. But compute or simulate 
+<br />
+are not similar to believing or proving (or talking in some genuine 
+<br />
+personal way).
+<br />
+<br />LRA provides a view of computability as a very particular and quasi 
+<br />
+debilitating case of provability. LRA can prove almost only the true 
+<br />
+Sigma1 sentences (which is enough to run the UD). For example, LRA 
+<br />
+cannot prove (about its ontic reality or intended interpretation) that 
+<br />
+Ax (x + y = y + x). PA can. PA is already a sort of Ramananujan, a 
+<br />
+total genius compared to LRA, despite the fact that LRA is already 
+<br />
+universal for computation. For the notion of provability there is no 
+<br />
+universal notion. There are as many notion of provability than there 
+<br />
+are machines (human included).
+<br />
+<br />If you want,  LRA is gifted in proving the existence of number having 
+<br />
+verifiable property, and giving that PA can be defined, by Godel 
+<br />
+arithmetizability, in the language of LRA , although LRA has no opinion 
+<br />
+on the induction axioms (believed by PA), LRA can prove that PA proves 
+<br />
+this or that. And with strong-AI (that is Searle's weak Turing notion) 
+<br />
+LRA will prove &quot;and Bruno says this or that&quot;. In this setting, Searle 
+<br />
+would confused LRA and PA, or LRA and Bruno.
+<br />
+<br />Now, I will not interview the brunos, but the PAs, as they have much 
+<br />
+less prejudices, if only that. By the &quot;PAs&quot; I mean the many recurring 
+<br />
+proofs by LRA that PA proves something (you can see that as the many 
+<br />
+simulations of PA by LRA). Well, the main advantage of interviewing PA 
+<br />
+is that anyone just a bit reasonable, believes in PA's beliefs.
+<br />
+<br />The PAs, are Löbian. In a nutshell, if LRA is indeed universal, PA is 
+<br />
+not only universal, but knows, in some weak sense, that she is 
+<br />
+universal.
+<br />
+LRA has universal &quot;existential provability&quot; power about the verifiable 
+<br />
+propositions, but LRA has almost no universal &quot;universal provability&quot; 
+<br />
+power. LRA's talks go like this: oh a prime number! oh a proof by ZF 
+<br />
+that PA is consistent, oh ...&quot;, but LRA cannot prove the infinity of 
+<br />
+the primes, nor can LRA prove any reasonable result in number theory 
+<br />
+begining by a &quot;Ax&quot; (for all x) quantification. The induction axioms, in 
+<br />
+which PA believes, provide her with, not only a tremedous 
+<br />
+generalization power, but confers to PA the (modal-logically-viewed) 
+<br />
+maximal indepassable self-referential power (the one which are 
+<br />
+axiomatisable by the modal logics G, G*).
+<br />
+<br />Being universal LRA is under the joug of the incompleteness phenomenon. 
+<br />
+But this is not saying a lot given that we already know LRA's 
+<br />
+provability power are so weak. PA, being universal too, is obviously 
+<br />
+under that joug too, and that is more astonishing a priori, because, as 
+<br />
+I said, PA is already quite a genius with tremendous provability power. 
+<br />
+Now, by its powerful self-referential knowledge inherited by that 
+<br />
+provability power, knowing her universality, PA *knows* that she is 
+<br />
+under the joug of the incompleteness phenomenon.
+<br />
+<br />This makes PA, and all her correct (with respect to the usual model 
+<br />
+(N,+,x)) recursively enumerable extensions, incredibly modest!  (if not 
+<br />
+a bit naive). But it makes also PA &quot;aware&quot; of intensional distinctions, 
+<br />
+already described in the Theatetus, which provide then the arithmetical 
+<br />
+interpretations of Plotinus Hypostases. Including his &quot;Matter&quot; 
+<br />
+hypostases, making them comparable with quantum logic/quantum 
+<br />
+computations.
+<br />
+<br />OK, that last paragraph was quick. I have to explain more on logic 
+<br />
+(godelian, modal, but also the weak logics like intuitionistic logic or 
+<br />
+(mainly!) quantum logic, ...). Asap.
+<br />
+<br />Does this help a bit?
+<br />
+<br />Bruno
+<br />
+<br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<br />--~--~---------~--~----~------------~-------~--~----~
+<br />
+You received this message because you are subscribed to the Google Groups &quot;Everything List&quot; group.
+<br />
+To post to this group, send email to everything-list.domain.name.hidden
+<br />
+To unsubscribe from this group, send email to everything-list-unsubscribe.domain.name.hidden
+<br />
+For more options, visit this group at <a href="http://groups.google.com/group/everything-list?hl=en">http://groups.google.com/group/everything-list?hl=en</a>
+<br />
+-~----------~----~----~----~------~----~------~--~---
+<br />
+<span id="received"><dfn>Received on</dfn> Wed May 16 2007 - 11:17:51 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start13374">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="13375.html" title="Next message in the list">Russell Standish: "Re: Theory of Nothing"</a></li>
+<li><dfn>Previous message</dfn>: <a href="13373.html" title="Previous message in the list">Bruno Marchal: "Re: Meaning Fixed Point"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="13376.html" title="Next message in this discussion thread">Mohsen Ravanbakhsh: "Re: Attempt toward a systematic description"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="13376.html" title="Message sent in reply to this message">Mohsen Ravanbakhsh: "Re: Attempt toward a systematic description"</a></li>
+<li><dfn>Reply</dfn>: <a href="13387.html" title="Message sent in reply to this message">Tom Caylor: "Re: Attempt toward a systematic description"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg13374" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg13374" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg13374" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg13374" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:14 PST
+</em></small></p>
+</body>
+</html>

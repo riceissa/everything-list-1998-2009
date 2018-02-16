@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Program for UD from hal.domain.name.hidden on 2001-05-02 (everything)</title>
+<meta name="Author" content="hal.domain.name.hidden (hal.domain.name.hidden)" />
+<meta name="Subject" content="Program for UD" />
+<meta name="Date" content="2001-05-02" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Program for UD</h1>
+<!-- received="Wed May  2 10:01:43 2001" -->
+<!-- isoreceived="20010502170143" -->
+<!-- sent="Wed, 2 May 2001 09:44:31 -0700" -->
+<!-- isosent="20010502164431" -->
+<!-- name="hal.domain.name.hidden" -->
+<!-- email="hal.domain.name.hidden" -->
+<!-- subject="Program for UD" -->
+<!-- id="200105021644.JAA18115.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start2814" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="2815.html" accesskey="d" title="rwas rwas: &quot;Re: The role of logic, &#0038; planning ...&quot;">Next message</a> ]
+[ <a href="2813.html" title="Marchal: &quot;Re: The role of logic, &#0038; planning ...&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="2821.html" accesskey="t" title="Marchal: &quot;Re: Program for UD&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2814" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2814" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2814" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2814" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:hal.domain.name.hidden?Subject=Re%3A%20Program%20for%20UD">hal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed, 2 May 2001 09:44:31 -0700</span><br />
+</address>
+<br />
+Has anyone proposed a specific implementation for the Universal Dovetailer
+<br />
+(UD)?  This is a program which runs all possible programs, a little bit
+<br />
+at a time, making progress in all of them.
+<br />
+<br />For something close, here is Greg Chaitin's program to calculate Omega,
+<br />
+the probability that a random program will halt.  It comes from from
+<br />
+<a href="http://www.cs.auckland.ac.nz/CDMTCS/chaitin/omega.l">http://www.cs.auckland.ac.nz/CDMTCS/chaitin/omega.l</a>, and is written in
+<br />
+his dialect of Lisp.
+<br />
+<br />&nbsp;&nbsp;&nbsp;[[[[ Omega in the limit from below! ]]]]
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br />
+&nbsp;&nbsp;&nbsp;define (all-bit-strings-of-size k)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if = 0 k '(())
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(extend-by-one-bit (all-bit-strings-of-size - k 1))
+<br />
+&nbsp;&nbsp;&nbsp;define (extend-by-one-bit x)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if atom x nil
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cons append car x '(0)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cons append car x '(1)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(extend-by-one-bit cdr x)
+<br />
+&nbsp;&nbsp;&nbsp;define (count-halt p)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if atom p 0
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if = success car try t 'eval read-exp car p
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 0
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(count-halt cdr p)
+<br />
+&nbsp;&nbsp;&nbsp;define (omega t) cons (count-halt (all-bit-strings-of-size t))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cons /
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cons ^ 2 t
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nil
+<br />
+<br />Examples of calling it:
+<br />
+<br />&nbsp;&nbsp;&nbsp;(omega 0)
+<br />
+&nbsp;&nbsp;&nbsp;(omega 1)
+<br />
+&nbsp;&nbsp;&nbsp;(omega 2)
+<br />
+&nbsp;&nbsp;&nbsp;(omega 3)
+<br />
+&nbsp;&nbsp;&nbsp;(omega 8)
+<br />
+<br />To read it, keep in mind that Lisp is a prefix style language, so that
+<br />
+the syntax is &quot;operator operands&quot;.  Also, the single quote means that
+<br />
+the following argument is quoted rather than evaluated.  The built-in
+<br />
+functions car and cdr return the 1st element of a list and the remainder
+<br />
+of the list, respectively, and cons puts car and cdr back together to
+<br />
+form the original list.
+<br />
+<br />The first two functions just return a list of all bit strings of size k.
+<br />
+These will be the programs that run.  The first function tests if k = 0
+<br />
+and returns (()), otherwise it calls itself on k-1 to get all k-1 bit
+<br />
+strings, then calls extend-by-one-bit.  The latter takes the first
+<br />
+element (car of x) and appends both 0 and 1 to it.  Then it recurses on
+<br />
+the remainder of the list.  So calling all-bit-strings-of-size-k with 1
+<br />
+gives ( (0) (1) ), with 2 gives ( (0 0) (0 1) (1 0) (1 1) ) and so on.
+<br />
+These are the possible programs which will be run.
+<br />
+<br />The count-halt function will return the number of programs in list p
+<br />
+which halt within t steps.  If p is an atom (not a list) it returns 0,
+<br />
+else it tries running car p (the first element of p) for t steps and
+<br />
+counts 1 or 0 based on halt/no-halt.  It recurses on the remainder of
+<br />
+p and adds that result to the 1 or 0.
+<br />
+<br />The key to this function is Chaitin's operator &quot;try&quot;, which takes a number
+<br />
+of steps and a program.  It runs the program for that many steps and
+<br />
+returns a success/still-running flag, plus the output from the program
+<br />
+if any.  Above Chaitin is only using the success flag to count whether
+<br />
+the program has halted.
+<br />
+<br />Last we have omega itself, which for parameter t calls count-halt
+<br />
+on all strings of length t. It then shows that this needs to be
+<br />
+divided by 2^t to get the halting probability.  (BTW Chaitin
+<br />
+has actual Lisp interpreters which can run this program at
+<br />
+<a href="http://www.cs.auckland.ac.nz/CDMTCS/chaitin/lm.html">http://www.cs.auckland.ac.nz/CDMTCS/chaitin/lm.html</a>.)
+<br />
+<br />You could get the effect of a UD, then, by calling omega with successively
+<br />
+larger numbers.  It would run all 1-bit programs for 1 step, then all
+<br />
+2-bit programs for 2 steps, all 3-bit programs for 3 steps, and so on.
+<br />
+It might appear that this will not, for example, run 2-bit programs for
+<br />
+10 steps.  However Chaitin's programs are self-delimiting.  When you
+<br />
+have all 10-bit programs, some of those are 2-bit programs with 8 ignored
+<br />
+bits at the end.  So in running N-bit programs for N steps, we are also
+<br />
+running all K bit programs for N steps, where K &lt; N.
+<br />
+<br />This way of doing a UD is wasteful in that we keep restarting each program
+<br />
+from the beginning.  I think in most conceptions of the UD we assume that
+<br />
+each program's state is retained, so that when its turn comes up again,
+<br />
+it continues from where it left off.  However I think it would be difficult
+<br />
+to manage the storage space for this to work.
+<br />
+<br />Doing it Chaitin's way might appear to change the frequency with
+<br />
+which a program ones so that it departs from the universal measure.
+<br />
+If we have two programs of length K and L, where K &lt;&lt; L but both are
+<br />
+large, it should be that the first program gets running time 2^(L-K)
+<br />
+greater than the second program.  However program K actually gets in
+<br />
+addition L-K runs before we even start running program L, as we build
+<br />
+up to programs of size L.  In the end this should not matter though
+<br />
+as this constant factor will decrease in importance as the size of
+<br />
+programs approaches infinity.  Running programs of size N &gt;&gt; L &gt;&gt; K,
+<br />
+K will get running time 2^(L-K) more than L due to its smaller size,
+<br />
+which corresponds to the universal measure.
+<br />
+<br />This leads to three questions:
+<br />
+<br />&nbsp;- Would all UD programs would correspond to the universal measure,
+<br />
+asymptotically?
+<br />
+<br />&nbsp;- Is there a way to retain state for all the programs so that you don't
+<br />
+have to start over from the beginning?  (Although Chaitin's way may
+<br />
+be simpler, and if it gives the same probability distribution then we
+<br />
+couldn't tell the difference).
+<br />
+<br />&nbsp;- Is it necessary to use self-delimiting programs in order for the
+<br />
+notion of running all programs to be well defined, and recover the
+<br />
+universal distribution?
+<br />
+<br />Hal
+<br />
+<span id="received"><dfn>Received on</dfn> Wed May 02 2001 - 10:01:43 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start2814">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="2815.html" title="Next message in the list">rwas rwas: "Re: The role of logic, &#0038; planning ..."</a></li>
+<li><dfn>Previous message</dfn>: <a href="2813.html" title="Previous message in the list">Marchal: "Re: The role of logic, &#0038; planning ..."</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="2821.html" title="Next message in this discussion thread">Marchal: "Re: Program for UD"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Maybe reply</dfn>: <a href="2821.html" title="Message sent in reply to this message">Marchal: "Re: Program for UD"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2829.html" title="Message sent in reply to this message">Marchal: "Re: Program for UD"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2814" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2814" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2814" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2814" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

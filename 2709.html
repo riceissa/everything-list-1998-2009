@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Kripke semantics from Marchal on 2001-03-30 (everything)</title>
+<meta name="Author" content="Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="Kripke semantics" />
+<meta name="Date" content="2001-03-30" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Kripke semantics</h1>
+<!-- received="Fri Mar 30 09:19:54 2001" -->
+<!-- isoreceived="20010330171954" -->
+<!-- sent="Fri Mar 30 09:19:54 2001" -->
+<!-- isosent="20010330171954" -->
+<!-- name="Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="Kripke semantics" -->
+<!-- id="200103301700.TAA16197.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start2709" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="2710.html" accesskey="d" title="Hal Ruhl: &quot;Re: Computing Randomness&quot;">Next message</a> ]
+[ <a href="2708.html" title="Marchal: &quot;Re: Leibniz Semantics&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="2719.html" accesskey="t" title="George Levy: &quot;Re: Kripke semantics&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2709" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2709" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2709" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2709" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20Kripke%20semantics">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Fri Mar 30 09:19:54 2001</span><br />
+</address>
+<br />
+Hi George,
+<br />
+<br />Do you remember Leibniz semantics?
+<br />
+<br />Here is Leibniz semantics for modal propositions.
+<br />
+In any world, []p will be considered true if p is true
+<br />
+in all worlds of W. And in any world, &lt;&gt;p will be considered true,
+<br />
+if there is (at least one) world in W in which p is true.
+<br />
+<br />the problem is that it makes valid at once all the formula
+<br />
+<br />[]p -&gt; p
+<br />
+p -&gt; &lt;&gt;p
+<br />
+[]p -&gt; [][]p
+<br />
+p -&gt; []&lt;&gt;p
+<br />
+&lt;&gt;p -&gt; []&lt;&gt;p
+<br />
+[](p-&gt;q) -&gt; ([]p -&gt; []q)
+<br />
+<br />Do you remember our attempt to modelise belief by a modal box?
+<br />
+<br />We would like not have &quot;[]p -&gt; p&quot;, beacuse we know that a belief can
+<br />
+be wrong.
+<br />
+But then S5 is certainly not the good system because &quot;[]p -&gt; p&quot; is 
+<br />
+among the theorems, and Leibniz semantics is not a good one because
+<br />
+it makes &quot;[]p -&gt; p&quot; valid, true everywhere (in all worlds of all
+<br />
+frames!).
+<br />
+<br /><br />We would like weaker theories and more general semantics,k capable
+<br />
+of making the above formula ([]p -&gt; p, []p -&gt; [][]p, p -&gt; []&lt;&gt;p
+<br />
+&lt;&gt;p -&gt; []&lt;&gt;p, &lt;&gt;p -&gt; []&lt;&gt;p) independent.
+<br />
+<br /><br />Let W be a frame (a set of worlds)
+<br />
+<br />With Leibniz, []A is true in a world w, if A is true in all worlds.
+<br />
+<br />Kripke relativises Leibniz:
+<br />
+<br />[]A is true in a world w, if A is true in all world accessible from w.
+<br />
+<br />And (as you can guess):
+<br />
+<br />&lt;&gt;A is true in a world w, if there is a world, accessible from w, 
+<br />
+where A is true.
+<br />
+<br />So a Kripke frame will be a set of worlds + an accessibility relation,
+<br />
+which is just a binary relation defined on the frame.
+<br />
+<br />(W, R) will denoted Kripke frame. W is the set of worlds, and R is
+<br />
+the relation of accessibility. I will write xRy for the world y is
+<br />
+accessible from x.
+<br />
+<br />A model (W, R, V), by definition, is a frame + a valuation (a fonction 
+<br />
+which attributes truth value to each atomic proposition in each world).
+<br />
+<br />Try to convince you that []p-&gt;p is automatically valid in all
+<br />
+reflexive model. R is reflexive if for all x in W we have xRx, that is
+<br />
+all world are self-accessible.
+<br />
+<br />Try to find a model in which []p-&gt;p is falsified.
+<br />
+<br />Convince yourself that Leibniz semantics is a particular case
+<br />
+of Kripke semantics where the relation of accessibility
+<br />
+makes all the world accessible from each other. That is R is an
+<br />
+equivalence relation (a reflexive (xRx), transitive (xRy and yRz entails
+<br />
+xRz), and symetric relation (xRy entails yRx).
+<br />
+<br />You can try to guess the relation R making valid []p -&gt; [][]p,
+<br />
+p -&gt; []&lt;&gt;p, ...).
+<br />
+<br />Take your time, and tell me if everything is ok up to now.
+<br />
+<br />It is not a luxe, for a relativist everythinger, to have a look
+<br />
+on Kripke insight.
+<br />
+<br />Bruno
+<br />
+<span id="received"><dfn>Received on</dfn> Fri Mar 30 2001 - 09:19:54 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start2709">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="2710.html" title="Next message in the list">Hal Ruhl: "Re: Computing Randomness"</a></li>
+<li><dfn>Previous message</dfn>: <a href="2708.html" title="Previous message in the list">Marchal: "Re: Leibniz Semantics"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="2719.html" title="Next message in this discussion thread">George Levy: "Re: Kripke semantics"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="2719.html" title="Message sent in reply to this message">George Levy: "Re: Kripke semantics"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2724.html" title="Message sent in reply to this message">Marchal: "Re: Kripke semantics"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2726.html" title="Message sent in reply to this message">Marchal: "Re: Kripke semantics"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2733.html" title="Message sent in reply to this message">Marchal: "Re: Kripke semantics"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2764.html" title="Message sent in reply to this message">Marchal: "Re: Kripke semantics"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2792.html" title="Message sent in reply to this message">Marchal: "Re: Kripke semantics"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2709" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2709" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2709" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2709" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Re: decision theory papers from H J Ruhl on 2002-04-22 (everything)</title>
+<meta name="Author" content="H J Ruhl (HalRuhl.domain.name.hidden)" />
+<meta name="Subject" content="Re: decision theory papers" />
+<meta name="Date" content="2002-04-22" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Re: decision theory papers</h1>
+<!-- received="Mon Apr 22 19:17:18 2002" -->
+<!-- isoreceived="20020423021718" -->
+<!-- sent="Mon, 22 Apr 2002 22:07:54 -0700" -->
+<!-- isosent="20020423050754" -->
+<!-- name="H J Ruhl" -->
+<!-- email="HalRuhl.domain.name.hidden" -->
+<!-- subject="Re: decision theory papers" -->
+<!-- id="5.1.0.14.0.20020422203455.02a63260.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- inreplyto="decision theory papers" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start3674" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="3675.html" accesskey="d" title="Hal Finney: &quot;Re: decision theory papers&quot;">Next message</a> ]
+[ <a href="3673.html" title="H J Ruhl: &quot;Re: decision theory papers&quot;">Previous message</a> ]
+[ <a href="3654.html" title="Wei Dai: &quot;decision theory papers&quot;">Maybe in reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="3676.html" accesskey="t" title="Marcus Hutter: &quot;Re: decision theory papers&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3674" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3674" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3674" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3674" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: H J Ruhl &lt;<a href="mailto:HalRuhl.domain.name.hidden?Subject=Re%3A%20decision%20theory%20papers">HalRuhl.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Mon, 22 Apr 2002 22:07:54 -0700</span><br />
+</address>
+<br />
+Explorations of the definitional basis of a universe and its effect on the 
+<br />
+idea of decisions:
+<br />
+<br />First examine a deterministic universe j such that [using notation from a 
+<br />
+post by Matthieu Walraet]:
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tj                        Tj                               Tj
+<br />
+Sj(0) ----------------&gt; Sj(1) ----------------&gt; Sj(2) .... 
+<br />
+----------------&gt; Sj(i)
+<br />
+<br />An interpretation is that all the information needed to get from Sj(0) to 
+<br />
+Sj(i) is contained in Sj(0) and the rules of state evolution for that 
+<br />
+universe that is Tj.
+<br />
+<br />I see a problem with this interpretation.
+<br />
+<br />Suppose we write an expression for the shortest self delimiting program 
+<br />
+able to compute Sj(i) as:
+<br />
+<br />(1) Pj(i) = {Tj[Sj(i - 1)] + DLj(i)} computes Sj(i)
+<br />
+<br />where DLj(i) is the self delimiter.
+<br />
+<br />Compressing Sj(i - 1) it can be written as Pj(i - 1) and this short hand 
+<br />
+substituted into (1) to yield:
+<br />
+<br />(2) Pj(i) = {Tj[Pj(i - 1)] + DLj(i)} computes Sj(i)
+<br />
+<br />Note that Pj(i) is always longer than Pj(i - 1) because it contains Pj(i - 
+<br />
+1) plus the Tj plus the delimiter so Sj(i) contains more information [using 
+<br />
+the program length definition of information] than Sj(i - 1) and thus more 
+<br />
+information than Sj(0).
+<br />
+<br />What kind of information is it? I see it as location record keeping 
+<br />
+information. The universe is at state i of the recursion and this extra 
+<br />
+information is the tag providing that location. The effect has several results:
+<br />
+<br />1) This new information can never be removed from such a universe so its 
+<br />
+local &quot;time&quot; has an arrow.
+<br />
+<br />2) New information can manifest as either a decorrelation of the bit 
+<br />
+pattern of and/or an increased length of the string representing Sj(i). The 
+<br />
+length of the string is interpretable as &quot;space&quot; [a fixed number of bits 
+<br />
+say x bits describe the configuration of a small region of that &quot;space&quot; and 
+<br />
+there are y regions requiring description so an increase in length of the 
+<br />
+string causes y to increase.].  Note that the effect increases as the 
+<br />
+recursion progresses since DLj(i) increases monotonically with i. Thus such 
+<br />
+a universe should see a long term acceleration in the rate of expansion of 
+<br />
+its &quot;space&quot;.
+<br />
+<br />3) So how do we define a universe?  Suppose many universes are following 
+<br />
+the same recursion some at earlier states and some at later states than 
+<br />
+universe j.  It seems best to define such universes by the state they are 
+<br />
+in [which includes Tj and DLj(i)].  Where did the additional information 
+<br />
+come from?  The additional information is not that a universe can follow 
+<br />
+the recursion but rather as stated above the location of a particular 
+<br />
+universe in the recursion.  Since this information is not in Sj(0) or Tj it 
+<br />
+must have come from outside universe j.
+<br />
+<br />Universes that are not deterministic but have rules that allow external 
+<br />
+true to enter are easier to analyze in this regard since the current state 
+<br />
+seems the only reasonable definition.
+<br />
+<br />4) For a deterministic universe is the additional information true 
+<br />
+noise?  In at least one sense it is because a particular universe j is 
+<br />
+defined by its current state it can not tell which state including the 
+<br />
+current state was or is Sj(0) so there is no clue as to what the 
+<br />
+information means or if it is somehow even additional or new or which 
+<br />
+information is involved.  This is the same as the situation for a universe 
+<br />
+whose rules allow external origin true noise.
+<br />
+<br />5) This would seem to enhance the case against the idea of &quot;decision&quot; since 
+<br />
+noise [chance] of some sort seems to be everywhere.
+<br />
+<br />6) Behavior similar to (2) is found in universes that are sufficiently well 
+<br />
+behaved so that it is possible to propose a prior state such that the 
+<br />
+universe's rules when stripped of their allowance for external true noise 
+<br />
+can deterministicly arrive at the universe's current state.  This proposed 
+<br />
+prior state need not have been the actual prior state.
+<br />
+<br />Hal
+<br />
+<span id="received"><dfn>Received on</dfn> Mon Apr 22 2002 - 19:17:18 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start3674">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="3675.html" title="Next message in the list">Hal Finney: "Re: decision theory papers"</a></li>
+<li><dfn>Previous message</dfn>: <a href="3673.html" title="Previous message in the list">H J Ruhl: "Re: decision theory papers"</a></li>
+<li><dfn>Maybe in reply to</dfn>: <a href="3654.html" title="Message to which this message replies">Wei Dai: "decision theory papers"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="3676.html" title="Next message in this discussion thread">Marcus Hutter: "Re: decision theory papers"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="3676.html" title="Message sent in reply to this message">Marcus Hutter: "Re: decision theory papers"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3674" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3674" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3674" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3674" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

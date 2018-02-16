@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>polynomial vs exponential time problems clarification from vznuri.domain.name.hidden on 2002-12-30 (everything)</title>
+<meta name="Author" content="vznuri.domain.name.hidden (vznuri.domain.name.hidden)" />
+<meta name="Subject" content="polynomial vs exponential time problems clarification" />
+<meta name="Date" content="2002-12-30" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>polynomial vs exponential time problems clarification</h1>
+<!-- received="Mon Dec 30 22:44:36 2002" -->
+<!-- isoreceived="20021231064436" -->
+<!-- sent="Mon, 30 Dec 2002 20:29:43 -0700" -->
+<!-- isosent="20021231032943" -->
+<!-- name="vznuri.domain.name.hidden" -->
+<!-- email="vznuri.domain.name.hidden" -->
+<!-- subject="polynomial vs exponential time problems clarification" -->
+<!-- id="200212310329.UAA01680.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start4358" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="4359.html" accesskey="d" title="scerir: &quot;R: Quantum Probability and Decision Theory&quot;">Next message</a> ]
+[ <a href="4357.html" title="Stephen Paul King: &quot;Re: Quantum Probability and Decision Theory&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg4358" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg4358" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg4358" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg4358" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:vznuri.domain.name.hidden?Subject=Re%3A%20polynomial%20vs%20exponential%20time%20problems%20clarification">vznuri.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Mon, 30 Dec 2002 20:29:43 -0700</span><br />
+</address>
+<br />
+hi all. re: the exponential vs polynomial time thread.
+<br />
+imho HFs comments could be interpreted as roughly correct
+<br />
+but stated in a very confusing way &amp; I would say, hence
+<br />
+the ensuing confusion. lets give this another shot.
+<br />
+<br />there are no problems for which it has been proven that
+<br />
+there is a **lower bound** of exponential time except
+<br />
+for those that also require exponential space (for which
+<br />
+the exponential time lower bound is trivial). (space is
+<br />
+the number of tape squares used by a TM, time is the number
+<br />
+of steps). this of course is quite frustrating &amp; even embarrassing
+<br />
+to researchers and a gaping open problem in the theory.
+<br />
+<br />the big P!=NP problem depends on showing that there is some
+<br />
+P-space problem that has a lower bound of exponential time, i.e.
+<br />
+it cannot be solved &quot;any faster&quot; than exponential time.
+<br />
+<br />literally, there are many problems for which it has been shown or even
+<br />
+&quot;proven&quot; that they can be verified in P time and can 
+<br />
+be solved in exponential time.
+<br />
+<br />in fact every NP complete problem has this property. what has
+<br />
+not been proven or is not known is that exponential time is
+<br />
+also a **lower bound**.
+<br />
+<br />so it can be very confusing if someone says: there are no
+<br />
+problems that are known to be checkable/verifiable in P time but take
+<br />
+exponential time. the term &quot;take&quot; must be used very carefully, imho
+<br />
+it should be avoided as just too ambiguous.
+<br />
+sometimes people mean as a lower bound (as HF did below), or 
+<br />
+sometimes it just means &quot;a solution exists at that speed&quot; (as I write
+<br />
+above).
+<br />
+<br />forget NP complete for a minute &amp; 
+<br />
+suppose I have a problem that is solvable in P time. does it
+<br />
+&quot;take&quot; exponential time? in one sense, yes, there exists also
+<br />
+algorithms that run in exponential time to solve it. but in another
+<br />
+sense, no, that is not the lower bound, the lower bound is polynomial.
+<br />
+<br />also note that defining NP in terms of &quot;verification in P time&quot;
+<br />
+is done in terms of a regular deterministic TM machine, not 
+<br />
+an nondeterministic one. the sense that NP 
+<br />
+can be defined in terms of nondeterministic
+<br />
+TMs is: it is the set of problems that can be solved by nondeterministic
+<br />
+TMs in P time.
+<br />
+<br />that straightens it all out, right???
+<br />
+<br />there are many different ways to look at the P vs NP problem,
+<br />
+in this way it is like g&quot;odel's problem, and this can lead
+<br />
+to knowledge in the sense that &quot;a little knowledge is a
+<br />
+dangerous thing&quot;..
+<br />
+<br />HF writes
+<br />
+<em class="quotelev2">&gt;&gt; On 31-Dec-02, Hal Finney wrote:
+</em><br />
+<em class="quotelev3">&gt;&gt; &gt; One correction, there are no known problems which take exponential
+</em><br />
+<em class="quotelev3">&gt;&gt; &gt; time but which can be checked in polynomial time. If such a problem
+</em><br />
+<em class="quotelev3">&gt;&gt; &gt; could be found it would prove that P != NP, one of the greatest
+</em><br />
+<em class="quotelev3">&gt;&gt; &gt; unsolved problems in computability theory.
+</em><br />
+<em class="quotelev2">&gt;&gt;
+</em><br />
+<em class="quotelev2">&gt;&gt; What about Hamiltonian circuits or factoring an integer or roots of a
+</em><br />
+<em class="quotelev2">&gt;&gt; Diophantine equation?
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<em class="quotelev1">&gt;I don't believe any of those are known to take exponential time.  For all
+</em><br />
+<em class="quotelev1">&gt;we know a polynomial time solution may yet be found for all of these.
+</em><br />
+<br />HM writes
+<br />
+<br /><em class="quotelev1">&gt;Communications glitch here.  The definition
+</em><br />
+<em class="quotelev1">&gt;of NP is problems that can be solved in
+</em><br />
+<em class="quotelev1">&gt;polynomial time on a &quot;nondeterministic&quot;
+</em><br />
+<em class="quotelev1">&gt;machine, that is one that can test
+</em><br />
+<em class="quotelev1">&gt;simultaneously all candidate solutions
+</em><br />
+<em class="quotelev1">&gt;(effectively by creating exponentially
+</em><br />
+<em class="quotelev1">&gt;many processes for testing all possible
+</em><br />
+<em class="quotelev1">&gt;combinations of undetermined variables,
+</em><br />
+<em class="quotelev1">&gt;each individual combination taking polynomial
+</em><br />
+<em class="quotelev1">&gt;time to check)
+</em><br />
+<span id="received"><dfn>Received on</dfn> Mon Dec 30 2002 - 22:44:36 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start4358">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="4359.html" title="Next message in the list">scerir: "R: Quantum Probability and Decision Theory"</a></li>
+<li><dfn>Previous message</dfn>: <a href="4357.html" title="Previous message in the list">Stephen Paul King: "Re: Quantum Probability and Decision Theory"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg4358" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg4358" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg4358" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg4358" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:08 PST
+</em></small></p>
+</body>
+</html>

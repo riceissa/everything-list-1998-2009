@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Turing vs math from Juergen Schmidhuber on 1999-10-21 (everything)</title>
+<meta name="Author" content="Juergen Schmidhuber (juergen.domain.name.hidden)" />
+<meta name="Subject" content="Turing vs math" />
+<meta name="Date" content="1999-10-21" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Turing vs math</h1>
+<!-- received="Thu Oct 21 01:46:28 1999" -->
+<!-- isoreceived="19991021084628" -->
+<!-- sent="Thu, 21 Oct 1999 10:43:20 +0200" -->
+<!-- isosent="19991021084320" -->
+<!-- name="Juergen Schmidhuber" -->
+<!-- email="juergen.domain.name.hidden" -->
+<!-- subject="Turing vs math" -->
+<!-- id="199910210843.KAA24402.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start1272" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="1273.html" accesskey="d" title="Marchal: &quot;Re: Turing vs math&quot;">Next message</a> ]
+[ <a href="1271.html" title="Juergen Schmidhuber: &quot;UTM vs math&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="1273.html" accesskey="t" title="Marchal: &quot;Re: Turing vs math&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1272" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1272" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1272" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1272" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Juergen Schmidhuber &lt;<a href="mailto:juergen.domain.name.hidden?Subject=Re%3A%20Turing%20vs%20math">juergen.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Thu, 21 Oct 1999 10:43:20 +0200</span><br />
+</address>
+<br />
+It seems to me the recent discussion on universal Turing machines
+<br />
+(UTMs) versus mathematics in general occasionally suffers from certain
+<br />
+misunderstandings.
+<br />
+<br />Schmidhuber's UTM theory of everything [1] and Tegmark's theory of
+<br />
+everything based on all self-consistent mathematical structures [2] are
+<br />
+related as follows.  It is well-known that for any set of mathematical
+<br />
+axioms there is a program that lists all provable theorems in order
+<br />
+of the lengths of their proofs encoded as bitstrings.  Since the UTM
+<br />
+that computes all bitstrings essentially outputs all these proofs for
+<br />
+all possible sets of axioms, Tegmark's approach [2] is encompassed by the
+<br />
+UTM approach [1].  In UTM speak: there is no computable universe that
+<br />
+simultaneously satisfies some computable criterion and its negation.
+<br />
+On the other hand, there are many formal axiomatic systems powerful enough
+<br />
+to encode all computations of all possible UTMs, such as standard number
+<br />
+theory.  Hence Tegmark's view [2] also encompasses the UTM approach [1].
+<br />
+The UTM approach, however, offers several conceptual advantages: (1) It
+<br />
+directly connects to algorithmic and information-theoretic complexity
+<br />
+issues traditionally ignored in pure mathematics, and imposes natural
+<br />
+complexity-based orderings on the possible universes and subsets thereof.
+<br />
+(2) It taps into a rich source of theoretical work on computable
+<br />
+probability distributions relevant for establishing priors on possible
+<br />
+universes. Such priors are needed for making probabilistic predictions
+<br />
+concerning our own particular universe. For instance, Tegmark's statement
+<br />
+&quot;... all mathematical structures are a priori given equal statistical
+<br />
+weight&quot; [2] differs from the natural complexity-based weighting used
+<br />
+in [1], which builds on the &quot;optimal&quot; UTM-based &quot;universal prior&quot; or
+<br />
+Solomonoff-Levin distribution U.
+<br />
+<br />The universal prior U assigns to a bitstring s the probability of
+<br />
+successively guessing all bits of a self-delimiting program that computes
+<br />
+s (individual bits are guessed whenever the UTM's input scanning head
+<br />
+shifts right).  So we need to sum over all programs computing the same
+<br />
+universe. U is &quot;optimal&quot; or &quot;universal&quot; in the sense that it dominates
+<br />
+all other discrete enumerable semimeasures: under U the probability
+<br />
+of any computable object is at least as large (save for a constant
+<br />
+that does not depend on the object) as under any alternative discrete
+<br />
+enumerable semimeasure.  The particular choice of UTM does not matter
+<br />
+due to the invariance theorem.
+<br />
+<br />The prior U suggests: you are in the simplest universe compatible with
+<br />
+your existence. The conditional probability of some universe, given
+<br />
+yourself, is high if that universe is computable by a short algorithm. To
+<br />
+use the example in [1], a universe in which lambs start attacking lions
+<br />
+seems less probable than the present one, because apparently it requires
+<br />
+more information than conveyed by the few physical laws causing &quot;normal&quot;
+<br />
+animal evolution. Similarly for &quot;flying rabbits&quot;.
+<br />
+<br />The main motivation of the UTM theory of everything is Occam's razor:
+<br />
+given several explanations of the data, choose the simplest one - the one
+<br />
+requiring the least amount of information.  Currently the UTM theory is
+<br />
+the simplest one compatible with everything we know.  One may believe in
+<br />
+it until (a) there is evidence against it, e.g., someone shows that our
+<br />
+own universe won't run without all the real numbers, most of which are not
+<br />
+computable, or (b) someone comes up with an even simpler explanation of
+<br />
+everything.  Note, however, that the UTM theory does encompass everything
+<br />
+we will ever be able to describe formally. Non-computable stuff is simply
+<br />
+beyond description.
+<br />
+<br /><br />[1] J.Schmidhuber.  A computer scientist's view of life, the universe, and
+<br />
+everything.  In C.Freksa, M.Jantzen, and R.Valk, editors, Foundations of
+<br />
+Computer Science: Theory, Cognition, Applications, volume 1337, pages
+<br />
+201-208. Lecture Notes in Computer Science, Springer, Berlin, 1997.
+<br />
+<br />[2] M. Tegmark. Is &quot;the theory of everything&quot; merely the ultimate ensemble 
+<br />
+theory? Annals of Physics, 270:1-51, 1998.
+<br />
+<br /><br />Juergen
+<br />
+<br /><br /><br /><br />_________________________________________________
+<br />
+PD Dr. Dr. habil. Juergen Schmidhuber,   director
+<br />
+IDSIA, Corso Elvezia 36, 6900-Lugano, Switzerland
+<br />
+home +41 91 9212778       office +41 91 911 98 36
+<br />
+juergen.domain.name.hidden     <a href="http://www.idsia.ch/~juergen">http://www.idsia.ch/~juergen</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Thu Oct 21 1999 - 01:46:28 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start1272">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="1273.html" title="Next message in the list">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Previous message</dfn>: <a href="1271.html" title="Previous message in the list">Juergen Schmidhuber: "UTM vs math"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="1273.html" title="Next message in this discussion thread">Marchal: "Re: Turing vs math"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Maybe reply</dfn>: <a href="1273.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1274.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1275.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1276.html" title="Message sent in reply to this message">Juergen Schmidhuber: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1277.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1278.html" title="Message sent in reply to this message">Juergen Schmidhuber: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1279.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1280.html" title="Message sent in reply to this message">hal.domain.name.hidden: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1281.html" title="Message sent in reply to this message">hal.domain.name.hidden: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1282.html" title="Message sent in reply to this message">Marchal: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1283.html" title="Message sent in reply to this message">Higgo James: "FW: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1284.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1285.html" title="Message sent in reply to this message">Marchal: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1286.html" title="Message sent in reply to this message">Juergen Schmidhuber: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1287.html" title="Message sent in reply to this message">hal.domain.name.hidden: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1288.html" title="Message sent in reply to this message">GSLevy.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1290.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1291.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Reply</dfn>: <a href="1294.html" title="Message sent in reply to this message">Alastair Malcolm: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1297.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1298.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1299.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1300.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1301.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1303.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1304.html" title="Message sent in reply to this message">Higgo James: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1305.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1306.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1313.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1316.html" title="Message sent in reply to this message">Jacques M. Mallah: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1318.html" title="Message sent in reply to this message">GSLevy.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1319.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1321.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1323.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1325.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1326.html" title="Message sent in reply to this message">GSLevy.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1327.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1328.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1329.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1332.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1333.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1334.html" title="Message sent in reply to this message">Bostrom,N  (pg): "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1335.html" title="Message sent in reply to this message">Bostrom,N  (pg): "FW: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1337.html" title="Message sent in reply to this message">Marchal: "RE: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1338.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1344.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1345.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1346.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1347.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1348.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1349.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1350.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1356.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1360.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1363.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1395.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1396.html" title="Message sent in reply to this message">Marchal: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1398.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Turing vs math"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="1399.html" title="Message sent in reply to this message">hal.domain.name.hidden: "Re: Turing vs math"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1272" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1272" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1272" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1272" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

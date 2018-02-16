@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Re: COMBINATORS VI from Bruno Marchal on 2005-02-20 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="Re: COMBINATORS VI" />
+<meta name="Date" content="2005-02-20" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Re: COMBINATORS VI</h1>
+<!-- received="Sun Feb 20 10:10:49 2005" -->
+<!-- isoreceived="20050220181049" -->
+<!-- sent="Sun, 20 Feb 2005 16:11:37 +0100" -->
+<!-- isosent="20050220151137" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="Re: COMBINATORS VI" -->
+<!-- id="5.1.0.14.2.20050220132322.03b4e460.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- inreplyto="5.1.0.14.2.20050218145626.00abce80.domain.name.hidden" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start6118" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="6119.html" accesskey="d" title="Bruno Marchal: &quot;COMBINATORS VI&quot;">Next message</a> ]
+[ <a href="6117.html" title="Bruno Marchal: &quot;COMBINATORS V&quot;">Previous message</a> ]
+[ <a href="6117.html" title="Bruno Marchal: &quot;COMBINATORS V&quot;">In reply to</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6118" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6118" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6118" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6118" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20COMBINATORS%20VI">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Sun, 20 Feb 2005 16:11:37 +0100</span><br />
+</address>
+<br />
+I will provide a detailed solution of the last problem
+<br />
+for those who have perhaps missed the beginning.
+<br />
+<br /><br /><em class="quotelev1">&gt;Verify that S = B(BW)(BBC). That is verify that B(BW)(BBC)xyz = xz(yz).
+</em><br />
+<em class="quotelev1">&gt;This should be much easier.
+</em><br />
+<br /><br /><br />One awful solution would be, reminding that B = S(KS)K, and that W = SS(KI)
+<br />
+and that C = S(BBS)(KK), that is S((S(KS)K)(S(KS)K)S)(KK), to substitute those
+<br />
+the occurence of B, W and C by they SK-programs, giving:
+<br />
+<br />S = B(BW)(BBC) =
+<br />
+= S(KS)K((S(KS)K)SS(K(SKK)))((S(KS)K)(S(KS)K)(S((S(KS)K)(S(KS)K)S)(KK)))
+<br />
+<br />... and then applying that expression on xyz.
+<br />
+<br />Obviously we have not programmed the elementary compositor B, the elementary
+<br />
+permutator C and the elementary duplicator W for not using them. Yet this 
+<br />
+gave an
+<br />
+interesting definition of S in term of itself and this rises the question 
+<br />
+if there is not
+<br />
+some general recursion phenomenon there and indeed there will be a very general
+<br />
+such phenomenon captured by a combinator which is neither an eliminator, nor a
+<br />
+permutator, nor a duplicator, nor even an identificator (like Ix = x) and 
+<br />
+which was
+<br />
+called the paradoxical combinators by Curry and Feys and is known today as the
+<br />
+fixed  point combinator but that's for later.
+<br />
+<br />So I recall:
+<br />
+<br />Bxyz = x(yz)
+<br />
+Wxy = xyy
+<br />
+Cxyz = xzy
+<br />
+<br />And 'course:
+<br />
+Kxy = x
+<br />
+Sxyz = xz(yz)
+<br />
+<br />And let us verify that S = B(BW)(BBC)
+<br />
+I recall &quot;=&quot; means &quot;act similarly&quot;; thus we must show that
+<br />
+<br />B(BW)(BBC)xyz = Sxyz = xz(yz)
+<br />
+<br />Well Bxyz = x(yz)  and please remember that
+<br />
+Bxyz abbreviates (((B x) y) z) and in particular
+<br />
+<br />B(BW)(BBC)x abbreviates (((B (BW)) (BBC)) x) and that that matches!
+<br />
+<br />Another practical way (more practical than by adding the left
+<br />
+parenthesis!) is to fully abbreviate the expression (like I do usually) and
+<br />
+remember that B (here) is trigged by its dynamic when presented
+<br />
+with three arguments and that argument are *arbitrary* combinators:
+<br />
+<br />so the expression B(BW)(BBC)xyz is
+<br />
+<br />B     (BW)      (BBC)         x       y       z
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1            2             3
+<br />
+<br />and you can write the dynamic of B by  B123 = 1(23), meaning
+<br />
+that 1 denotes its first argument, 2 its second ..., so that
+<br />
+<br />B(BW)(BBC)x gives (BW)((BBC)x) that is (fully abbreviated)
+<br />
+<br />BW(BBCx).  We must yet apply it to y and then z:
+<br />
+<br />BW(BBCx)y
+<br />
+<br />Oh! here we have a choice!  Indeed the B-dynamic match the
+<br />
+first occurrence of B and the second one. A famous result,
+<br />
+known as Church Rosser Theorem tells us that as far as the
+<br />
+reduction will converge on some stable molecule, the path, and
+<br />
+thus those choice does not matter: we will get the same
+<br />
+stable molecule. Soon or later we will come back
+<br />
+on this, but let us just choose the leftmost reduction (another
+<br />
+theorem will make some advertising for that strategy, but
+<br />
+things will appear to be non trivial though ...). So we apply
+<br />
+the B-rule on leftmost B in:     B W (BBCx) y  giving
+<br />
+W((BBCx)y) that is (fully abbrev.) W(BBCxy), and now we have
+<br />
+also a choice: either we apply W(BBCxy) directly on z, or
+<br />
+we reduce it further. You could verify those alternate path as
+<br />
+exercise; let us apply W(BBCxy) directly on z. This gives
+<br />
+W(BBCxy)z (and Wab = abb) thus W(BBCxy)z gives
+<br />
+(BBCxy)zz = (fully abbrev.) BBCxyzz, and this gives
+<br />
+by the B-rule B123 = 1(23), (where 1, the first argument of B
+<br />
+is B itself, and 2 is C and 3 is x)  B(Cx)yzz which by the B
+<br />
+rule again (with 1 = (Cx), 2 = y, 3 = z) gives (Cx)(yz)z,
+<br />
+which by the C-rule C123 = 132 (with 1 = x, 2 = (yz)
+<br />
+3 = z gives xz(yz).   That is Sxyz and so we have shown that
+<br />
+B(BW)(BBC) behaves like S.
+<br />
+<br />To sum up:   S = B(BW)(BBC) because
+<br />
+B(BW)(BBC)xyz
+<br />
+= BW(BBCx)yz
+<br />
+= W(BBCxy)z
+<br />
+= (BBCxy)zz
+<br />
+= B(Cx)yzz
+<br />
+= Cx(yz)z
+<br />
+= xz(yz)    which what Sxyz gives.
+<br />
+<br /><br /><br />Of course the original exercise I gave was harder: program
+<br />
+S from B, W and C. It consisted in finding that B(BW)(BBC) or
+<br />
+something similar. But how could we have found such expression?
+<br />
+A nice thing is that the verification above, which just use the
+<br />
+dynamics of B, C and W gives us the answer: just copy the
+<br />
+execution above in the reverse order (cf programming here is
+<br />
+inverse execution). I do it and I comment:
+<br />
+<br />?xyz    =  &lt; B, C, ...&gt;xyz  = xz(yz)
+<br />
+<br />xz(yz)   so this is what we want as the
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result of B C W application
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on xyz. So we must transform
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xz(yz) as &lt;B,C ..&gt;xyz, that is
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get those final &quot;x)y)z)&quot;, or
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xyz in fully abb. form.
+<br />
+<br />Cx(yz)z  what a clever move! we are
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at once close to xyz, except
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that we have two parentheses
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;too much, and one z to much.
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To suppress one z we will
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isolate it by moving the right
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parenthesis to the left. That's
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the inversion of the B-rule, so
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we arrive at:
+<br />
+<br />B(Cx)yzz   and applying again the
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B-rule, we get
+<br />
+<br />(BBCxy)zz   I let some left parenthesis
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;so that the W-rule
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;applicability is highlightened
+<br />
+<br />W(BBCxy)z   And now there just
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remains a right parenthesis
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we would like to push on the
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left, which we can do by
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two successive inverse B rule:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first gives (with 1 = W, 2
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (BBCx) and 3 = y:
+<br />
+<br />BW(BBCx)yz    the second gives
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with 1 = (BW), 2 = (BBC)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and 3 = x:
+<br />
+<br />B(BW)(BBC)xyz  we got what we wanted:
+<br />
+<br />S = B(BW)(BBC). Both gives xz(yz) when
+<br />
+given x y and z (in that order!).
+<br />
+<br /><br />Question: is there a systematic method such
+<br />
+that giving any behavior like
+<br />
+<br />&nbsp;&nbsp;&nbsp;Xxyztuv = x(yx)(uvut)   &lt;or what you want)
+<br />
+<br />can generate systematically a corresponding
+<br />
+SK or BWCK -combinator?
+<br />
+The answer is yes. I let you meditate the question.
+<br />
+(This point will be made clear when we will meet
+<br />
+the terrible little cousins of the combinators
+<br />
+which are the *lambda expression*, (and which
+<br />
+in our context will just abbreviate complex
+<br />
+combinators), but I propose to progress
+<br />
+and make sure that the
+<br />
+SK combinator are Turing Universal.
+<br />
+<br />I am not yet decided when I really should
+<br />
+introduce you to the paradoxical combinators,
+<br />
+which are rather crazy. Smullyan call
+<br />
+them wise birds, but I guess
+<br />
+it is an euphemism!
+<br />
+<br />Mmhhh... Showing turing-universality
+<br />
+through the use of some paradoxical
+<br />
+combinator is easy (once we have defined
+<br />
+the numbers), but there is a risk you take
+<br />
+bad habits! Actually we don't need the
+<br />
+paradoxical combinators to prove the turing
+<br />
+universality of the SK forest, mmmmh...
+<br />
+<br />Well actually I will be rather buzy so I give
+<br />
+you the definition of a paradoxical combinator
+<br />
+and I let you search one.
+<br />
+<br />First show that for any combinator A there
+<br />
+is a combinator B such that AB = B.
+<br />
+B is called a fixed point of A. (like the center
+<br />
+of a wheel C is a fixed point of the rotations of
+<br />
+the wheel: RC = C). It is a bit amazing that
+<br />
+all combinators have a fixed point and that is
+<br />
+what I propose you try to show. Here are hints for
+<br />
+different arguments. 1) Show how to find a fixed
+<br />
+point of A (Arbitrary combinator) using just B, M
+<br />
+and A. (Mx = xx I recall). 2) The same using just the
+<br />
+Lark L (Lxy = x(yy) I recall).
+<br />
+Now, a paradoxical combinator Y is just a
+<br />
+combinator which applied on that A will give the
+<br />
+fixed point of A;  that is YA will give a B such that
+<br />
+AB = B, that is A(YA) gives YA, or more generally
+<br />
+Y is a combinator satisfying  Yx = x(Yx).
+<br />
+<br /><br /><br /><em class="quotelev1">&gt;Bruno
+</em><br />
+<em class="quotelev1">&gt;============================
+</em><br />
+<em class="quotelev1">&gt;COMBINATORS I is
+</em><br />
+<em class="quotelev1">&gt;<a href="http://www.escribe.com/science/theory/m5913.html">http://www.escribe.com/science/theory/m5913.html</a>
+</em><br />
+<em class="quotelev1">&gt;COMBINATORS II is
+</em><br />
+<em class="quotelev1">&gt;<a href="http://www.escribe.com/science/theory/m5942.html">http://www.escribe.com/science/theory/m5942.html</a>
+</em><br />
+<em class="quotelev1">&gt;COMBINATORS III is
+</em><br />
+<em class="quotelev1">&gt;<a href="http://www.escribe.com/science/theory/m5946.html">http://www.escribe.com/science/theory/m5946.html</a>
+</em><br />
+<em class="quotelev1">&gt;COMBINATORS IV is
+</em><br />
+<em class="quotelev1">&gt;<a href="http://www.escribe.com/science/theory/m5947.html">http://www.escribe.com/science/theory/m5947.html</a>
+</em><br />
+<br />COMBINATORS V is
+<br />
+<a href="http://www.escribe.com/science/theory/m5948.html">http://www.escribe.com/science/theory/m5948.html</a>
+<br />
+<br /><em class="quotelev1">&gt;Resume:
+</em><br />
+<em class="quotelev1">&gt;Kxy = x
+</em><br />
+<em class="quotelev1">&gt;Sxyz = xz(yz)
+</em><br />
+<br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Sun Feb 20 2005 - 10:10:49 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start6118">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="6119.html" title="Next message in the list">Bruno Marchal: "COMBINATORS VI"</a></li>
+<li><dfn>Previous message</dfn>: <a href="6117.html" title="Previous message in the list">Bruno Marchal: "COMBINATORS V"</a></li>
+<li><dfn>In reply to</dfn>: <a href="6117.html" title="Message to which this message replies">Bruno Marchal: "COMBINATORS V"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6118" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6118" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6118" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6118" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>

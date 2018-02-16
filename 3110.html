@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Diagonalisation 1 from Marchal on 2001-08-21 (everything)</title>
+<meta name="Author" content="Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="Diagonalisation 1" />
+<meta name="Date" content="2001-08-21" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Diagonalisation 1</h1>
+<!-- received="Tue Aug 21 08:59:04 2001" -->
+<!-- isoreceived="20010821155904" -->
+<!-- sent="Tue Aug 21 08:59:04 2001" -->
+<!-- isosent="20010821155904" -->
+<!-- name="Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="Diagonalisation 1" -->
+<!-- id="200108211549.RAA27516.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start3110" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="3111.html" accesskey="d" title="Brent Meeker: &quot;Re: Diagonalisation 1&quot;">Next message</a> ]
+[ <a href="3109.html" title="Wei Dai: &quot;service for James Higgo&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="3111.html" accesskey="t" title="Brent Meeker: &quot;Re: Diagonalisation 1&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3110" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3110" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3110" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3110" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20Diagonalisation%201">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Tue Aug 21 08:59:04 2001</span><br />
+</address>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in memory of James,
+<br />
+<br /><br />Hi George, Hi People,
+<br />
+<br />I guess most of you know the famous proof by diagonalisation
+<br />
+of the uncountability or non enumerability of the reals.
+<br />
+<br />To my knowledge diagonalisation appears in the work of
+<br />
+Dubois-Reymond, but it is Cantor who first used it for proving
+<br />
+that the set of reals is bigger, in some sense, than the set of 
+<br />
+natural numbers N, or the set of integers Z or the set of 
+<br />
+rational numbers Q.
+<br />
+<br />Here I want recall Cantor proof, and then I want to show you 
+<br />
+a weird, similar but false diagonalisation reasoning. 
+<br />
+<br />The  correction of that reasoning will give a shortcut to Godel's
+<br />
+incompleteness result, which is itself a step toward G and G*. 
+<br />
+<br />In this post I prove Cantor theorem, and then I give you the
+<br />
+similar but wrong proof. I will let you search the error. 
+<br />
+<br />I hope you see that Q is countable. There are simple 
+<br />
+drawing proof of that. But without drawing, it is enough
+<br />
+to realise that a rational numbers like -344/671 is described
+<br />
+by a finite string in the alphabet {O, 1, 2, 3, ... 9, -, /}.
+<br />
+And finite strings can be ordered by length, and those
+<br />
+with the same length which remains can be ordered by some
+<br />
+chosen alphabetical order. I call this order (on string) the
+<br />
+*lexicographic* order.
+<br />
+<br /><br />Actually we will be interested by the functions of N to N.
+<br />
+N is the set of natural numbers (positive integers).
+<br />
+<br />============================
+<br />
+<br />So here is a variant of Cantor theorem:
+<br />
+<br />1. Theorem: The set of functions from N to N is NOT countable.
+<br />
+<br />(Note: if you know Cantor proof, just skip it and go to 2. below).
+<br />
+<br />Proof: (by absurdum and diagonalisation)
+<br />
+<br />&nbsp;I recall that a function from N to N is just an assignment for each
+<br />
+&nbsp;natural number (called the argument or input) of a natural numbers,
+<br />
+&nbsp;called the output or value.
+<br />
+<br />&nbsp;exemples:
+<br />
+&nbsp;-the constant function:
+<br />
+<br />&nbsp;&nbsp;&nbsp;input   0   1   2   3   4   5   6    ...
+<br />
+&nbsp;&nbsp;&nbsp;output  1   1   1   1   1   1   1    ...
+<br />
+<br />-the identity function:
+<br />
+<br />&nbsp;&nbsp;&nbsp;input   0   1   2   3   4   5   6     ...
+<br />
+&nbsp;&nbsp;&nbsp;output  0   1   2   3   4   5   6     ...
+<br />
+<br />-the factorial function:
+<br />
+<br />&nbsp;&nbsp;&nbsp;input   0   1   2   3   4    5     6     ...
+<br />
+&nbsp;&nbsp;&nbsp;output  1   1   2   6   24   120   720   ...
+<br />
+<br />-an &quot;arbitrary&quot; function:
+<br />
+&nbsp;
+<br />
+&nbsp;&nbsp;&nbsp;input   0   1   2   3   4    5     6            ...
+<br />
+&nbsp;&nbsp;&nbsp;output  10  0   0   3   56   1   35465439087    ...
+<br />
+<br />Of course in this last case, the  &quot;...&quot; has only sense
+<br />
+in Plato heaven or in God's Mind.
+<br />
+<br />Suppose now (our absurd hypothesis) that the set of all
+<br />
+function from N to N is countable.
+<br />
+This means that we can count or enumerate the functions.
+<br />
+So we would have a sequence of functions, each associated
+<br />
+to a natural number such that all functions appear in that
+<br />
+sequence. We would have a sequence:
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f_0  f_1  f_2  f_3  f_5  f_6 ...
+<br />
+<br />of all functions (from N to N, but this will not be repeated).
+<br />
+<br />Let us put those functions with their value in a matrix:
+<br />
+<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;input   0   1   2   3   4   5   6      ...
+<br />
+<br />f_0         4   7   0   0   0   19  5      ...
+<br />
+f_1         8   6   6   2   1   3   49     ...
+<br />
+f_2         66  36  5   2   4   5   8      ...
+<br />
+f_3         1   2   3   2   1   3   2      ...
+<br />
+f_4         1   2   3   4   5   6   7      ...
+<br />
+f_5         10  0   0   3   56  1   356    ...
+<br />
+f_6         0   10  7   2   2   35  0      ...
+<br />
+<br />...                 ....                  ...
+<br />
+<br />Now we will get a contradiction. Indeed we pretend that
+<br />
+all functions belongs to the sequence f_0  f_1  f_2 ...
+<br />
+and this makes the matrix well defined (in Plato heaven
+<br />
+or Cantor paradise, we don't ask that the matrix can be
+<br />
+algorithmicaly generable).
+<br />
+<br />But here is a function, certainly well defined in Plato
+<br />
+Heaven, which, by definition, will not appear in the
+<br />
+matrix. It is the function g which send n on f_n(n) + 1.
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(n) = f_n(n) + 1
+<br />
+<br />In particular g(0) = f_0(0) + 1 = 4+1 = 5;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(1) = f_1(1) + 1 = 6+1 = 7;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;g(2) = 6;  g(3) = 3; g(4) = 6, g(5) = 2; g(6) = 1, ...
+<br />
+<br />You see we just change the &quot;diagonal value&quot; so as to be
+<br />
+sure that g is different from f_0 on the value O
+<br />
+(it is f_0(0) + 1), g is different from f_1 on the value 1, etc.
+<br />
+<br />Would have g belong to the list f_0  f_1  f_2  f_3  f_5 ...
+<br />
+A number k would exist such that g = f_k, but then, applying
+<br />
+g on k gives g(k) = f_k(k), but remembering the definition
+<br />
+of g, we have also g(k) = f_k(k) + 1. Contradiction.
+<br />
+<br />The proof does not depend of the choice of the matrix, so that
+<br />
+we have just shown that the set of functions cannot be put
+<br />
+in an exhaustive sequence. N^N is not countable.
+<br />
+(A^B is a notation for the set of function from B to A).
+<br />
+<br />==============================
+<br />
+<br />2. A paradox ?
+<br />
+<br />I will say that a function f is computable if there is
+<br />
+a well defined formal language FL in which I can explained
+<br />
+non ambiguously how to compute f on arbitrary input (number).
+<br />
+I must be able to recognise if an expression in my language
+<br />
+is a grammaticaly correct definition of a function, that is
+<br />
+syntax error must be recoverable.
+<br />
+All expression in the language must be of finite length, and
+<br />
+the alphabet (the set of symbols) of the language is asked to
+<br />
+be finite.
+<br />
+Now all finite strings, a fortiori the grammatically correct
+<br />
+one, form a countable set. Just use the lexicographic order
+<br />
+defined above.
+<br />
+<br />So the set of function computable with FL is countable. 
+<br />
+A synonym of countable is *enumerable*, and is used by
+<br />
+computer scientist, so I will also use it. 
+<br />
+<br />So I can enumerate the functions computable with FL, that is
+<br />
+I can put them in sequence like f_0, f_1, f_2, f_3, ...
+<br />
+going through all functions computable in or with FL.
+<br />
+<br />Let us consider the function g defined again by
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(n) = f_n(n) + 1
+<br />
+<br />Now, g is not only well defined, but is even computable. To
+<br />
+compute it on n, just search in the enumeration f_i the nth
+<br />
+function, apply it to n (this gives an answer because the f_i
+<br />
+are computable) and add 1.
+<br />
+So, there is a number k such that g = f_k, but then, again
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(k) = f_k(k) = f_k(k) + 1
+<br />
+<br />But f_k(k) is a well defined number (f_k is computable), and
+<br />
+no numbers can be equal to &quot;itself + 1&quot;. Contradiction.
+<br />
+<br />Could the set of computable functions in FL be uncountable, after
+<br />
+all, or is g not expressible in FL, or what? 
+<br />
+<br />Where is the error?   I let you think a little bit. You can
+<br />
+ask question. (Notably in case of notational problem).
+<br />
+<br />Bruno
+<br />
+<span id="received"><dfn>Received on</dfn> Tue Aug 21 2001 - 08:59:04 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start3110">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="3111.html" title="Next message in the list">Brent Meeker: "Re: Diagonalisation 1"</a></li>
+<li><dfn>Previous message</dfn>: <a href="3109.html" title="Previous message in the list">Wei Dai: "service for James Higgo"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="3111.html" title="Next message in this discussion thread">Brent Meeker: "Re: Diagonalisation 1"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="3111.html" title="Message sent in reply to this message">Brent Meeker: "Re: Diagonalisation 1"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3112.html" title="Message sent in reply to this message">Marchal: "Re: Diagonalisation 1"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3110" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3110" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3110" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3110" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

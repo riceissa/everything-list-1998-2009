@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Re: Bruno's argument from Hal Finney on 2006-08-02 (everything)</title>
+<meta name="Author" content="Hal Finney (hal.domain.name.hidden)" />
+<meta name="Subject" content="Re: Bruno's argument" />
+<meta name="Date" content="2006-08-02" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Re: Bruno's argument</h1>
+<!-- received="Wed Aug  2 20:20:05 2006" -->
+<!-- isoreceived="20060803032005" -->
+<!-- sent="Wed,  2 Aug 2006 16:12:03 -0700 (PDT)" -->
+<!-- isosent="20060802231203" -->
+<!-- name="Hal Finney" -->
+<!-- email="hal.domain.name.hidden" -->
+<!-- subject="Re: Bruno's argument" -->
+<!-- id="20060802231203.85D0A57FD2.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- inreplyto="Bruno's argument" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start10125" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="10126.html" accesskey="d" title="Stathis Papaioannou: &quot;RE: Bruno&#0039;s argument&quot;">Next message</a> ]
+[ <a href="10124.html" title="David Nyman: &quot;Re: Emotions (was: Indeterminism&quot;">Previous message</a> ]
+[ <a href="9931.html" title="Bruno Marchal: &quot;Re: Bruno&#0039;s argument&quot;">Maybe in reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="9953.html" accesskey="t" title="Stathis Papaioannou: &quot;RE: Bruno&#0039;s argument&quot;">Next in thread</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg10125" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg10125" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg10125" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg10125" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Hal Finney &lt;<a href="mailto:hal.domain.name.hidden?Subject=Re%3A%20Bruno's%20argument">hal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed,  2 Aug 2006 16:12:03 -0700 (PDT)</span><br />
+</address>
+<br />
+A useful model of computation is the Turing Machine.  A TM has a tape
+<br />
+with symbols on it; a head which moves along the tape and which can read
+<br />
+and write symbols, and a state machine with a fixed number of states
+<br />
+that controls head movement and symbol writing based on the current
+<br />
+state and the symbol at the head's current location.  It has been shown
+<br />
+that this relatively simplistic model is able to do anything that more
+<br />
+sophisticated computer models can do.
+<br />
+<br />We can consider the &quot;state&quot; of a TM to be made up of the conjunction of
+<br />
+three things: the current state of the tape (i.e. the string of symbols
+<br />
+written there); the position of the head; and the state of the internal
+<br />
+state machine.  Maybe it would be best to call this the superstate
+<br />
+because normally the &quot;state&quot; of the TM just refers to its internal state
+<br />
+machine state.  The TM can then be said to advance from superstate to
+<br />
+superstate according to its internal rules and the contents of the tape.
+<br />
+<br />If a TM ever gets into the same superstate twice, it is in an infinite
+<br />
+loop.  This is because the TM is fully deterministic and so it will
+<br />
+always go into the same successor superstate from a given superstate.
+<br />
+Halting TM's never get into the same superstate twice.  Therefore halting
+<br />
+TM's go through a unique succession of superstates, from the first to
+<br />
+the last.
+<br />
+<br />We can map or label a TM's superstates with successive integers,
+<br />
+corresponding to the order that it goes through the superstates of a
+<br />
+computation.  In this mapping, the only difference between two different
+<br />
+computations is their length.  If two computations had the same length N,
+<br />
+they would both go through states labeled 0, 1, 2, ..., N.
+<br />
+<br />What is a computation?  A TM computation has two parts.  One is the
+<br />
+initial conditions: the initial value on the tape, the initial head
+<br />
+position.  The other is the set of rules used, the internal state machine
+<br />
+that controls the machine.  Together these two parts define a trajectory
+<br />
+of the TM through a sequence of superstates.
+<br />
+<br />We often think of the internal state machine as being like the &quot;program&quot;
+<br />
+and the initial contents of tape as being the &quot;data&quot;.  However, as
+<br />
+Turing was the first to recognize, this distinction is not always useful,
+<br />
+and sometimes it makes more sense to think of at least part of the tape
+<br />
+contents as being program rather than data.  In particular, the Universal
+<br />
+TM treats part of the tape as a specification for a specific other TM
+<br />
+that it will emulate, and the remainder of the tape is then the input
+<br />
+to that TM.
+<br />
+<br />Generally, when we think of counterfactuals in a TM computation we mean
+<br />
+to change the data, not the program.  We don't mean to ask, what would
+<br />
+happen if you ran a different program on the same data.  Rather, we
+<br />
+mean, what would happen if you ran the same program on different data.
+<br />
+We want to say that two computations are equivalent only if they have
+<br />
+the same counterfactual behavior - that is, if the programs would behave
+<br />
+the same on all data.
+<br />
+<br />One problem with this is noted above, that we cannot always cleanly
+<br />
+distinguish program and data.  In the case of the UTM, is the prefix part
+<br />
+of the tape, that defines the particular TM to emulate, program or data?
+<br />
+If it is program, we would not try to vary it in considering whether
+<br />
+two computations are equivalent.  If it is data, we should consider
+<br />
+such variations.  In general, I don't think we can always distinguish
+<br />
+these cases cleanly.  UTMs can be nested to any desired degree.  What is
+<br />
+program to one is data to another.  More complex UTM computations may be
+<br />
+aided by certain patterns on the tape which will disrupt the computation
+<br />
+if they are changed.
+<br />
+<br />Another problem is that a more complex mapping may be able to be set up
+<br />
+between two different computations even if we consider counterfactuals
+<br />
+as all different initial tape configurations.  We could make the mapping
+<br />
+be a function of the superstate as defined above.  Two computations with
+<br />
+different initial tapes will start in different superstates, hence the
+<br />
+mapping is still unique.  And it will be robust over all possible inputs
+<br />
+and hence all possible counterfactual computations.
+<br />
+<br />On these considerations, It seems to me that there are problems
+<br />
+with basing the distinction between computations on support for
+<br />
+counterfactuals.  TMs make the very notion of counterfactuals rather
+<br />
+fuzzy, and still admit the possibility of mappings between computations
+<br />
+that remain robust even in the face of counterfactuals.
+<br />
+<br />My preferred view is to focus on the algorithmic complexity of the
+<br />
+mapping between two computations, and to ask whether the information
+<br />
+needed to specify the mapping is less than the information needed to
+<br />
+write down the computation from scratch.  If not, if the mapping is
+<br />
+substantially bigger than the computation it purports to describe,
+<br />
+then the correspondence is an illusion and is not real.
+<br />
+<br />Hal Finney
+<br />
+<br />--~--~---------~--~----~------------~-------~--~----~
+<br />
+You received this message because you are subscribed to the Google Groups &quot;Everything List&quot; group.
+<br />
+To post to this group, send email to everything-list.domain.name.hidden
+<br />
+To unsubscribe from this group, send email to everything-list-unsubscribe.domain.name.hidden
+<br />
+For more options, visit this group at <a href="http://groups.google.com/group/everything-list">http://groups.google.com/group/everything-list</a>
+<br />
+-~----------~----~----~----~------~----~------~--~---
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Aug 02 2006 - 20:20:05 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start10125">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="10126.html" title="Next message in the list">Stathis Papaioannou: "RE: Bruno&#0039;s argument"</a></li>
+<li><dfn>Previous message</dfn>: <a href="10124.html" title="Previous message in the list">David Nyman: "Re: Emotions (was: Indeterminism"</a></li>
+<li><dfn>Maybe in reply to</dfn>: <a href="9931.html" title="Message to which this message replies">Bruno Marchal: "Re: Bruno&#0039;s argument"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="9953.html" title="Next message in this discussion thread">Stathis Papaioannou: "RE: Bruno&#0039;s argument"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg10125" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg10125" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg10125" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg10125" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:11 PST
+</em></small></p>
+</body>
+</html>

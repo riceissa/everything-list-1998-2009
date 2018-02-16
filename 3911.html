@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>a framework for multiverse decision theory from Wei Dai on 2002-08-11 (everything)</title>
+<meta name="Author" content="Wei Dai (weidai.domain.name.hidden)" />
+<meta name="Subject" content="a framework for multiverse decision theory" />
+<meta name="Date" content="2002-08-11" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>a framework for multiverse decision theory</h1>
+<!-- received="Sun Aug 11 22:43:15 2002" -->
+<!-- isoreceived="20020812054315" -->
+<!-- sent="Sun, 11 Aug 2002 22:38:32 -0700" -->
+<!-- isosent="20020812053832" -->
+<!-- name="Wei Dai" -->
+<!-- email="weidai.domain.name.hidden" -->
+<!-- subject="a framework for multiverse decision theory" -->
+<!-- id="20020811223831.A28522.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start3911" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="3912.html" accesskey="d" title="Juergen Schmidhuber: &quot;Re: colt&quot;">Next message</a> ]
+[ <a href="3910.html" title="Russell Standish: &quot;Re: Ordinary atom-mirror atom bound states&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3911" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3911" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3911" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3911" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Wei Dai &lt;<a href="mailto:weidai.domain.name.hidden?Subject=Re%3A%20a%20framework%20for%20multiverse%20decision%20theory">weidai.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Sun, 11 Aug 2002 22:38:32 -0700</span><br />
+</address>
+<br />
+I call this a framework because there are lots of details left
+<br />
+unspecified, problems unsolved, etc. However I expected any multiverse
+<br />
+decision theory will probably look something like this. My goal in writing
+<br />
+this down is to have a framework for formalizing problems and proposed
+<br />
+solutions.
+<br />
+<br />This decision theory is more complex than the one in [Joyce] for two
+<br />
+reasons. First is to take into account the lack of logical omniscience
+<br />
+(following [Lipman]). This is necessary because if the multiverse consist
+<br />
+of all logically consistent universes, then logical omniscience implies no
+<br />
+decision is possible, so we have to assume lack of logical omniscience in
+<br />
+that case. Second is to take into account the fact that you don't know
+<br />
+which universe you're in or which observer moment you are at in each
+<br />
+universe, and the different observer moments that you may be at can have
+<br />
+different utility functions. This implies we have to use the game
+<br />
+theoretic concept of equilibrium.
+<br />
+<br />Start with the set A of possible strategies to choose from. Consider an
+<br />
+element a from this set. We want to determine if a is an equilibrium
+<br />
+strategy. Consider another set S, where each element is a full description
+<br />
+of the entire multiverse (including the history of all of the universes
+<br />
+inside it), which may be false or even inconsistent or unsatisfiable. You
+<br />
+know that one and only one of the descriptions is true, but you're not
+<br />
+sure which one. You have a function P such that P(s) is your subjective
+<br />
+probability that s is true given the assumption that all observer moments
+<br />
+that you may be at do choose strategy a.
+<br />
+<br />For each s, you have:
+<br />
+<br />- a set M_s of observer moments, which are the possible observer moments 
+<br />
+that you may be at if s is true. Let M be the union of all M_s.
+<br />
+- a set C_s of possible consequence functions c: M_s x A -&gt; S x M. If 
+<br />
+&lt;s',m'&gt; = c(m,a'), then s' is what s would be if m chose a' instead of a 
+<br />
+(while all other observer moments in M_s still
+<br />
+choose a), and m' is the observer moment corresponding to m in M_s'.
+<br />
+- functions Pm_s and Pc_s with the interpretation that Pm_s(m) is the
+<br />
+probability that you are at m if s is true and Pc_s(c) is the probability
+<br />
+that c is the true consequence function if s is true.
+<br />
+- utility function u_s: M_s -&gt; R, where u_s(m) gives the utility of s 
+<br />
+being true if you are m.
+<br />
+<br />To check whether it is an equilibrium to choose a, we compute the expected
+<br />
+utility of all strategies under the assumption that other observer moments
+<br />
+choose a, and see if choosing a gives the maximum expected utility. The
+<br />
+expected utility of a' is:
+<br />
+<br />\sum_{s \in S} \sum_{m \in M_s} \sum_{c \in C_s} P(s) * Pm_s(m) * Pc_s(c) 
+<br />
+* u_s'(m'), where &lt;s',m'&gt; = c(m,a')
+<br />
+<br />Some problems and discussion:
+<br />
+<br />What does each element of S look like exactly? It would seem to take an
+<br />
+infinite string to fully describe the entire multiverse, so how can we
+<br />
+think about them and assign probabilities to them? Perhaps it's better to 
+<br />
+make them finite descriptions of the parts of the multiverse that we care
+<br />
+about or are relevant to the decision.
+<br />
+<br />What should P be? Suppose the multiverse consists of all mathematical
+<br />
+structures (as proposed by Tegmark). In that case each element in S would
+<br />
+be a conjunction of mathematical statements and P would assign
+<br />
+probabilities to these mathematical statements (most of which we have no
+<br />
+hope of proving or disproving). How should we do that? Of
+<br />
+course we already do that (e.g. computer scientists bet with each other on
+<br />
+whether polytime = non-deterministic polytime, and we make use of
+<br />
+mathematical facts that we don't understand the proofs for), but
+<br />
+there does not seem to be a known method for doing it optimally. This is
+<br />
+also where anthropic reasoning would come in.
+<br />
+<br />What about Pm? That brings up the discussions we had about whether running
+<br />
+an experience again doubles its measure, whether a bigger computer
+<br />
+generates more measure, etc. Following up on an earlier point I made, I'll
+<br />
+note the interchangeability between P_m(s) and the utility
+<br />
+u_s'(m'). You can increase one, decrease the other, and keep expected
+<br />
+utilities the same. (Joyce also talks about this in his book.) So you
+<br />
+can't really talk about what Pm should be without also talking about what
+<br />
+u should be.
+<br />
+<br />Pc is where all the causality stuff goes of course. Beyond that it's an 
+<br />
+open question how it should be derived.
+<br />
+<br />Is this framework general enough so that any rational decision maker can
+<br />
+be modeled by choosing the appropriate A, S, M, C, P, Pm, Pc, and u? Can
+<br />
+it be simplified?
+<br />
+<br />Barton L. Lipman. &quot;Decision Theory without Logical Omniscience: Toward an 
+<br />
+Axiomatic Framework for Bounded Rationality,&quot; Review of Economic Studies, 
+<br />
+April 1999.
+<br />
+<br />James M. Joyce. The Foundations of Causal Decision Theory. Cambridge: 
+<br />
+Cambridge University Press, April 1999.
+<br />
+<span id="received"><dfn>Received on</dfn> Sun Aug 11 2002 - 22:43:15 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start3911">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="3912.html" title="Next message in the list">Juergen Schmidhuber: "Re: colt"</a></li>
+<li><dfn>Previous message</dfn>: <a href="3910.html" title="Previous message in the list">Russell Standish: "Re: Ordinary atom-mirror atom bound states"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3911" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3911" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3911" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3911" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

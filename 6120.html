@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>COMBINATORS VI (sequel) from Bruno Marchal on 2005-02-21 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="COMBINATORS VI (sequel)" />
+<meta name="Date" content="2005-02-21" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>COMBINATORS VI (sequel)</h1>
+<!-- received="Mon Feb 21 09:58:10 2005" -->
+<!-- isoreceived="20050221175810" -->
+<!-- sent="Mon, 21 Feb 2005 15:57:02 +0100" -->
+<!-- isosent="20050221145702" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="COMBINATORS VI (sequel)" -->
+<!-- id="5.1.0.14.2.20050221155226.03c8e720.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start6120" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="6121.html" accesskey="d" title="Bruno Marchal: &quot;COMBINATORS VIII  (The PARADOXICAL one)&quot;">Next message</a> ]
+[ <a href="6119.html" title="Bruno Marchal: &quot;COMBINATORS VI&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6120" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6120" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6120" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6120" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20COMBINATORS%20VI%20(sequel)">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Mon, 21 Feb 2005 15:57:02 +0100</span><br />
+</address>
+<br />
+Well, COMBINATORS VI is a little bit more readable,
+<br />
+but I don't understand why it puts a blank line each line,
+<br />
+and, worst why it cuts the end of the posts. So
+<br />
+I resend the cutted line. Apology for your mail box.
+<br />
+<br />COMBINATORS VI (sequel):
+<br />
+<br />Question: is there a systematic method such
+<br />
+that giving any behavior like
+<br />
+<br />Xxyztuv = x(yx)(uvut) (or what you want)
+<br />
+<br />can generate systematically a corresponding
+<br />
+SK or BWCK -combinator?
+<br />
+The answer is yes. I let you meditate the question.
+<br />
+(This point will be made clear when we will meet
+<br />
+the terrible little cousins of the combinators
+<br />
+which are the *lambda expression*, (and which
+<br />
+in our context will just abbreviate complex
+<br />
+combinators), but I propose to progress
+<br />
+and make sure that the
+<br />
+SK combinator are Turing Universal.
+<br />
+<br />I am not yet decided when I really should
+<br />
+introduce you to the paradoxical combinators,
+<br />
+which are rather crazy. Smullyan call
+<br />
+them wise birds, but I guess
+<br />
+it is an euphemism!
+<br />
+<br />Mmhhh... Showing turing-universality
+<br />
+through the use of some paradoxical
+<br />
+combinator is easy (once we have defined
+<br />
+the numbers), but there is a risk you take
+<br />
+bad habits! Actually we don't need the
+<br />
+paradoxical combinators to prove the turing
+<br />
+universality of the SK forest, mmmmh...
+<br />
+<br />Well actually I will be rather buzy so I give
+<br />
+you the definition of a paradoxical combinator
+<br />
+and I let you search one.
+<br />
+<br />First show that for any combinator A there
+<br />
+is a combinator B such that AB = B.
+<br />
+B is called a fixed point of A. (like the center
+<br />
+of a wheel C is a fixed point of the rotations of
+<br />
+the wheel: RC = C). It is a bit amazing that
+<br />
+all combinators have a fixed point and that is
+<br />
+what I propose you try to show. Here are hints for
+<br />
+different arguments. 1) Show how to find a fixed
+<br />
+point of A (Arbitrary combinator) using just B, M
+<br />
+and A. (Mx = xx I recall). 2) The same using just the
+<br />
+Lark L (Lxy = x(yy) I recall).
+<br />
+Now, a paradoxical combinator Y is just a
+<br />
+combinator which applied on that A will give the
+<br />
+fixed point of A; that is YA will give a B such that
+<br />
+AB = B, that is A(YA) gives YA, or more generally
+<br />
+Y is a combinator satisfying Yx = x(Yx).
+<br />
+<br /><br /><br />Bruno
+<br />
+============================
+<br />
+COMBINATORS I is
+<br />
+<a href="http://www.escribe.com/science/theory/m5913.html">http://www.escribe.com/science/theory/m5913.html</a>
+<br />
+COMBINATORS II is
+<br />
+<a href="http://www.escribe.com/science/theory/m5942.html">http://www.escribe.com/science/theory/m5942.html</a>
+<br />
+COMBINATORS III is
+<br />
+<a href="http://www.escribe.com/science/theory/m5946.html">http://www.escribe.com/science/theory/m5946.html</a>
+<br />
+COMBINATORS IV is
+<br />
+<a href="http://www.escribe.com/science/theory/m5947.html">http://www.escribe.com/science/theory/m5947.html</a>
+<br />
+<br />COMBINATORS V is
+<br />
+<a href="http://www.escribe.com/science/theory/m5948.html">http://www.escribe.com/science/theory/m5948.html</a>
+<br />
+<br />Resume:
+<br />
+Kxy = x
+<br />
+Sxyz = xz(yz)
+<br />
+<br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Mon Feb 21 2005 - 09:58:10 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start6120">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="6121.html" title="Next message in the list">Bruno Marchal: "COMBINATORS VIII  (The PARADOXICAL one)"</a></li>
+<li><dfn>Previous message</dfn>: <a href="6119.html" title="Previous message in the list">Bruno Marchal: "COMBINATORS VI"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6120" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6120" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6120" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6120" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>

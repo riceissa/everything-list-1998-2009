@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Comparators vs computers etc. from Hal Ruhl on 2000-11-29 (everything)</title>
+<meta name="Author" content="Hal Ruhl (hjr.domain.name.hidden)" />
+<meta name="Subject" content="Comparators vs computers etc." />
+<meta name="Date" content="2000-11-29" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Comparators vs computers etc.</h1>
+<!-- received="Wed Nov 29 20:12:03 2000" -->
+<!-- isoreceived="20001130041203" -->
+<!-- sent="Wed, 29 Nov 2000 22:56:36 -0800" -->
+<!-- isosent="20001130065636" -->
+<!-- name="Hal Ruhl" -->
+<!-- email="hjr.domain.name.hidden" -->
+<!-- subject="Comparators vs computers etc." -->
+<!-- id="5.0.0.25.2.20001129184746.02d24c70.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start2300" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="2301.html" accesskey="d" title="Hal Ruhl: &quot;Error reduction&quot;">Next message</a> ]
+[ <a href="2299.html" title="Hal Ruhl: &quot;A contrast: my approach vs Schmidhuber&#0039;s&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2300" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2300" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2300" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2300" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Hal Ruhl &lt;<a href="mailto:hjr.domain.name.hidden?Subject=Re%3A%20Comparators%20vs%20computers%20etc.">hjr.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed, 29 Nov 2000 22:56:36 -0800</span><br />
+</address>
+<br />
+1) The way in which I described my model in the several posts where I 
+<br />
+accumulate things did not, upon reflection, explain the comparator approach 
+<br />
+to my Rj very well so I have fixed this and attach the applicable revised 
+<br />
+material.
+<br />
+<br />2) Compatators vs computers:
+<br />
+<br />Can a computer act as my comparator?
+<br />
+<br />The comparator examines the current string Uj(i - 1) and forms - by some 
+<br />
+means - a template with which randomly encountered numbers are tested.  The 
+<br />
+first encountered number that fits the template is accepted as the next 
+<br />
+string Uj(i).  If the template allows for more than one number to fit then 
+<br />
+there is no prior knowledge of the actual complete resulting Uj(i).  This 
+<br />
+amounts to at least some &quot;true noise&quot; in the sequence Uj(i) as i counts up.
+<br />
+<br />If the template is such that only one number will fit it then it can be 
+<br />
+computed and it is equivalent to computing Uj(i).  This is a no &quot;true 
+<br />
+noise&quot; situation and at best a minor class of comparator.
+<br />
+<br />3) The consequent of fixed rules:
+<br />
+<br />In my equation:
+<br />
+<br />(1)  Pj(i) = {Rj(Pj(i - 1)) + PLj(i)} is the compressed form of Uj(i).
+<br />
+<br />If Rj is fixed and of course Pj(i - 1) is fixed any new information - the 
+<br />
+result of &quot;true noise&quot; - in Uj(i) must be represented in PLj(i).  But 
+<br />
+PLj(i) is just a measure of the length of Pj(i). So  this indicates that Rj 
+<br />
+runs beyond its data i.e. Pj(i - 1) if there is a &quot;true noise&quot; content in 
+<br />
+the step Uj(i - 1) to Uj(i).  In my model this is just the addition of more 
+<br />
+u to complete the formation of Uj(i) from Uj(i - 1).
+<br />
+<br />4) Thus there are two sources of &quot;true noise&quot; in my approach.  Rj may 
+<br />
+contribute and the necessary increases in the complexity of the fc-FAS will 
+<br />
+contribute.
+<br />
+<br />5) Axioms and alphabets:
+<br />
+<br />I have said that the necessary ongoing increases in complexity to the 
+<br />
+underlying fc-FAS take place as additions to its alphabet.  But my equation 
+<br />
+is highly compressed. These additions can also be viewed as restarting the 
+<br />
+recursion with a new axiom.
+<br />
+<br />6) It is my opinion that life exists best in universes that have an Rj that 
+<br />
+is at least a bit non deterministic.
+<br />
+<br />--------------------------------
+<br />
+<br />REVISIONS
+<br />
+<br /><br />POSTULATE:
+<br />
+<br />All counting numbers exist with countably infinite copies in a seething 
+<br />
+foamy fractal.
+<br />
+<br />Call this fractal Everything or as I prefer to call it the Superverse S.
+<br />
+<br />In this fractal every universe Uj is isomorphic to a non deterministicly 
+<br />
+self sorting sequence Uj(i) of these numbers that, upon chance encounters 
+<br />
+between numbers, they self sort according to:
+<br />
+<br />(1)  Pj(i) = {Rj(Pj(i - 1)) + PLj(i)} is the compressed form of Uj(i).
+<br />
+<br />where Rj(Pj(i - 1)) is the fixed rule set of a particular universe acting 
+<br />
+as a comparator [it may be non deterministic that is a source of &quot;true 
+<br />
+noise&quot; - also see (2) below] to the previous Uj(i) and the underlying 
+<br />
+N-bit, finite, consistent FAS [N-bit, fc-FAS} structure is:
+<br />
+<br />a) It has a single axiom Aj unique to a particular family of universes 
+<br />
+which is in Pj(1), it serves as Pj(0), it is thus the compressed form of 
+<br />
+Uj(0) and initiates the recursion.
+<br />
+<br />b) It has a fixed set of rules = Rj the comparator.
+<br />
+<br />c) It has an alphabet = differently sequenced strings of bits I call types 
+<br />
+of &quot;regions&quot;.  Each region type is isomorphic to a physical structure that 
+<br />
+has existence such that the location of a discrete space point inside a 
+<br />
+small fixed portion of a grid is coded by each region type.  [In our case I 
+<br />
+believe the grid to be 3D and most likely Face Centered Cubic.]  The axiom 
+<br />
+Aj contains the entire initial alphabet for a particular universe.
+<br />
+<br />So the equation (1) contains the entire N-bit, fc-FAS.
+<br />
+<br />Uj(i) contains a theorem of this FAS giving a specific arrangement of 
+<br />
+regions - a configuration of a particular universe.
+<br />
+<br />(2) Uj(i) grows in length [number of bits] randomly to avoid Chaitin's 
+<br />
+limit on how much information you can put into an N-bit number.  Since 
+<br />
+Pj(i) can not yield Pj(i) unless Pj(i -1) is empty and each Pj(i) is 
+<br />
+clearly longer than Pj(i - 1) the sequence can not stop on a finite 
+<br />
+number.  To sustain this growth in complexity of Uj(i) the fc-FAS - again 
+<br />
+as per Chaitin - must also increase in complexity - randomly adding 
+<br />
+additional alphabet elements - new types of regions.  This is equivalent to 
+<br />
+&quot;true noise&quot; and to starting the sequence over with a new axiom which is 
+<br />
+now just Uj(i).
+<br />
+<br />Thus there are two sources of &quot;true noise&quot; in the model.
+<br />
+<br />(3) When Uj(i) gets to have a countably infinite number of bits the 
+<br />
+sequence ends. From Turing [limits to FAS size] and Hilbert [Mathematical 
+<br />
+existence]- See Tegmark Section II.
+<br />
+<br />The numbers in the fractal non deterministicly self sort upon encounters 
+<br />
+because of (1) and (2).   Basically from the perspective of Uj:  Uj(i -1) 
+<br />
+contains Rj and recognizes any PLj(i) suitably higher valued than its own 
+<br />
+PLj(i -1) i.e. Uj(i -1) picks the first good number it encounters out of a 
+<br />
+countably infinite set of potential successors.
+<br />
+<br />(2) and (3) may not be independent of (1).
+<br />
+<br />The fractal contains all universes potentially an infinite number of times.
+<br />
+<br />-------------------------------------
+<br />
+<br />Hal
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Nov 29 2000 - 20:12:03 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start2300">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="2301.html" title="Next message in the list">Hal Ruhl: "Error reduction"</a></li>
+<li><dfn>Previous message</dfn>: <a href="2299.html" title="Previous message in the list">Hal Ruhl: "A contrast: my approach vs Schmidhuber&#0039;s"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2300" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2300" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2300" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2300" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

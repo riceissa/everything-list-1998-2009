@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Mathematical methods for the discrete space-time. from Torgny Tholerus on 2008-11-12 (everything)</title>
+<meta name="Author" content="Torgny Tholerus (torgny.domain.name.hidden)" />
+<meta name="Subject" content="Mathematical methods for the discrete space-time." />
+<meta name="Date" content="2008-11-12" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Mathematical methods for the discrete space-time.</h1>
+<!-- received="Wed Nov 12 12:45:16 2008" -->
+<!-- isoreceived="20081112204516" -->
+<!-- sent="Wed, 12 Nov 2008 18:44:59 +0100" -->
+<!-- isosent="20081112174459" -->
+<!-- name="Torgny Tholerus" -->
+<!-- email="torgny.domain.name.hidden" -->
+<!-- subject="Mathematical methods for the discrete space-time." -->
+<!-- id="491B161B.6020003.domain.name.hidden" -->
+<!-- charset="ISO-8859-1" -->
+<!-- inreplyto="96088315-C89F-4171-A0B8-F9BED67F54F4.domain.name.hidden" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start15205" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="15206.html" accesskey="d" title="Kory Heath: &quot;Re: QTI &#0038; euthanasia (brouillon)&quot;">Next message</a> ]
+[ <a href="15204.html" title="Bruno Marchal: &quot;Re: QTI &#0038; euthanasia (brouillon)&quot;">Previous message</a> ]
+[ <a href="15202.html" title="Bruno Marchal: &quot;Re: QTI &#0038; euthanasia&quot;">In reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="15207.html" accesskey="t" title="Bruno Marchal: &quot;Re: Mathematical methods for the discrete space-time.&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg15205" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg15205" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg15205" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg15205" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Torgny Tholerus &lt;<a href="mailto:torgny.domain.name.hidden?Subject=Re%3A%20Mathematical%20methods%20for%20the%20discrete%20space-time.">torgny.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed, 12 Nov 2008 18:44:59 +0100</span><br />
+</address>
+<br />
+When you are going to do exact mathematical computations for the 
+<br />
+discrete space-time, then the continuous mathematics is not enough, 
+<br />
+because then you will only get an approximation of the reality.  So 
+<br />
+there is a need for developing a special calculus for a discrete 
+<br />
+mathematics.
+<br />
+<br />One difference between continuous and discrete mathematics is the rule 
+<br />
+for how to derívate the product of two functions.  In continuous 
+<br />
+mathematics the rule says:
+<br />
+<br />D(f*g) = f*D(g) + D(f)*g.
+<br />
+<br />But in the discrete mathematics the corresponding rule says:
+<br />
+<br />D(f*g) = f*D(g) + D(f)*g + D(f)*D(g).
+<br />
+<br />In discrete mathematics you have difference equations of type: x(n+2) = 
+<br />
+x(n+1) + x(1), x(0) = 0, x(1) = 1, which then will give the number 
+<br />
+sequence 0,1,1,2,3,5,8,13,21,34,55,... etc.  For a general difference 
+<br />
+equation you have:
+<br />
+<br />Sum(a(i)*x(n+i)) = 0, plus a number of starting conditions.
+<br />
+<br />If you then introduce the step operator S with the effect: S(x(n)) = 
+<br />
+x(n+1), then you can express the difference equation as:
+<br />
+<br />Sum((a(i)*S^i)(x(n)) = 0.
+<br />
+<br />You will then get a polynom in S.  If the roots (the eigenvalues) to 
+<br />
+this polynom are e(i), you will then get:
+<br />
+<br />Sum(a(i)*S^i) = Prod(S - e(i)) = 0.
+<br />
+<br />This will give you the equations S - e(i) = 0, or more complete: (S - 
+<br />
+e(i))(x(n)) = S(x(n)) - e(i)*x(n) = x(n+1) - e(i)*x(n) = 0, which have 
+<br />
+the solutions x(n) = x(0)*e(i)^n.
+<br />
+<br />The general solution to this difference equation will then be a linear 
+<br />
+combination of these solutions, such as:
+<br />
+<br />x(n) = Sum(k(i)*e(i)^n), where k(i) are arbitrary constants.
+<br />
+<br />To get the integer solutions you can then build the eigenfunctions:
+<br />
+<br />x(j,n) = Sum(k(i,j)*e(i)^n) = delta(j,n), for n &lt; the grade of the 
+<br />
+difference equation.
+<br />
+<br />With the S-operator it is then very easy to define the difference- or 
+<br />
+derivation-operator D as:
+<br />
+<br />D = S-1, so D(x(n)) = x(n+1) - x(n).
+<br />
+<br />What do you think, is this a good starting point for handling the 
+<br />
+mathematics of the discrete space-time?
+<br />
+<br /><pre>
+-- 
+Torgny Tholerus
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;Everything List&quot; group.
+To post to this group, send email to everything-list.domain.name.hidden
+To unsubscribe from this group, send email to everything-list+unsubscribe.domain.name.hidden
+For more options, visit this group at <a href="http://groups.google.com/group/everything-list?hl=en">http://groups.google.com/group/everything-list?hl=en</a>
+-~----------~----~----~----~------~----~------~--~---
+</pre>
+<span id="received"><dfn>Received on</dfn> Wed Nov 12 2008 - 12:45:16 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start15205">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="15206.html" title="Next message in the list">Kory Heath: "Re: QTI &#0038; euthanasia (brouillon)"</a></li>
+<li><dfn>Previous message</dfn>: <a href="15204.html" title="Previous message in the list">Bruno Marchal: "Re: QTI &#0038; euthanasia (brouillon)"</a></li>
+<li><dfn>In reply to</dfn>: <a href="15202.html" title="Message to which this message replies">Bruno Marchal: "Re: QTI &#0038; euthanasia"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="15207.html" title="Next message in this discussion thread">Bruno Marchal: "Re: Mathematical methods for the discrete space-time."</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="15207.html" title="Message sent in reply to this message">Bruno Marchal: "Re: Mathematical methods for the discrete space-time."</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg15205" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg15205" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg15205" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg15205" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:15 PST
+</em></small></p>
+</body>
+</html>

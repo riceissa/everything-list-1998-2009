@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Re: Misc-Chris from Marchal on 1999-07-15 (everything)</title>
+<meta name="Author" content="Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="Re: Misc-Chris" />
+<meta name="Date" content="1999-07-15" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Re: Misc-Chris</h1>
+<!-- received="Thu Jul 15 08:02:38 1999" -->
+<!-- isoreceived="19990715150238" -->
+<!-- sent="Thu Jul 15 08:02:38 1999" -->
+<!-- isosent="19990715150238" -->
+<!-- name="Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="Re: Misc-Chris" -->
+<!-- id="199907151459.QAA17219.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- inreplyto="Misc-Chris" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start940" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0941.html" accesskey="d" title="Wei Dai: &quot;Re: Interpretations, subjectivity &#0038; spread-spectrum&quot;">Next message</a> ]
+[ <a href="0939.html" title="Marchal: &quot;RE: Know your mind&quot;">Previous message</a> ]
+[ <a href="0912.html" title="Marchal: &quot;Misc-Chris&quot;">Maybe in reply to</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg940" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg940" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg940" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg940" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20Misc-Chris">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Thu Jul 15 08:02:38 1999</span><br />
+</address>
+<br />
+Chris wrote:
+<br />
+<br /><em class="quotelev1">&gt;Using a simple von Neumann description, a perfect fidelity 
+</em><br />
+<em class="quotelev1">&gt;self-simulation would involve emulating its own program, _and 
+</em><br />
+<em class="quotelev1">&gt;duplicating all of its internal data_.  The latter is obviously 
+</em><br />
+<em class="quotelev1">&gt;impossible.
+</em><br />
+<br />In fact, altough it is hard to believe, it is possible !
+<br />
+It is a consequence of the second recursion theorem. Look at Cutland's
+<br />
+chapter 11.
+<br />
+<br />Here is the basic idea:
+<br />
+<br />Let D be a special duplicating machine which outputs a description
+<br />
+of his input applied to it (the input) self. For exemple:
+<br />
+<br />&nbsp;&nbsp;D(A) =&gt; description of A(A)
+<br />
+&nbsp;&nbsp;D(B) =&gt; description of B(B)       &quot;=&gt;&quot; means &quot;outputs&quot;
+<br />
+&nbsp;&nbsp;D(C) =&gt; description of C(C)
+<br />
+<br />There is nothing magic or circular in D. It just build a description 
+<br />
+of his input applied to the input : 
+<br />
+D(x) =&gt; description of x(x), whatever x is.
+<br />
+<br />Now it suffices to apply D to itself:
+<br />
+<br />&nbsp;&nbsp;D(D) =&gt; description of D(D)
+<br />
+<br />i.e. the expression &quot;D(D)&quot; will ouput an exact description of itself.
+<br />
+Is it not magic !
+<br />
+<br />Now, you can easily make the following generalisation. Suppose you
+<br />
+want a program who simulate itself, or more generaly which apply T to
+<br />
+itself. (The simulation is the case T = a universal program, 
+<br />
+the self-reproduction is the case T = a identity program, etc.).
+<br />
+<br />Build a new D such that
+<br />
+<br /><br />&nbsp;&nbsp;D(A) =&gt; T(A(A))
+<br />
+&nbsp;&nbsp;D(B) =&gt; T(B(B))       &quot;=&gt;&quot; means &quot;outputs&quot;
+<br />
+&nbsp;&nbsp;D(C) =&gt; T(C(C))
+<br />
+<br />i.e. D(x) =&gt; T(x(x))
+<br />
+<br />Here too it's enough to apply D on itself: D(D) =&gt; T(D(D)). So the
+<br />
+&nbsp;expression D(D) applies T to itself.
+<br />
+<br />OK ?
+<br />
+<br />Now, what is impossible, is that, for a consistent prover machine,
+<br />
+to build a copy of itself AND to prove that the copy of itself is
+<br />
+a copy of itself. This is not a direct consequence of Godel's theorems,
+<br />
+but is a consequence of the correct part of Lucas-Penrose argument.
+<br />
+(perhaps more on this latter).
+<br />
+<br /><em class="quotelev1">&gt;So let me see if I'm understanding this correctly.  Penrose says that
+</em><br />
+<em class="quotelev1">&gt;consciousness cannot be the result of computational processes because
+</em><br />
+<em class="quotelev1">&gt;there will always be true statements which a computational process
+</em><br />
+<em class="quotelev1">&gt;would find undecidable (Goedel statements for that process).  But
+</em><br />
+<em class="quotelev1">&gt;humans,
+</em><br />
+<em class="quotelev1">&gt;on the other hand, would be able to &quot;see&quot; the truth of Goedel-esque
+</em><br />
+<em class="quotelev1">&gt;propositions because of our amazing, non-computational intuition.  But
+</em><br />
+<em class="quotelev1">&gt;the counter to this argument is that:  
+</em><br />
+<em class="quotelev1">&gt;    1. if a particular human's consciousness is the result of a 
+</em><br />
+<em class="quotelev1">&gt;       computable process, 
+</em><br />
+<em class="quotelev1">&gt;    2. there will be Goedel statements for that particular human, but
+</em><br />
+<em class="quotelev1">&gt;    3. they will be of such a complexity that the human would not 
+</em><br />
+<em class="quotelev1">&gt;       possibly be able to decide the truth or falsity without the aid
+</em><br />
+<em class="quotelev1">&gt;       of a computer, which,  
+</em><br />
+<em class="quotelev1">&gt;    4. changes the computable process into a human+computer system,
+</em><br />
+<em class="quotelev1">&gt;    5. rendering the original statement decidable in the new system.
+</em><br />
+<br />Not too bad :-)
+<br />
+But in 3. the impossibility is not linked to the complexity. It works
+<br />
+even with high level description of yourself. For exemple the expression
+<br />
+&quot;Chris&quot; is a high level description of yourself. And here is a simple
+<br />
+true self-referential sentence that you will never believe:
+<br />
+<br />&nbsp;&nbsp;&quot;Chris will never believe this very sentence&quot;
+<br />
+<br />... unless you are inconsistent (you believe false propositions).
+<br />
+<br /><em class="quotelev1">&gt;When you say that this is related to the topic above, I think you 
+</em><br />
+<em class="quotelev1">&gt;must be talking about the inability of any machine to fully model
+</em><br />
+<em class="quotelev1">&gt;itself.  Is this right?
+</em><br />
+<br />No, because a machine can fully model itself. But the consistent
+<br />
+machine cannot prove that such model is indeed a correct model of itself.
+<br />
+Now, like the computationalist in front of his teleportation machine,
+<br />
+the machine can build itself, and BET the product is indeed itself. And 
+<br />
+if the machine adds that as a new axiom, indeed the machine becomes
+<br />
+a new machine, etc.
+<br />
+<br /><em class="quotelev2">&gt;&gt; [BM] In fact those &quot;De Broglie-Bohm&quot; zombies are even incorporeal !
+</em><br />
+<em class="quotelev2">&gt;&gt; They are not made with particules !
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<em class="quotelev1">&gt;  [CM] Okay, let me again try to see if I understand where you're coming
+</em><br />
+<em class="quotelev1">&gt;from.  This is related to your crackpot proof that &quot;not comp&quot; or
+</em><br />
+<em class="quotelev1">&gt;&quot;not phys-sup&quot;, correct?
+</em><br />
+<br />Not really. It comes from the fact that the Bohm interpretation of
+<br />
+QM is really a many-world interpretation of QM such that:
+<br />
+<br />1) The position observable is priviledged
+<br />
+2) Particules haves initial conditions such that they will remain
+<br />
+in one branche.
+<br />
+<br />The result is a multiverse where only one &quot;real&quot; branche is full of
+<br />
+particules and the others are just empty. They are nevertheless 
+<br />
+influencing the position of the particules in the &quot;real&quot; branche through
+<br />
+the action of Bohm's quantum potential.
+<br />
+It is a remarkable and non trivial fact that this theory is consistent
+<br />
+with QM.
+<br />
+The other branches can be seen as empty waves, but SHOULD the initial 
+<br />
+conditions be different, they would have been full or partially full.
+<br />
+So the other branches describe kind of counterfactual worlds which, from
+<br />
+inside are not distinguishable from the real world. That is why I see it
+<br />
+as a kind of cosmic solipsisme: all Universes exists, but only our own
+<br />
+universe own consciousness and particules !
+<br />
+<br />Bruno.
+<br />
+<span id="received"><dfn>Received on</dfn> Thu Jul 15 1999 - 08:02:38 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start940">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0941.html" title="Next message in the list">Wei Dai: "Re: Interpretations, subjectivity &#0038; spread-spectrum"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0939.html" title="Previous message in the list">Marchal: "RE: Know your mind"</a></li>
+<li><dfn>Maybe in reply to</dfn>: <a href="0912.html" title="Message to which this message replies">Marchal: "Misc-Chris"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg940" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg940" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg940" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg940" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

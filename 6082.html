@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>The chemistry of COMBINATORS from Bruno Marchal on 2005-01-27 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="The chemistry of COMBINATORS" />
+<meta name="Date" content="2005-01-27" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>The chemistry of COMBINATORS</h1>
+<!-- received="Thu Jan 27 10:38:42 2005" -->
+<!-- isoreceived="20050127183842" -->
+<!-- sent="Thu, 27 Jan 2005 16:35:42 +0100" -->
+<!-- isosent="20050127153542" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="The chemistry of COMBINATORS" -->
+<!-- id="5.1.0.14.2.20050125144359.03c31ec0.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start6082" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="6083.html" accesskey="d" title="Hal Finney: &quot;Re: Belief Statements&quot;">Next message</a> ]
+[ <a href="6081.html" title="Bruno Marchal: &quot;Re: Belief Statements&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6082" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6082" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6082" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6082" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20The%20chemistry%20of%20COMBINATORS">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Thu, 27 Jan 2005 16:35:42 +0100</span><br />
+</address>
+<br />
+Hi,
+<br />
+<br />For those who are interested in the comp hypothesis,
+<br />
+it is hardly a luxury to dig a little bit in computer science.
+<br />
+If only to go toward explicit definition of notion like computations,
+<br />
+computational history, consistent extensions, models, etc.
+<br />
+I open this thread for the very long term.
+<br />
+<br />One of the jewel of computer science is the theory of combinators.
+<br />
+<br />They have been discovered and presented in a talk by Moses
+<br />
+Schoenfinkel (from Moscow) in 1920. And rediscovered
+<br />
+independently by Haskell Curry (USA) in 1930. Church
+<br />
+rediscovered them too under the form of closed lambda expression,
+<br />
+for which he will postulate his famous &quot;Church thesis&quot;: the closed lambda
+<br />
+expression are enough to define all computable functions (from N to N, where
+<br />
+N = the set of positive integers).
+<br />
+<br />There is no &quot;Schoenfinkel thesis&quot; nor any &quot;Curry thesis&quot;, as
+<br />
+opposed to &quot;Church thesis&quot;. Indeed the goal of both Schoenfinkel
+<br />
+and Curry was to &quot;rebuild&quot; an alternative to the whole of mathematics.
+<br />
+One of Schoenfinkel's motivation was to eliminate all variables.
+<br />
+Curry's motivation was to find the most elementary finitary operations
+<br />
+rich enough to (re)build mathematics, and this preferably without  formal
+<br />
+sets, but only a finite set of primitive operations.
+<br />
+<br />Actually Combinatory Logic can &quot;easily&quot; be shown
+<br />
+rich enough to represent the partial recursive function, so that
+<br />
+the combinators gives a nice and pleasant computer programming
+<br />
+language. (And indeed LISP and functionnal programming languages
+<br />
+are all descendants or cousins of the combinators/lambda calculus).
+<br />
+But at some fundamental level combinatory logic is much more than
+<br />
+a programming language: it is really a possible road to tackle the problem
+<br />
+of the nature of mathematics, and with comp: the nature of reality.
+<br />
+Also, combinatory logic is very fine grained, and this will enable us to
+<br />
+introduce at a very cheap price important nuances.
+<br />
+<br /><br />Here is a short descrition of combinatory logic (beware: in the preceding post
+<br />
+I made a typo error):
+<br />
+<br />STATIC:
+<br />
+1) K is a molecule (called the &quot;kestrel&quot; is Smullyan's terminology)
+<br />
+2) S is a molecule (the &quot;Starling&quot;)
+<br />
+3) if x and y are molecules then (x y) is a molecule. From this you can 
+<br />
+easily enumerate all possible molecules: K, S, (K K), (K S), (S K), (S S), 
+<br />
+((K K) K), ((K S) K) ...
+<br />
+<br />DYNAMICS:  (X and Y are put for any molecules)
+<br />
+1) ((K X) Y) = X    (Law of the Kestrel)
+<br />
+2) (((S X) Y) Z)  = ((X Z) (Y Z))  (Law of the Starling)
+<br />
+<br />1) means that on any molecules X the molecules (K X) is stable and does not 
+<br />
+evolves (except by the evolution of X perhaps). I will say that a molecules 
+<br />
+of the shape (K X) is a charged Kestrel.
+<br />
+Now if (K X) comes to interact with some other molecules Y giving ((K X) Y) 
+<br />
+you get an explosion leaving as result of the reaction just the molecule X.
+<br />
+So for example
+<br />
+K is stable
+<br />
+(K K) is stable
+<br />
+(K (K K)) is stable
+<br />
+((K K) K) is unstable, indeed it matches the law &quot;1)&quot;, with X = K, and Y = 
+<br />
+K, so the reaction
+<br />
+is trigged giving K.
+<br />
+<br />((K (K K)) (K K)) gives (K K), ok?
+<br />
+<br /><br /><br />Well the price of having a conceptually very simple syntax (static) is that 
+<br />
+the notation can be very quickly a little bit cumbersome. The tradition is 
+<br />
+to neglect the left parenthesis abbreviating
+<br />
+(((a b) c) d) by abcd. The laws becomes:
+<br />
+<br />KXY = X
+<br />
+SXYZ = XZ(YZ)
+<br />
+<br />The examples becomes
+<br />
+<br />K is stable
+<br />
+KK is stable
+<br />
+K(KK) is stable
+<br />
+KKK is unstable and &quot;decays&quot; into K, and finally
+<br />
+<br />K(KK)(KK) gives (KK) ok?
+<br />
+<br />What gives S(KK)(KK) ? Solution: it remains S(KK)(KK). It is stable because
+<br />
+S needs &quot;three&quot; molecules to trigger its dynamic. So S(KK)(KK)(KK) gives 
+<br />
+KK(KK)(KK(KK)), as
+<br />
+SKKK gives KK(KK) which is still unstable and gives K.
+<br />
+<br />Exercices (Taken from the course &quot;My First Everything Theory&quot; Primary 
+<br />
+school Year 2127 :)
+<br />
+<br />Evaluate:
+<br />
+<br />(SS)KKK = ?
+<br />
+KKK(SS) = ?
+<br />
+(KK)(KK)(KK) = ?
+<br />
+(KKK)(KKK)(KKK) = ?
+<br />
+<br />Evaluate:
+<br />
+<br />K
+<br />
+KK
+<br />
+KKK
+<br />
+KKKK
+<br />
+KKKKK
+<br />
+KKKKKK
+<br />
+KKKKKKK
+<br />
+KKKKKKKK
+<br />
+KKKKKKKKK
+<br />
+KKKKKKKKKK
+<br />
+<br />A little more advanced exercices: is there a molecule, let us called it I, 
+<br />
+having
+<br />
+the following dynamic:   (X refers to any molecule).
+<br />
+<br />IX = X
+<br />
+<br />So a solution is some molecule made up from K and S which applied on any
+<br />
+molecule give as result of the reaction that very molecule unchanged.
+<br />
+<br />For example KXS is not a solution, although it gives X, it is not of the 
+<br />
+shape (molecule  X).
+<br />
+<br /><br /><br />Of course you can learn a lot by searching &quot;combinators&quot; or &quot;lambda calcul&quot;
+<br />
+on the net. Two samples:
+<br />
+For those &quot;who knows&quot;, here is a paper on
+<br />
+Kolmogorov Complexity viewed through the
+<br />
+combinators. It can be used as a quick introduction to combinators.
+<br />
+<br />Kolmogorov Complexity in Combinatory Logic
+<br />
+John Tromp
+<br />
+<a href="http://homepages.cwi.nl/~tromp/cl/CL.pdf">http://homepages.cwi.nl/~tromp/cl/CL.pdf</a>
+<br />
+<br />And here is a much more technical paper on some advanced stuff translating
+<br />
+an amazing idea of Girard, the geometry of interaction (GOI) in terms
+<br />
+of combinator.
+<br />
+<a href="http://www.mathnet.or.kr/papers/Pennsy/Haghverdi/main7.pdf">http://www.mathnet.or.kr/papers/Pennsy/Haghverdi/main7.pdf</a>
+<br />
+(Need Category Theory).
+<br />
+<br />Soon I will give the solution of the exercices. I will give you &quot;my second 
+<br />
+everything
+<br />
+theory (Year 2127)&quot;. Then a third ... I let you meditate on the following 
+<br />
+&quot;philosophical&quot;
+<br />
+question &quot;does Kestrel really exist?&quot;, doesn't Classical General Relativity 
+<br />
+entails the
+<br />
+existence of Kestrels? Does not a &quot;physical&quot; time arrow need kestrels?
+<br />
+Look closely: KXY = X, kestrels eliminate information, Y has been erased).
+<br />
+<br />To doubt on the physical existence of kestrels leads to quasi-physicalist 
+<br />
+view of logic
+<br />
+(not unlike the one by *the other Schmidhuber*Strings from Logic:
+<br />
+<a href="http://arxiv.org/abs/hep-th/0011065">http://arxiv.org/abs/hep-th/0011065</a>   I tend to think for
+<br />
+now that Newton's lesson can (admittedly roughly) be sum up by saying there 
+<br />
+are no
+<br />
+Kestrels. And perhaps the no-cloning theorem gives us empirical reason to doubt
+<br />
+about the Starling too, because they clone (duplicate)
+<br />
+one of their argument (Einstein Podolski Rosen Bell ... Diecks Zurek 
+<br />
+Wootters lesson).
+<br />
+<br />In fine combinators provide tools for building models of weak logics. 
+<br />
+Strictly speaking
+<br />
+abandoning the kestrel is abandoning the a priori axiom: p-&gt;(q-&gt;p). This is 
+<br />
+a step toward
+<br />
+quantum or toward relevance logics. But I guess I anticipate too much.
+<br />
+<br />I am not hiding you that one of my motivation is to make my thesis easier. 
+<br />
+Until now
+<br />
+I have attempt to describe the SHORT path (the interview of the lobian 
+<br />
+machine). Now I
+<br />
+will give you the LONG path, including a precise sequences of formal theories.
+<br />
+The result is that Lobian machine should prove that if Kestrels and 
+<br />
+Starling exist then
+<br />
+they cannot be *observed* by Lobian machine. Feel free to make comments or
+<br />
+metacomments. I see this thread as an aside thread which I hope will not 
+<br />
+perturbate
+<br />
+more general discussions, only that with comp some computer science could 
+<br />
+be helpful.
+<br />
+<br />Bruno
+<br />
+<br /><br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Thu Jan 27 2005 - 10:38:42 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start6082">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="6083.html" title="Next message in the list">Hal Finney: "Re: Belief Statements"</a></li>
+<li><dfn>Previous message</dfn>: <a href="6081.html" title="Previous message in the list">Bruno Marchal: "Re: Belief Statements"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6082" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6082" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6082" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6082" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>

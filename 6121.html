@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>COMBINATORS VIII  (The PARADOXICAL one) from Bruno Marchal on 2005-03-10 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="COMBINATORS VIII  (The PARADOXICAL one)" />
+<meta name="Date" content="2005-03-10" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>COMBINATORS VIII  (The PARADOXICAL one)</h1>
+<!-- received="Thu Mar 10 10:37:49 2005" -->
+<!-- isoreceived="20050310183749" -->
+<!-- sent="Thu, 10 Mar 2005 16:34:06 +0100" -->
+<!-- isosent="20050310153406" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="COMBINATORS VIII  (The PARADOXICAL one)" -->
+<!-- id="71e29d52880ad13b1521e89403d3cdd7.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start6121" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="6122.html" accesskey="d" title="Bruno Marchal: &quot;Re: MWI &#0034;is&#0034; a continuum&quot;">Next message</a> ]
+[ <a href="6120.html" title="Bruno Marchal: &quot;COMBINATORS VI (sequel)&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6121" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6121" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6121" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6121" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20COMBINATORS%20VIII%20%20(The%20PARADOXICAL%20one)">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Thu, 10 Mar 2005 16:34:06 +0100</span><br />
+</address>
+<br />
+Hi,
+<br />
+<br />Be sure you have understood the preceding posts before reading this one.
+<br />
+For archives and even better archives, see the links below.
+<br />
+<br />The Paradoxical combinators
+<br />
+<br />I recall that a combinator X is a fixed point of a combinator Z if ZX = 
+<br />
+X.
+<br />
+For example, all combinators (birds) are fixed point of the identity 
+<br />
+combinator,
+<br />
+given that for any x Ix = x. Curiously enough in many forest all 
+<br />
+combinators
+<br />
+&nbsp;&nbsp;have a fixed point.
+<br />
+The &quot;paradoxical combinator&quot;, or &quot;fixed point combinator&quot; is a 
+<br />
+combinator
+<br />
+which find that fixed point of any given combinators.
+<br />
+<br /><br />PROPOSITION 1:  if a forest contains a bluebird B, where Bxyz = x(yz),
+<br />
+and a MockingBird M, that is Mx = xx, then ALL birds have indeed a 
+<br />
+fixed point P.
+<br />
+<br />Proof: All bird x have BxM(BxM) as a fixed point, that is BxM(BxM) is 
+<br />
+always a fixed point of x, indeed:
+<br />
+<br />BxM(BxM) = x(M(BxM)) = x(BxM(BxM)).  OK?
+<br />
+<br /><br />PROPOSITION 2: If a forest contains a lark L, i.e. Lxy = x(yy), then 
+<br />
+again ALL birds
+<br />
+will have a fixed point. Indeed all birds x have Lx(Lx) as a fixed 
+<br />
+point:
+<br />
+<br />Lx(Lx) = x(Lx(Lx)) (directly from the dynamic of L). OK?
+<br />
+<br /><br />Saying that all birds in a forest have a fixed point is not the same as 
+<br />
+saying that there is,
+<br />
+in the forest a bird capable of finding that fixed point. Let us show 
+<br />
+that if the forest
+<br />
+contains a starling and a lark, then there is such a bird (called a 
+<br />
+paradoxical combinator,
+<br />
+or a fixed point combinator. raymond called them &quot;wise bird&quot;, and I was 
+<br />
+used to call them
+<br />
+&quot;crazy bird&quot; given that they can have some crazy behavior).
+<br />
+<br />To find a fixed point combinator, it is enough, for example, to find a 
+<br />
+bird which on x
+<br />
+will generate Lx(Lx).
+<br />
+<br />But Lx(Lx) is just SLLx
+<br />
+<br />And thus SLL is a fixed point combinator. SLLx = x(SLLx) given that 
+<br />
+SLLx = Lx(Lx).  OK?
+<br />
+<br />(Of course SLL is an abbreviated name for combinator
+<br />
+<br />S(S(S(KS)K)(KS(SKK)(SKK)))(S(S(KS)K)(KS(SKK)(SKK)))
+<br />
+<br />given that we have shown L = SB(KM); and B = S(KS)K, and M = SI I= 
+<br />
+S(SKK)(SKK)
+<br />
+&nbsp;&nbsp;cf solution 2 in COMBINATORS IV (see links below).
+<br />
+<br />Obviously, a forest which contains S and K, like our current 
+<br />
+&quot;everything theory&quot;,
+<br />
+contains L (or a B and a M) and, thus, is such that all birds have a 
+<br />
+fixed point.
+<br />
+Such a forest also contains fixed point combinators. Some day we will 
+<br />
+justify
+<br />
+why any SK-forest contains really all possible birds.
+<br />
+<br /><br />WHAT'S the USE of PARADOXICAL combinators?
+<br />
+<br />Well, you should be able to solve an exercise like finding a combinator 
+<br />
+A such
+<br />
+that its dynamics is described by Axyz = y(yx)zz. Some other day we 
+<br />
+will make this
+<br />
+precise by giving an *algorithm* for solving such problem (which 
+<br />
+solutions exist
+<br />
+in all &quot;sufficiently rich forest like the SK or BWCK forest). With the 
+<br />
+fixed point combinators
+<br />
+you should be able to solve &quot;recursive equations&quot; like: find a A such 
+<br />
+that its dynamics
+<br />
+is described recursively by Axyz = xxA(Ayy)z. How?
+<br />
+Just find a B such that Baxyz = xxa(ayy)z    (A has been replaced by a 
+<br />
+variable a).
+<br />
+This is a traditional (non recursive) exercise.
+<br />
+Then YB gives the solution of the recursive equation. (Y is the 
+<br />
+traditional name for
+<br />
+a paradoxical combinator). Exercise: why?
+<br />
+<br /><br />EXERCISES:
+<br />
+<br />Find an infinite eliminator E, that is a bird which eliminates all its 
+<br />
+variables: Ex = E, Exy = E, etc.
+<br />
+Find an perpetual permutator, that is a bird which forever permutes its 
+<br />
+two inputs: its dynamics is
+<br />
+as follow: Pxy =: Pyx =: Pxy =: Pyx etc.  (I recall &quot;=:&quot; is the 
+<br />
+reduction symbol of the dynamics; it
+<br />
+is the left to right reading of the &quot;dynamics&quot;). Etc.
+<br />
+I mean: solve the following equations (little letters like x, y z are 
+<br />
+put for any combinator, A is put
+<br />
+for the precise combinator we are ask searching for):
+<br />
+<br />Ax = A
+<br />
+Ax = xA
+<br />
+Axy = Ayx
+<br />
+Ax = AAx
+<br />
+A = AA
+<br />
+Ax = AA
+<br />
+Ax = x(Ax)
+<br />
+<br />Obviously, Y is useful for the recursive programming. This will be 
+<br />
+illustrate when when we will do
+<br />
+some logic and some arithmetic (soon on a screen near you).
+<br />
+After that you should be able to program any function with a 
+<br />
+combinator. And after that we will
+<br />
+make a move enabling us to come back to our basic problems: where does 
+<br />
+mind and matter
+<br />
+come from, ..., how to put a reasonable measure on the set of all 
+<br />
+computations, ...
+<br />
+<br /><br />Archives and better archives:
+<br />
+<br />COMBINATORS I is
+<br />
+<a href="http://www.escribe.com/science/theory/m5913.html">http://www.escribe.com/science/theory/m5913.html</a>, or better:
+<br />
+<a href="http://www.mail-archive.com/everything-list.domain.name.hidden/msg05920.html">http://www.mail-archive.com/everything-list.domain.name.hidden/msg05920.html</a>
+<br />
+<br />COMBINATORS II is
+<br />
+<a href="http://www.escribe.com/science/theory/m5942.html">http://www.escribe.com/science/theory/m5942.html</a>, or better:
+<br />
+<a href="http://www.mail-archive.com/everything-list.domain.name.hidden/msg05949.html">http://www.mail-archive.com/everything-list.domain.name.hidden/msg05949.html</a>
+<br />
+<br />COMBINATORS III is
+<br />
+<a href="http://www.escribe.com/science/theory/m5946.html">http://www.escribe.com/science/theory/m5946.html</a>, or better:
+<br />
+<a href="http://www.mail-archive.com/everything-list.domain.name.hidden/msg05953.html">http://www.mail-archive.com/everything-list.domain.name.hidden/msg05953.html</a>
+<br />
+<br />COMBINATORS IV is
+<br />
+<a href="http://www.escribe.com/science/theory/m5947.html">http://www.escribe.com/science/theory/m5947.html</a>, or better:
+<br />
+<a href="http://www.mail-archive.com/everything-list.domain.name.hidden/msg05954.html">http://www.mail-archive.com/everything-list.domain.name.hidden/msg05954.html</a>
+<br />
+<br />COMBINATORS V is
+<br />
+<a href="http://www.escribe.com/science/theory/m5948.html">http://www.escribe.com/science/theory/m5948.html</a>, or better:
+<br />
+<a href="http://www.mail-archive.com/everything-list.domain.name.hidden/msg05955.html">http://www.mail-archive.com/everything-list.domain.name.hidden/msg05955.html</a>
+<br />
+<br />COMBINATORS VI
+<br />
+<a href="http://www.escribe.com/science/theory/m5950.html">http://www.escribe.com/science/theory/m5950.html</a>,
+<br />
++ <a href="http://www.escribe.com/science/theory/m5951.html">http://www.escribe.com/science/theory/m5951.html</a>, or better, just:
+<br />
+<a href="http://www.mail-archive.com/everything-list.domain.name.hidden/msg05957.html">http://www.mail-archive.com/everything-list.domain.name.hidden/msg05957.html</a>
+<br />
+<br />Summary:
+<br />
+abc abbreviates ((a b) c)
+<br />
+Kxy = x
+<br />
+Sxyz = xz(yz)
+<br />
+Combinators combine.
+<br />
+===========================
+<br />
+<br />Bruno
+<br />
+<a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Thu Mar 10 2005 - 10:37:49 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start6121">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="6122.html" title="Next message in the list">Bruno Marchal: "Re: MWI &#0034;is&#0034; a continuum"</a></li>
+<li><dfn>Previous message</dfn>: <a href="6120.html" title="Previous message in the list">Bruno Marchal: "COMBINATORS VI (sequel)"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6121" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6121" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6121" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6121" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>

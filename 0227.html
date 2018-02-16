@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>information content of measures from Wei Dai on 1999-01-09 (everything)</title>
+<meta name="Author" content="Wei Dai (weidai.domain.name.hidden)" />
+<meta name="Subject" content="information content of measures" />
+<meta name="Date" content="1999-01-09" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>information content of measures</h1>
+<!-- received="Sat Jan  9 02:01:15 1999" -->
+<!-- isoreceived="19990109100115" -->
+<!-- sent="Sat, 9 Jan 1999 01:59:30 -0800" -->
+<!-- isosent="19990109095930" -->
+<!-- name="Wei Dai" -->
+<!-- email="weidai.domain.name.hidden" -->
+<!-- subject="information content of measures" -->
+<!-- id="19990109015930.A20634.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start227" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0228.html" accesskey="d" title="Wei Dai: &quot;Re: Decision theory&quot;">Next message</a> ]
+[ <a href="0226.html" title="Higgo James: &quot;RE: Decision theory&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="0229.html" accesskey="t" title="Wei Dai: &quot;Re: information content of measures&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg227" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg227" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg227" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg227" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Wei Dai &lt;<a href="mailto:weidai.domain.name.hidden?Subject=Re%3A%20information%20content%20of%20measures">weidai.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Sat, 9 Jan 1999 01:59:30 -0800</span><br />
+</address>
+<br />
+Is there an established definition of the information content of a measure
+<br />
+on finite binary strings (as opposed to the information content of a
+<br />
+finite binary string)? I searched through Li and Vitanyi's _An
+<br />
+Introduction to Kolmogorov Complexity and Its Applications_ but wasn't
+<br />
+able to find it.
+<br />
+<br />If there isn't an established definition, let me propose the following as
+<br />
+a natural one:
+<br />
+<br />Let B = {0,1} and U : B* -&gt; N be a universal prefix machine. Define U' :
+<br />
+(B*-&gt;R) -&gt; (N-&gt;R) as:
+<br />
+<br />U'(u)(x) = \sum_{U(p)=x}u(p)
+<br />
+<br />U' is interpreted as a function from measures on infinite binary strings
+<br />
+(see 4.2 of Li and Vitanyi for the notation) to measures on finite binary
+<br />
+strings. If U'(u)=v, then v is the distribution on the output of U when
+<br />
+the input of U has distribution u. Note that U' is many-to-one and onto.
+<br />
+Now define the algorithmic information content of a measure on finite
+<br />
+binary strings v : N -&gt; R as:
+<br />
+<br />C_U(v)=min {c:U'(u)=v and c=\sum u(p)(log u(p)+l(p))}
+<br />
+<br />which can be thought of as the negative entropy of the maximum entropy
+<br />
+distribution on inputs that produce v as the distribution on outputs. (BTW
+<br />
+I originally had c=limit as n goes to infinity of
+<br />
+n+\sum_{l(p)&lt;=n}u(p)log(u(p)/2^(n-l(p))), which simplies to the above.
+<br />
+<br />With this definition, the only measure with zero algorithmic information
+<br />
+content is the universal a priori distribution (4.3.2). Also, for any
+<br />
+measure that assigns 1 to some particular string x, the algorithmic
+<br />
+information content of that measure agrees with the algorithmic
+<br />
+information content of the string x, as defined by -log Q_U(x), where Q_U
+<br />
+is the universal a priori distribution.
+<br />
+<br />Any comments?
+<br />
+<span id="received"><dfn>Received on</dfn> Sat Jan 09 1999 - 02:01:15 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start227">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0228.html" title="Next message in the list">Wei Dai: "Re: Decision theory"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0226.html" title="Previous message in the list">Higgo James: "RE: Decision theory"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="0229.html" title="Next message in this discussion thread">Wei Dai: "Re: information content of measures"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="0229.html" title="Message sent in reply to this message">Wei Dai: "Re: information content of measures"</a></li>
+<li><dfn>Reply</dfn>: <a href="0235.html" title="Message sent in reply to this message">Wei Dai: "Re: information content of measures"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg227" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg227" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg227" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg227" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

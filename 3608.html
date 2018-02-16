@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Optimal Prediction from Juergen Schmidhuber on 2002-03-26 (everything)</title>
+<meta name="Author" content="Juergen Schmidhuber (juergen.domain.name.hidden)" />
+<meta name="Subject" content="Optimal Prediction" />
+<meta name="Date" content="2002-03-26" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Optimal Prediction</h1>
+<!-- received="Tue Mar 26 05:26:51 2002" -->
+<!-- isoreceived="20020326132651" -->
+<!-- sent="Tue, 26 Mar 2002 14:25:21 +0100" -->
+<!-- isosent="20020326132521" -->
+<!-- name="Juergen Schmidhuber" -->
+<!-- email="juergen.domain.name.hidden" -->
+<!-- subject="Optimal Prediction" -->
+<!-- id="3CA076C1.D3937CF4.domain.name.hidden" -->
+<!-- charset="iso-8859-2" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start3608" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="3609.html" accesskey="d" title="Bill Jefferys: &quot;Re: Optimal Prediction&quot;">Next message</a> ]
+[ <a href="3607.html" title="Saibal Mitra: &quot;Shadowlands&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="3609.html" accesskey="t" title="Bill Jefferys: &quot;Re: Optimal Prediction&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3608" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3608" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3608" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3608" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Juergen Schmidhuber &lt;<a href="mailto:juergen.domain.name.hidden?Subject=Re%3A%20Optimal%20Prediction">juergen.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Tue, 26 Mar 2002 14:25:21 +0100</span><br />
+</address>
+<br />
+Many on this list have discussed the anthropic principle. It
+<br />
+essentially says that the conditional probability of finding
+<br />
+yourself in a universe compatible with your existence equals 1.
+<br />
+<br />But unfortunately the anthropic principle does not have any
+<br />
+predictive power. It does NOT predict there won't be any flying
+<br />
+rabbits tomorrow.
+<br />
+<br />Clearly we need more than the anthropic principle to explain
+<br />
+the predictability of our universe. In particular, we need an 
+<br />
+optimal way of predicting the future, given past observations. 
+<br />
+<br />And there is one!
+<br />
+<br />Normally we do not know the true conditional probability 
+<br />
+distribution p(next event | past). But assume we do know that 
+<br />
+p is in some set P of distributions. Choose a fixed weight w_q 
+<br />
+for each q in P such that the w_q add up to 1 (for simplicity, 
+<br />
+let P be countable). Then construct the Bayesmix 
+<br />
+M(x) = Sum_q w_q q(x), and predict using M instead of the
+<br />
+optimal but unknown p.
+<br />
+<br />How wrong is it to do that? The recent exciting work of my postdoc
+<br />
+Marcus Hutter (IDSIA) provides general and sharp (!) loss bounds:
+<br />
+<br />Let LM(n) and Lp(n) be the total expected losses of the M-predictor 
+<br />
+and the p-predictor, respectively, for the first n events. Then 
+<br />
+LM(n)-Lp(n) is at most of the order of sqrt[Lp(n)]. That is, M is 
+<br />
+not much worse than p. And in general, no other predictor can do 
+<br />
+better than that!
+<br />
+<br />In particular, if p is deterministic, then the M-predictor soon 
+<br />
+won't make any errors any more.
+<br />
+<br />If P contains ALL recursively computable distributions, then M 
+<br />
+becomes the celebrated enumerable universal prior. That is, after 
+<br />
+decades of somewhat stagnating research we now have sharp loss 
+<br />
+bounds for Solomonoff's universal (but incomputable) induction 
+<br />
+scheme. And if we also include the distributions computable in 
+<br />
+the limit, we get sharp loss bounds for the even more general 
+<br />
+priors introduced in &quot;Algorithmic Theories of Everything&quot;: 
+<br />
+<a href="http://www.idsia.ch/~juergen/toesv2/">http://www.idsia.ch/~juergen/toesv2/</a>
+<br />
+<br />Similarly, if we replace M by the Speed Prior S - where S(x) is 
+<br />
+small if x is hard to compute by any method - we obtain appropriate 
+<br />
+loss bounds for computable S-based induction:
+<br />
+<a href="http://www.idsia.ch/~juergen/toesv2/node32.html">http://www.idsia.ch/~juergen/toesv2/node32.html</a>
+<br />
+<br />Alternatively, reduce M to what you get if you just add up 
+<br />
+weighted estimated future finance data probabilities generated by 
+<br />
+1000 commercial stock-market prediction software packages. If only 
+<br />
+one of them happens to work fine (but you do not know which) you 
+<br />
+still should get rich.
+<br />
+<br />To learn more, please read
+<br />
+<br />Optimality of Universal Bayesian Sequence Prediction for General Loss  
+<br />
+and Alphabet:        <a href="ftp://ftp.idsia.ch/pub/techrep/IDSIA-02-02.ps.gz">ftp://ftp.idsia.ch/pub/techrep/IDSIA-02-02.ps.gz</a>
+<br />
+<br />and also check out Hutter's other recent papers at ICML, ECML, NIPS,
+<br />
+Int. J. of Foundations of CS: www.idsia.ch/~marcus
+<br />
+<br /><br /><br />Juergen Schmidhuber
+<br />
+<a href="http://www.idsia.ch/~juergen/">http://www.idsia.ch/~juergen/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Tue Mar 26 2002 - 05:26:51 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start3608">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="3609.html" title="Next message in the list">Bill Jefferys: "Re: Optimal Prediction"</a></li>
+<li><dfn>Previous message</dfn>: <a href="3607.html" title="Previous message in the list">Saibal Mitra: "Shadowlands"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="3609.html" title="Next message in this discussion thread">Bill Jefferys: "Re: Optimal Prediction"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="3609.html" title="Message sent in reply to this message">Bill Jefferys: "Re: Optimal Prediction"</a></li>
+<li><dfn>Reply</dfn>: <a href="3610.html" title="Message sent in reply to this message">H J Ruhl: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3611.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3614.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3616.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3617.html" title="Message sent in reply to this message">Saibal Mitra: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3621.html" title="Message sent in reply to this message">Saibal Mitra: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3625.html" title="Message sent in reply to this message">Hal Finney: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3627.html" title="Message sent in reply to this message">Hal Finney: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3628.html" title="Message sent in reply to this message">H J Ruhl: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3632.html" title="Message sent in reply to this message">Hal Finney: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3633.html" title="Message sent in reply to this message">Hal Finney: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3635.html" title="Message sent in reply to this message">Hal Finney: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3639.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Optimal Prediction"</a></li>
+<li><dfn>Reply</dfn>: <a href="3640.html" title="Message sent in reply to this message">Wei Dai: "Re: Optimal Prediction"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="3643.html" title="Message sent in reply to this message">Juergen Schmidhuber: "Re: Optimal Prediction"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg3608" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg3608" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg3608" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg3608" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

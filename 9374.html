@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Re: Smullyan Shmullyan, give me a real example from Tom Caylor on 2006-05-21 (everything)</title>
+<meta name="Author" content="Tom Caylor (Daddycaylor.domain.name.hidden)" />
+<meta name="Subject" content="Re: Smullyan Shmullyan, give me a real example" />
+<meta name="Date" content="2006-05-21" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Re: Smullyan Shmullyan, give me a real example</h1>
+<!-- received="Sun May 21 03:09:27 2006" -->
+<!-- isoreceived="20060521100927" -->
+<!-- sent="Sun, 21 May 2006 00:08:25 -0700" -->
+<!-- isosent="20060521070825" -->
+<!-- name="Tom Caylor" -->
+<!-- email="Daddycaylor.domain.name.hidden" -->
+<!-- subject="Re: Smullyan Shmullyan, give me a real example" -->
+<!-- id="1148195305.041978.291700.domain.name.hidden" -->
+<!-- charset="iso-8859-1" -->
+<!-- inreplyto="020c0db89efdf147a862b8c8e2bee821&#64;ulb.ac.be" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start9374" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="9375.html" accesskey="d" title="Tom Caylor: &quot;Re: Smullyan Shmullyan, give me a real example&quot;">Next message</a> ]
+[ <a href="9373.html" title="Bruno Marchal: &quot;Re: Smullyan Shmullyan, give me a real example&quot;">Previous message</a> ]
+[ <a href="9128.html" title="George Levy: &quot;Smullyan Shmullyan, give me a real example&quot;">Maybe in reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="9375.html" accesskey="t" title="Tom Caylor: &quot;Re: Smullyan Shmullyan, give me a real example&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg9374" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg9374" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg9374" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg9374" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Tom Caylor &lt;<a href="mailto:Daddycaylor.domain.name.hidden?Subject=Re%3A%20Smullyan%20Shmullyan%2C%20give%20me%20a%20real%20example">Daddycaylor.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Sun, 21 May 2006 00:08:25 -0700</span><br />
+</address>
+<br />
+I've been working on this off and on when I get a chance, even before
+<br />
+my &quot;first guess&quot;.  My version of this defines an operation as a
+<br />
+recursive function f(N,m,n), where N is the degree of the operation.
+<br />
+m is one of the operands.   n is the other operand, which is the
+<br />
+counting operand.  n is the number iterations that the recursive
+<br />
+function is evaluated.
+<br />
+<br />I'll call addition the operation of degree 1. So addition can be
+<br />
+defined as follows.
+<br />
+<br />Initial value:
+<br />
+f(1,m,0) = m
+<br />
+<br />Recursion rule:
+<br />
+f(1,m,k) = f(1,m,k-1) + 1
+<br />
+<br />So for a given n,
+<br />
+f(1,m,n) = f(1,...f(1,m,0) + 1,... + 1)   (f(1) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,0) + 1 + ... + 1        (1 added n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,0) + n
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m + n
+<br />
+<br />Note that counting can be separately defined as the operation of degree
+<br />
+0, but this didn't add to the current argument.  Counting is also
+<br />
+equivalent to adding with m=0.
+<br />
+<br />Multiplication is defined in a similar manner, as the operation of
+<br />
+degree 2.
+<br />
+<br />Initial value:
+<br />
+f(2,m,0) = 0
+<br />
+<br />Recursion rule:
+<br />
+f(2,m,k) = f(2,m,k-1) + m
+<br />
+<br />So for a given n,
+<br />
+f(2,m,n) = f(2,...f(2,m,0) + m,... + m)   (f(2) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(2,m,0) + m + ... + m        (m added n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(2,m,0) + m * n
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m * n
+<br />
+<br />Exponentiation is the operation of degree 3.
+<br />
+<br />f(3,m,0) = 1
+<br />
+f(3,m,k) = f(3,m,k-1) * m
+<br />
+f(3,m,n) = f(3,...f(3,m,0) * m,...* m)   (f(3) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(3,m,0) * m * ... * m        (m multiplied n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(3,m,0) * m ^ n
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m ^ n
+<br />
+<br />Just for kicks, I tried to define &quot;hyper-nentiation&quot; as the operation
+<br />
+of degree 4, with operator symbol &quot;-AT_SYMBOL-&quot;.  I was interested in what
+<br />
+the initial value of this would be: the mth root of m.  Any further
+<br />
+than this gets too weird for me.
+<br />
+<br />f(4,m,0) = m^(1/m)
+<br />
+f(4,m,1) = m
+<br />
+f(4,m,k) = f(4,m,k-1) ^ m
+<br />
+f(4,m,n) = f(4,...f(4,m,0) ^ m,...^ m)   (f(4) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m ^ m ^ ... ^ m                (m exponentiated n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m -AT_SYMBOL- n
+<br />
+<br />Looking closer specifically at multiplication, we see that it is
+<br />
+defined in terms of addition, which is the preceding function in the
+<br />
+sequence of functions.
+<br />
+<br />f(2,m,n) = f(2,m,n-1) + m
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(2,m,n-1))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(2,m,n-2)+m)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(1,m,f(2,m,n-2)))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(1,m,f(2,n-3,m)+m))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(1,m,f(1,m,f(2,m,n-3))))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(2,m,n-n)+m)...)     (f(1) taken n-1 times,
+<br />
+f(2) taken 1 time)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(2,m,n-n))              (f(1) taken n times,
+<br />
+f(2) taken 1 time)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(2,m,0))                 (f(1) taken n times,
+<br />
+f(2) taken 1 time)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(1,m,0))                 (f(1) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m * n
+<br />
+<br />The above is a formal way of saying that multiplication of m and n is
+<br />
+adding n m's together.  We knew that.
+<br />
+<br />Generalizing this, given the function in the sequence corresponding to
+<br />
+the operation of degree N.
+<br />
+<br />f(N,m,n) = f(N-1,m,...f(N-1,m,n))         (f(N-1) taken n times)
+<br />
+<br />The above is a formal way of saying that f(N)ing of m and n together is
+<br />
+the same as f(N-1)ing n m's together.
+<br />
+<br />The sequence of ever growing functions is defined as f(N,m,n) for N=
+<br />
+1,2,3,...
+<br />
+Given a function of degree N, I take the growth of f(N,m,n) as defined
+<br />
+as its magnitude as n approaches infinity.
+<br />
+<br />So here's a thought toward finding a function that's bigger than
+<br />
+any function in this sequence.  Define the following function.
+<br />
+<br />d(m,n) = f(1,m,...f(n,m,n))
+<br />
+<br />Note that n has been placed not only as the counting operation, but
+<br />
+also as the degree!  So now as n approaches infinity, the degree
+<br />
+approaches infinity. (!)  So here is a single function that has a
+<br />
+degree of operation that is higher than any function of a given degree
+<br />
+of operation.
+<br />
+<br />Am I on the right track?
+<br />
+<br />Tom
+<br />
+<br />X-Google-Language: ENGLISH,ASCII-7-bit
+<br />
+Received: by 10.11.53.63 with SMTP id b63mr96488cwa;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sun, 21 May 2006 00:08:25 -0700 (PDT)
+<br />
+X-Google-Token: MV9CDAwAAABW1UuTDcJqFpeal26hqLve
+<br />
+Received: from 207.200.116.67 by y43g2000cwc.googlegroups.com with HTTP;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sun, 21 May 2006 07:08:25 +0000 (UTC)
+<br />
+From: &quot;Tom Caylor&quot; &lt;Daddycaylor.domain.name.hidden&gt;
+<br />
+To: &quot;Everything List&quot; &lt;everything-list.domain.name.hidden&gt;
+<br />
+Subject: Re: Smullyan Shmullyan, give me a real example
+<br />
+Date: Sun, 21 May 2006 00:08:25 -0700
+<br />
+Message-ID: &lt;1148195305.041978.291700.domain.name.hidden&gt;
+<br />
+References: &lt;14762723.1143066850497.JavaMail.root.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;200603241938.14450.quentin.anciaux.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;1143229104.805923.181410.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;200603242045.08484.quentin.anciaux.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;1143229759.310865.304480.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;44245849.3060503.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;442485EE.6010907.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;44f38451d0bd50dafb206875eb78cd17.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;1147793509.349430.290120.domain.name.hidden&gt;
+<br />
+&nbsp;&nbsp;&nbsp;&lt;020c0db89efdf147a862b8c8e2bee821.domain.name.hidden&gt;
+<br />
+User-Agent: G2/0.2
+<br />
+X-HTTP-UserAgent: Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.1; Q312461; SV1; .NET CLR 1.1.4322),gzip(gfe),gzip(gfe)
+<br />
+X-HTTP-Via: HTTP/1.1 (Velocity/1.3.32 [uScMs f p eN:t cCMp s ]), HTTP/1.1 Turboweb [ntc-tc091 8.4.0], HTTP/1.0 cache-ntc-ab03.proxy.aol.com[CFC87443] (Traffic-Server/6.1.0 [uScM])
+<br />
+Mime-Version: 1.0
+<br />
+Content-Type: text/plain
+<br />
+<br />I've been working on this off and on when I get a chance, even before
+<br />
+my &quot;first guess&quot;.  My version of this defines an operation as a
+<br />
+recursive function f(N,m,n), where N is the degree of the operation.
+<br />
+m is one of the operands.   n is the other operand, which is the
+<br />
+counting operand.  n is the number iterations that the recursive
+<br />
+function is evaluated.
+<br />
+<br />I'll call addition the operation of degree 1. So addition can be
+<br />
+defined as follows.
+<br />
+<br />Initial value:
+<br />
+f(1,m,0) = m
+<br />
+<br />Recursion rule:
+<br />
+f(1,m,k) = f(1,m,k-1) + 1
+<br />
+<br />So for a given n,
+<br />
+f(1,m,n) = f(1,...f(1,m,0) + 1,... + 1)   (f(1) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,0) + 1 + ... + 1        (1 added n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,0) + n
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m + n
+<br />
+<br />Note that counting can be separately defined as the operation of degree
+<br />
+0, but this didn't add to the current argument.  Counting is also
+<br />
+equivalent to adding with m=0.
+<br />
+<br />Multiplication is defined in a similar manner, as the operation of
+<br />
+degree 2.
+<br />
+<br />Initial value:
+<br />
+f(2,m,0) = 0
+<br />
+<br />Recursion rule:
+<br />
+f(2,m,k) = f(2,m,k-1) + m
+<br />
+<br />So for a given n,
+<br />
+f(2,m,n) = f(2,...f(2,m,0) + m,... + m)   (f(2) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(2,m,0) + m + ... + m        (m added n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(2,m,0) + m * n
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m * n
+<br />
+<br />Exponentiation is the operation of degree 3.
+<br />
+<br />f(3,m,0) = 1
+<br />
+f(3,m,k) = f(3,m,k-1) * m
+<br />
+f(3,m,n) = f(3,...f(3,m,0) * m,...* m)   (f(3) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(3,m,0) * m * ... * m        (m multiplied n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(3,m,0) * m ^ n
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m ^ n
+<br />
+<br />Just for kicks, I tried to define &quot;hyper-nentiation&quot; as the operation
+<br />
+of degree 4, with operator symbol &quot;-AT_SYMBOL-&quot;.  I was interested in what
+<br />
+the initial value of this would be: the mth root of m.  Any further
+<br />
+than this gets too weird for me.
+<br />
+<br />f(4,m,0) = m^(1/m)
+<br />
+f(4,m,1) = m
+<br />
+f(4,m,k) = f(4,m,k-1) ^ m
+<br />
+f(4,m,n) = f(4,...f(4,m,0) ^ m,...^ m)   (f(4) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m ^ m ^ ... ^ m                (m exponentiated n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m -AT_SYMBOL- n
+<br />
+<br />Looking closer specifically at multiplication, we see that it is
+<br />
+defined in terms of addition, which is the preceding function in the
+<br />
+sequence of functions.
+<br />
+<br />f(2,m,n) = f(2,m,n-1) + m
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(2,m,n-1))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(2,m,n-2)+m)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(1,m,f(2,m,n-2)))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(1,m,f(2,n-3,m)+m))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,f(1,m,f(1,m,f(2,m,n-3))))
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(2,m,n-n)+m)...)     (f(1) taken n-1 times,
+<br />
+f(2) taken 1 time)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(2,m,n-n))              (f(1) taken n times,
+<br />
+f(2) taken 1 time)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(2,m,0))                 (f(1) taken n times,
+<br />
+f(2) taken 1 time)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= f(1,m,...f(1,m,0))                 (f(1) taken n times)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= m * n
+<br />
+<br />The above is a formal way of saying that multiplication of m and n is
+<br />
+adding n m's together.  We knew that.
+<br />
+<br />Generalizing this, given the function in the sequence corresponding to
+<br />
+the operation of degree N.
+<br />
+<br />f(N,m,n) = f(N-1,m,...f(N-1,m,n))         (f(N-1) taken n times)
+<br />
+<br />The above is a formal way of saying that f(N)ing of m and n together is
+<br />
+the same as f(N-1)ing n m's together.
+<br />
+<br />The sequence of ever growing functions is defined as f(N,m,n) for N=
+<br />
+1,2,3,...
+<br />
+Given a function of degree N, I take the growth of f(N,m,n) as defined
+<br />
+as its magnitude as n approaches infinity.
+<br />
+<br />So here's a thought toward finding a function that's bigger than
+<br />
+any function in this sequence.  Define the following function.
+<br />
+<br />d(m,n) = f(1,m,...f(n,m,n))
+<br />
+<br />Note that n has been placed not only as the counting operation, but
+<br />
+also as the degree!  So now as n approaches infinity, the degree
+<br />
+approaches infinity. (!)  So here is a single function that has a
+<br />
+degree of operation that is higher than any function of a given degree
+<br />
+of operation.
+<br />
+<br />Am I on the right track?
+<br />
+<br />Tom
+<br />
+<br /><br />--~--~---------~--~----~------------~-------~--~----~
+<br />
+You received this message because you are subscribed to the Google Groups &quot;Everything List&quot; group.
+<br />
+To post to this group, send email to everything-list.domain.name.hidden
+<br />
+To unsubscribe from this group, send email to everything-list-unsubscribe.domain.name.hidden
+<br />
+For more options, visit this group at <a href="http://groups.google.com/group/everything-list">http://groups.google.com/group/everything-list</a>
+<br />
+-~----------~----~----~----~------~----~------~--~---
+<br />
+<span id="received"><dfn>Received on</dfn> Sun May 21 2006 - 03:09:27 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start9374">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="9375.html" title="Next message in the list">Tom Caylor: "Re: Smullyan Shmullyan, give me a real example"</a></li>
+<li><dfn>Previous message</dfn>: <a href="9373.html" title="Previous message in the list">Bruno Marchal: "Re: Smullyan Shmullyan, give me a real example"</a></li>
+<li><dfn>Maybe in reply to</dfn>: <a href="9128.html" title="Message to which this message replies">George Levy: "Smullyan Shmullyan, give me a real example"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="9375.html" title="Next message in this discussion thread">Tom Caylor: "Re: Smullyan Shmullyan, give me a real example"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="9375.html" title="Message sent in reply to this message">Tom Caylor: "Re: Smullyan Shmullyan, give me a real example"</a></li>
+<li><dfn>Reply</dfn>: <a href="9376.html" title="Message sent in reply to this message">Bruno Marchal: "Re: Smullyan Shmullyan, give me a real example"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg9374" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg9374" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg9374" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg9374" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:11 PST
+</em></small></p>
+</body>
+</html>

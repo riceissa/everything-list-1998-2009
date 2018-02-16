@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Re: Implementation from hal.domain.name.hidden on 1999-07-27 (everything)</title>
+<meta name="Author" content="hal.domain.name.hidden (hal.domain.name.hidden)" />
+<meta name="Subject" content="Re: Implementation" />
+<meta name="Date" content="1999-07-27" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Re: Implementation</h1>
+<!-- received="Tue Jul 27 18:46:25 1999" -->
+<!-- isoreceived="19990728014625" -->
+<!-- sent="Tue, 27 Jul 1999 18:45:50 -0700" -->
+<!-- isosent="19990728014550" -->
+<!-- name="hal.domain.name.hidden" -->
+<!-- email="hal.domain.name.hidden" -->
+<!-- subject="Re: Implementation" -->
+<!-- id="199907280145.SAA08676.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- inreplyto="Implementation" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start1019" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="1020.html" accesskey="d" title="Russell Standish: &quot;Re: Fwd: Implementation/Relativity&quot;">Next message</a> ]
+[ <a href="1018.html" title="Hans Moravec: &quot;Re: Fwd: Implementation/Relativity&quot;">Previous message</a> ]
+[ <a href="0981.html" title="Christopher Maloney: &quot;Re: Implementation&quot;">Maybe in reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="1022.html" accesskey="t" title="Hans Moravec: &quot;Re: Implementation&quot;">Next in thread</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1019" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1019" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1019" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1019" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:hal.domain.name.hidden?Subject=Re%3A%20Implementation">hal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Tue, 27 Jul 1999 18:45:50 -0700</span><br />
+</address>
+<br />
+I have read Hans Moravec's thoughts on the &quot;Humongous Look Up Table&quot;
+<br />
+in the past and so I thought I would step in and offer my interpretation
+<br />
+in the hopes of forestalling misunderstandings.
+<br />
+<br />The HLUT is a way of passing the Turing test which many people consider
+<br />
+unlikely to be conscious.  Hans disagrees that the HLUT is any less
+<br />
+conscious than an ordinary Turing test passing program.
+<br />
+<br />The HLUT consists of a table which has a response to all possible
+<br />
+conversations.  In database terms it is indexed by a conversation-so-far,
+<br />
+and its value is the response which would be given at that point in the
+<br />
+conversation.
+<br />
+<br />For example, one entry in the table consists of:
+<br />
+<br />Index:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Hello, my name is Martha.&quot;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Hello, Martha, I am wondering if you are conscious.&quot;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Well, I wonder that myself sometimes!&quot;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;So, are you?&quot;
+<br />
+<br />Response:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;As far as I can tell, I am!&quot;
+<br />
+<br />Every possible conversation is included in the HLUT, which is what makes
+<br />
+it &quot;humongous&quot; (slang for very large).  Once the HLUT is constructed, it
+<br />
+can pass the Turing test.  Every time you ask it a question, it gets
+<br />
+added to the record of the conversation-so-far.  For its response, it
+<br />
+simply looks through the table to find a matching index value for the
+<br />
+current conversation-so-far, then issues the corresponding response.
+<br />
+Since all possible conversations-so-far are included in the table,
+<br />
+it can always come up with a response.
+<br />
+<br />One way to construct the HLUT is by constructing a conscious program and
+<br />
+then querying it with all possible conversations.  This would take a
+<br />
+&quot;humongous&quot; amount of time, but that's OK.  In practice you can restrict
+<br />
+yourself to conversations which last no more than 100 years, so the size
+<br />
+of the table is finite.
+<br />
+<br />It seems clear that you need a conscious program (or perhaps person) to
+<br />
+construct the HLUT, but the question arises as to whether the HLUT is
+<br />
+conscious after it has been created, at the time it is used to pass the
+<br />
+Turing test.  The workings of the HLUT program are incredibly simple,
+<br />
+just appending questions and comments to a memory buffer, and looking
+<br />
+through the table to find a match.  It is hard to understand how such a
+<br />
+simple program could be conscious.
+<br />
+<br />Hans Moravec argues that the HLUT program is as conscious as the original
+<br />
+computer program which was used to create it.  In fact, he suggests that
+<br />
+the two programs are isomorphic, in the sense that there is a mapping
+<br />
+from one to the other.  Obviously there is a mapping from the original
+<br />
+program to the HLUT, since that is how I proposed to create the HLUT.
+<br />
+Hans suggests that there is a mapping in the other direction as well,
+<br />
+that is that given the HLUT, you could reconstruct the original program
+<br />
+which created it.  There is so much information in the HLUT, it is so
+<br />
+humongous, that it should be possible to deduce all the details of the
+<br />
+conscious program which could have created it.  Hence there are mappings
+<br />
+in both directions, what is called in mathematics an isomorphism.
+<br />
+<br />Despite the fact that both programs look very different, Hans suggests
+<br />
+that they are, in essence, the same.  One has a complex program and
+<br />
+simple data structures, the other has a complex data structure and a
+<br />
+simple program.  But the essence of the calculation done by each is the
+<br />
+same, as demonstrated by the existence of the isomorphism.
+<br />
+<br />My view is that it is possible that the isomorphism exists, but I am
+<br />
+not convinced that it is guaranteed to exist.  Much information is not
+<br />
+recorded in the HLUT - emotional states, alternate answers which were
+<br />
+considered and then rejected, etc.  People have been known to keep
+<br />
+secrets their entire lives.  Is it guaranteed that every private thought
+<br />
+of the original conscious program can be deduced by looking at its
+<br />
+responses to all possible conversations?  Maybe there are some programs
+<br />
+so closemouthed that no conversation could cause them to reveal their
+<br />
+secrets.  In that case I don't see how any amount of study of the HLUT
+<br />
+could reveal the full structure of the original program.
+<br />
+<br />Hal
+<br />
+<span id="received"><dfn>Received on</dfn> Tue Jul 27 1999 - 18:46:25 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start1019">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="1020.html" title="Next message in the list">Russell Standish: "Re: Fwd: Implementation/Relativity"</a></li>
+<li><dfn>Previous message</dfn>: <a href="1018.html" title="Previous message in the list">Hans Moravec: "Re: Fwd: Implementation/Relativity"</a></li>
+<li><dfn>Maybe in reply to</dfn>: <a href="0981.html" title="Message to which this message replies">Christopher Maloney: "Re: Implementation"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="1022.html" title="Next message in this discussion thread">Hans Moravec: "Re: Implementation"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1019" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1019" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1019" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1019" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

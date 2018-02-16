@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Information content of the brain from hal.domain.name.hidden on 1999-02-01 (everything)</title>
+<meta name="Author" content="hal.domain.name.hidden (hal.domain.name.hidden)" />
+<meta name="Subject" content="Information content of the brain" />
+<meta name="Date" content="1999-02-01" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Information content of the brain</h1>
+<!-- received="Mon Feb  1 18:57:36 1999" -->
+<!-- isoreceived="19990202025736" -->
+<!-- sent="Mon, 1 Feb 1999 18:47:57 -0800" -->
+<!-- isosent="19990202024757" -->
+<!-- name="hal.domain.name.hidden" -->
+<!-- email="hal.domain.name.hidden" -->
+<!-- subject="Information content of the brain" -->
+<!-- id="199902020247.SAA30419.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start421" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0422.html" accesskey="d" title="Higgo James: &quot;RE: Miscellaneous ideas, for what they&#0039;re worth.&quot;">Next message</a> ]
+[ <a href="0420.html" title="Wei Dai: &quot;eScribe archive&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="0470.html" accesskey="t" title="Gilles HENRI: &quot;Re: Information content of the brain&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg421" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg421" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg421" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg421" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:hal.domain.name.hidden?Subject=Re%3A%20Information%20content%20of%20the%20brain">hal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Mon, 1 Feb 1999 18:47:57 -0800</span><br />
+</address>
+<br />
+Information content of the brain
+<br />
+<br />Ralph Merkle, at <a href="http://www.merkle.com/cryo/techFeas.html#return5">http://www.merkle.com/cryo/techFeas.html#return5</a>, has
+<br />
+some estimates of the information content of the brain.  He is taking a
+<br />
+very conservative view and overestimating the content by looking at how
+<br />
+much information would be necessary to record every molecule in the brain.
+<br />
+He comes up with 50 bits per molecule, with 4E25 molecules in the brain
+<br />
+(99% of which are water).  This leads to an estimate of about 2E27 bits
+<br />
+to represent the entire brain.
+<br />
+<br />Another estimate he quotes is just for the information content of the
+<br />
+synapses in the cerebral cortex, which is 1E13 bits, and Merkle even
+<br />
+suggests that long term memories might involve only 1E9 bits.
+<br />
+<br />The gap between 1E13 and 2E27 (let alone 1E9) is embarrassingly large,
+<br />
+big enough to make it questionable whether these estimates are of any
+<br />
+value whatsoever.  However let us proceed and see what we can do with
+<br />
+these numbers.
+<br />
+<br /><br />Simulating a brain in isolation
+<br />
+<br />Suppose we want to write a program which will produce a simulation of
+<br />
+a typical human brain, as it experiences a life typical of those we
+<br />
+live today.  Let's suppose we want to simulate all its activity over a
+<br />
+70 year lifetime.  We don't want to simulate the rest of the universe,
+<br />
+we'll just simulate the brain and make it &quot;think&quot; it is interacting with
+<br />
+the universe.
+<br />
+<br />The actual brain simulation program itself will probably not be very
+<br />
+big compared to the larger numbers above.  It needs to simulate the
+<br />
+behavior of neurons, and possibly of other systems like the chemicals
+<br />
+which diffuse from the blood stream.  This will not be trivial, but the
+<br />
+chemistry involved is not all that complex.  Big programs today are a
+<br />
+few hundred megabytes, which would be small compared to 1E13, and the
+<br />
+simulator should not need to be bigger than that.  So the part of the
+<br />
+program that simulates brain internals is basically free.
+<br />
+<br />We also need to simulate the brain's input.  This is pretty hard since we
+<br />
+didn't want to simulate the universe that was going to give it the input.
+<br />
+What we need to do is to hard-wire the input which the brain will receive
+<br />
+over that 70 year period.  Everything the brain will see, hear, touch,
+<br />
+smell and taste over 70 years is going to be sitting in a table that our
+<br />
+program will provide.
+<br />
+<br />How much information is this?  How much &quot;bandwidth&quot; does the brain consume?
+<br />
+<br />TV is about 1E7 bits per second.  If we increase this by a factor of
+<br />
+10 it would roughly account for our visual input (we don't see as much
+<br />
+as it seems like; only a small part of our visual field is seen in high
+<br />
+resolution).  That gives 1E8 bits per second for vision.  Vision is the
+<br />
+primary sense modality for humans, but let's multiply it by a factor of
+<br />
+5 to account for the other senses (handwaving madly here!).  That gives
+<br />
+5E8 bits per second of input, over all modalities, for the human brain.
+<br />
+Over 70 years, which is 2E9 seconds, that gives a total of 1E18 bits
+<br />
+of input.
+<br />
+<br />This falls between the estimates above of brain information.  When we
+<br />
+encode this information in a table so that we can present it to our
+<br />
+simulated brain, we have to add it as part of the size of the input.
+<br />
+The result is to narrow our bracket, and put it from about 1E18 to
+<br />
+2E27 bits.
+<br />
+<br />That is the information for this method of simulating an entire human
+<br />
+lifetime, without trying to actually simulate the universe which the
+<br />
+human appears to live in.
+<br />
+<br /><br />Simulating a universe which evolves a brain
+<br />
+<br />We then ask how hard it would be to simulate a brain the old fashioned
+<br />
+way, by setting up a universe which uses the laws of physics that we
+<br />
+observe, and running it.
+<br />
+<br />We face a problem right at the beginning, here.  Our universe appears
+<br />
+to have a random component.  So we have some choices.  We can simulate
+<br />
+the universe as it appears, and include some mechanism in the program to
+<br />
+make random selections as specified by quantum mechanical measurements.
+<br />
+This mechanism could either be a software random number generator, or a
+<br />
+table of random bits which would be used to make the random choices.
+<br />
+Or, we could adopt a many-worlds approach, and simulate the universe
+<br />
+state without collapse.
+<br />
+<br />In any case, the physics involved is probably pretty simple.  We don't
+<br />
+have a full theory, but our best shots at it, the superstring and
+<br />
+membrane theories that try to marry QM and relativity, really aren't
+<br />
+very complicated.  I'm sure you could capture their essence in a few
+<br />
+megabytes or even kilobytes.
+<br />
+<br />The initial conditions, as far as we can tell, are also simple.  Matter
+<br />
+appears to have been quite uniformly distributed in the Big Bang.  This
+<br />
+bodes well for us, as it takes little information to specify a uniform
+<br />
+distribution, at least if we don't care about the details.
+<br />
+<br /><br />Simulating a random universe which has wave-function collapse
+<br />
+<br />However, incorporating the randomness of QM measurements introduces a
+<br />
+problem.  If we take the first approach, using a software random number
+<br />
+generator, it is unlikely that we will evolve humans, let alone humans
+<br />
+who observe a universe identical with ours.  With all the random events
+<br />
+that happened between the formation of the universe and our evolution,
+<br />
+the chances of repeating that exactly are virtually nil.
+<br />
+<br />If we used the second approach, a table of random values, we might be
+<br />
+able to force events to occur in such a way that humans would evolve.
+<br />
+But this would specifying, in this table, the outcome of every
+<br />
+quantum event that produces measurement-like wave function collapse.
+<br />
+These occur potentially billions of times per second, in billions of
+<br />
+places per centimeter, throughout the entire extent of the universe.
+<br />
+I haven't tried to work it out but if there are 1E80 particles in the
+<br />
+universe (as some people estimate) and the universe is 1E18 seconds old,
+<br />
+obviously we are talking about a very big number, much more than 1E100.
+<br />
+This amount of information would be overwhelmingly larger than the
+<br />
+stand-alone brain estimates.
+<br />
+<br /><br />Simulating a many-worlds universe
+<br />
+<br />The third approach, simulating many-worlds, has the advantage that
+<br />
+we don't have to put in any randomness.  Somewhere in the multiverse,
+<br />
+people are going to evolve.  But is that good enough?  The multiverse
+<br />
+is incredibly huge.  Instead of collapsing the wave function for every
+<br />
+atomic event, we now split it.  All those 1E100+ events are going to
+<br />
+result in distinct universes.
+<br />
+<br />Here is where Wei's point about *locating* the intelligent mind comes
+<br />
+into play.  In our first example, we created the mind directly as the
+<br />
+output of the simulation, taking approximately 1E23 bits, plus or minus
+<br />
+five orders of magnitude.  With the many-worlds approach, we can create
+<br />
+it with a very small program, probably 1E7 bits or so, but it is lost
+<br />
+in a maze of 1E100+ universes.  Is this method cheating?
+<br />
+<br /><br />Simulating a brain's entire lifetime with a counting program
+<br />
+<br />After all, if all we wanted to do was to create a series of mind states,
+<br />
+we have (upper bound) 2E27 bits of state, with the state changing about
+<br />
+100 times per second (faster than the shortest time intervals we can
+<br />
+detect), over 2E9 seconds, for a total of about 1E39 bits to just record
+<br />
+the brain as a series of states.  This is worse than our estimate above
+<br />
+where we used a program to actually simulate the brain; here we aren't
+<br />
+trying to simulate it, just hard-coding all the states it will go through.
+<br />
+<br />A trivial counting program, once it counts up to about 1E39, will produce
+<br />
+a number which encodes the entire 1E39 bits of a human brain's state all
+<br />
+through its lifetime.  And there we have it, a fully simulated brain,
+<br />
+70 years of human lifetime in living color, produced by a program which
+<br />
+is about 1E2 bits long.
+<br />
+<br /><br />Accounting for the costs to localize the brain
+<br />
+<br />We can apply Wei's approach, which is to count the size of the program
+<br />
+needed to locate the brain, and add it to the size of the program that
+<br />
+produces the output.  With the counting program, it will take 1E39 bits
+<br />
+to specify where in the output that brain is located.  Add that to the
+<br />
+1E2 bits of the counting program and the overall cost is 1E39 bits, very
+<br />
+high, making this program give a small contribution.
+<br />
+<br />In the case of many-worlds, then, the challenge is to estimate how hard
+<br />
+it would be to locate a human-like brain, or even more, a specific human
+<br />
+brain, among the 1E100+ universes it has created.
+<br />
+<br />To find a human brain, without asking for a specific one, should not be
+<br />
+that hard.  We could create a pattern or template which we would use to
+<br />
+look for a match.  It could perhaps be a specification for a generic
+<br />
+brain, perhaps a young person's brain.  The program to search through the
+<br />
+multiverse and look for matches to this would be easy to write.
+<br />
+<br />The actual information to encode the generic brain would probably be
+<br />
+somewhat less than the estimates above for specific human brain state.
+<br />
+But it's not clear how much less.  Conservativelly we could use the
+<br />
+same values as above, 1E13 to 2E27.  This would dominate the size of
+<br />
+our multiverse simulation and would be the size of program we would
+<br />
+need to create and locate a human mind.
+<br />
+<br />The main thing we have saved here is that once we have found the mind,
+<br />
+we don't have to simulate the universe.  We already have that simulation
+<br />
+running.  The only way we could find a mind is if it has evolved naturally
+<br />
+within the simulated universe, so if it is a typical human mind it must
+<br />
+have evolved on a simulated world which is the equivalent of Earth.
+<br />
+<br /><br />Are we in a real universe?
+<br />
+<br />If the estimates of mind information are towards the low end, near 1E13,
+<br />
+then this method uses a considerably smaller program than creating the
+<br />
+mind from scratch.  We save the effort needed to hard-code inputs
+<br />
+which mimic the effect of a universe.  Simulating the universe itself is
+<br />
+easier.  This makes sense, because the universe is lawful, and lawful
+<br />
+means predictable, which also means compressible.
+<br />
+<br />However, if we use the higher estimates of information in the mind, then
+<br />
+we have a problem.  It appears to be just as cheap to actually simulate
+<br />
+just the brain and provide a &quot;fake&quot; universe for it to interact with,
+<br />
+as it would be to provide a real universe.  The cost is dominated by the
+<br />
+need to simulate the brain state.
+<br />
+<br />I think Merkle's high estimates of brain state are intended to be
+<br />
+extremely conservative for his purposes, where he wants to show that
+<br />
+the brain could be recorded even at such a ridiculously small level of
+<br />
+detail.  In actuality, we could probably simulate brains at a much higher
+<br />
+level and still produce brain actions which are indistinguishable from
+<br />
+our own.  In that case, creating a real universe to live in looks like
+<br />
+the most economical approach.
+<br />
+<br />Hal
+<br />
+<span id="received"><dfn>Received on</dfn> Mon Feb 01 1999 - 18:57:36 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start421">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0422.html" title="Next message in the list">Higgo James: "RE: Miscellaneous ideas, for what they&#0039;re worth."</a></li>
+<li><dfn>Previous message</dfn>: <a href="0420.html" title="Previous message in the list">Wei Dai: "eScribe archive"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="0470.html" title="Next message in this discussion thread">Gilles HENRI: "Re: Information content of the brain"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="0470.html" title="Message sent in reply to this message">Gilles HENRI: "Re: Information content of the brain"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="0482.html" title="Message sent in reply to this message">Marchal: "Re: Information content of the brain"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="0484.html" title="Message sent in reply to this message">Marchal: "Re: Information content of the brain"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg421" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg421" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg421" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg421" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

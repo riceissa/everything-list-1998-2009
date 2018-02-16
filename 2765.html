@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>Revised Computing Randomness from Hal Ruhl on 2001-04-18 (everything)</title>
+<meta name="Author" content="Hal Ruhl (hjr.domain.name.hidden)" />
+<meta name="Subject" content="Revised Computing Randomness" />
+<meta name="Date" content="2001-04-18" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Revised Computing Randomness</h1>
+<!-- received="Wed Apr 18 18:43:40 2001" -->
+<!-- isoreceived="20010419014340" -->
+<!-- sent="Wed, 18 Apr 2001 20:57:02 -0700" -->
+<!-- isosent="20010419035702" -->
+<!-- name="Hal Ruhl" -->
+<!-- email="hjr.domain.name.hidden" -->
+<!-- subject="Revised Computing Randomness" -->
+<!-- id="5.0.2.1.2.20010418184925.0314dc10.domain.name.hidden" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start2765" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="2766.html" accesskey="d" title="Russell Standish: &quot;Re: Revised Computing Randomness&quot;">Next message</a> ]
+[ <a href="2764.html" title="Marchal: &quot;Re: Kripke semantics&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="2766.html" accesskey="t" title="Russell Standish: &quot;Re: Revised Computing Randomness&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2765" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2765" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2765" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2765" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Hal Ruhl &lt;<a href="mailto:hjr.domain.name.hidden?Subject=Re%3A%20Revised%20Computing%20Randomness">hjr.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed, 18 Apr 2001 20:57:02 -0700</span><br />
+</address>
+<br />
+Here is a revised version of my comments on this subject.  I think it fixes 
+<br />
+several aspects of what I have had to say earlier.
+<br />
+<br />Standalone deterministic evolving universes:
+<br />
+<br />Such a universe is describable as a concatenation of single output programs 
+<br />
+of the form:
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rj(Aj) -&gt; B; Rj(B) -&gt; C; ... Rj(F) -&gt; G; Rj(G) -&gt; H; Rj(H) -&gt; I; 
+<br />
+....
+<br />
+<br />&quot;Rj&quot; is a subset of the rules of an N-bit FAS.  &quot;Aj&quot; is an axiom of that 
+<br />
+FAS.  There are no potential branches in or out.  It is an elegant proof 
+<br />
+and defines the complexity of each of its objects B,C,...F,G,H,I ...
+<br />
+<br />Because the proof is everywhere elegant each successive object is more 
+<br />
+complex than its preimage.  This is the type of theorem cascade I was 
+<br />
+trying to identify.
+<br />
+<br />It has a problem: It will - if it does not stop - eventually outrun the 
+<br />
+complexity of its N-bit FAS.  Since the proof is known to be elegant this 
+<br />
+is [as I understand it] a contradiction of Chaitin's result.
+<br />
+<br />However, if it stopped at complexity N + c as required by Chaitin [again I 
+<br />
+think] the end state would be highly but finitely complex.  Highly but 
+<br />
+finitely complex states are going to have some consequent under the rules 
+<br />
+of the cascade.  It can not be both &quot;provably highly but finitely complex&quot; 
+<br />
+and &quot;absent operative correlations&quot; under the same set of finite rules.  It 
+<br />
+might reach an absence of operative correlations when it becomes infinitely 
+<br />
+complex and the domains of any correlations fall below the resolution of 
+<br />
+the still finite Rj of the cascade.  So the cascade can not stop prior to 
+<br />
+an infinity complex end state.
+<br />
+<br />This seems to be a contradiction.  It can be cured if the FAS is able to 
+<br />
+spontaneously take in additional complexity from an outside source.  I call 
+<br />
+such a source a Superverse.  The new information would act to replace the 
+<br />
+latest object of the cascade with a new axiom acceptable to the Rj and the 
+<br />
+cascade proceeds.
+<br />
+<br />I use this to argue in favor of non deterministic standalone universes.
+<br />
+<br />Now this universe is actually an isomorphism linked to the successive 
+<br />
+strings [objects] B, C etc.  The isomorphism has the same Rj as its laws of 
+<br />
+physics.
+<br />
+<br />This should continue to hold even if one shifts to a universal dovetailer 
+<br />
+running all universes simultaneously.  Individual isomorphisms would still 
+<br />
+jump to the string currently containing as the latest sub string [string 
+<br />
+structure:  ....;sub string;sub string;latest substring] that is the 
+<br />
+successor state of that isomorphism under its individual Rj.  Thus each 
+<br />
+individual isomorphism remains a single output program or elegant proof 
+<br />
+under its Rj.  A non deterministic result is sustained.
+<br />
+<br />Random histories are just isomorphisms with Rj = &quot;do not care&quot; and they 
+<br />
+jump as easily as any isomorphism.
+<br />
+<br />Well that is the current state of the argument.
+<br />
+<br />Hal
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Apr 18 2001 - 18:43:40 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start2765">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="2766.html" title="Next message in the list">Russell Standish: "Re: Revised Computing Randomness"</a></li>
+<li><dfn>Previous message</dfn>: <a href="2764.html" title="Previous message in the list">Marchal: "Re: Kripke semantics"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="2766.html" title="Next message in this discussion thread">Russell Standish: "Re: Revised Computing Randomness"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="2766.html" title="Message sent in reply to this message">Russell Standish: "Re: Revised Computing Randomness"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2768.html" title="Message sent in reply to this message">Hal Ruhl: "Re: Revised Computing Randomness"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="2769.html" title="Message sent in reply to this message">Hal Ruhl: "Re: Revised Computing Randomness"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg2765" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg2765" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg2765" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg2765" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:07 PST
+</em></small></p>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>K the Master Set (+ partial answer to Tom's Diagonalization) from Bruno Marchal on 2006-07-18 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="K the Master Set (+ partial answer to Tom's Diagonalization)" />
+<meta name="Date" content="2006-07-18" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>K the Master Set (+ partial answer to Tom's Diagonalization)</h1>
+<!-- received="Tue Jul 18 10:07:44 2006" -->
+<!-- isoreceived="20060718170744" -->
+<!-- sent="Tue, 18 Jul 2006 16:06:39 +0200" -->
+<!-- isosent="20060718140639" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="K the Master Set (+ partial answer to Tom's Diagonalization)" -->
+<!-- id="c554cba90adbaff4164533d3b57dd626.domain.name.hidden" -->
+<!-- charset="ISO-8859-1" -->
+<!-- inreplyto="1153168934.765706.303780.domain.name.hidden" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start9943" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="9944.html" accesskey="d" title="Bruno Marchal: &quot;Re: SV: Only Existence is necessary?&quot;">Next message</a> ]
+[ <a href="9942.html" title="1Z: &quot;Re: SV: Only Existence is necessary?&quot;">Previous message</a> ]
+[ <a href="9938.html" title="Tom Caylor: &quot;Re: Diagonalization (solution-sequel)&quot;">In reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="9951.html" accesskey="t" title="George Levy: &quot;Re: K the Master Set (+ partial answer to Tom&#0039;s Diagonalization)&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg9943" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg9943" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg9943" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg9943" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20K%20the%20Master%20Set%20(%2B%20partial%20answer%20to%20Tom's%20Diagonalization)">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Tue, 18 Jul 2006 16:06:39 +0200</span><br />
+</address>
+<br />
+Hi Tom, Hi George,
+<br />
+<br />George, and others, you can skip the &quot;partial answer to Tom&quot;,  and go 
+<br />
+directly to &quot;K, the master set&quot; below.
+<br />
+Tom seems to propose an alternate proof, which does not convince me, 
+<br />
+although I cannot right now provide a full counter-example. Note that 
+<br />
+the section &quot;K, the Master Set&quot; could already put some light on that 
+<br />
+matter.
+<br />
+<br /><br /><br />1) Partial answer to Tom:
+<br />
+<br />Le 17-juil.-06, &#x2c6; 22:42, Tom Caylor a &#x17d;crit :
+<br />
+<br /><em class="quotelev2">&gt;&gt; Now *your* G is just defined by G(n) = GEN2(n).
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<em class="quotelev1">&gt; But doesn't G output the range of one of the set of *all* partial
+</em><br />
+<em class="quotelev1">&gt; recursive functions, whereas GEN2 outputs the code of a *fortran*
+</em><br />
+<em class="quotelev1">&gt; program?  So shouldn't it be the following, where execute() actually
+</em><br />
+<em class="quotelev1">&gt; executes the fortran program generated by GEN2(n)?
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<em class="quotelev1">&gt; G(n) = execute(GEN2(n))
+</em><br />
+<br /><br />I should have written G(n) = Gen2(n) (n)  (= execute Pn on n)
+<br />
+<br /><br /><br /><br /><em class="quotelev2">&gt;&gt; Tell me if you are convince that &quot;your&quot; and &quot;my&quot; G are programmable.
+</em><br />
+<em class="quotelev2">&gt;&gt;
+</em><br />
+<em class="quotelev1">&gt;
+</em><br />
+<em class="quotelev1">&gt; They are both programmable, but I think they are both non-*executable*
+</em><br />
+<em class="quotelev1">&gt; on &quot;k&quot; (if G=Fk), for the same reason, self-reference.
+</em><br />
+<br /><br /><br />Let me give you a counterexample with a sequence of total functions.
+<br />
+<br />Let Hi be a RE sequence of (codes) of total functions. (so the seq. Hi 
+<br />
+is ­  from the seq. Fi)
+<br />
+<br />Let GBruno be defined by GBruno(n) = Hn(n) +1
+<br />
+Let GTom be defined by GTom(n) = Hn(n)
+<br />
+<br />Could GBruno belongs to the sequence Hi?
+<br />
+If GBruno belongs to the Hi, it means there is a number kbr such that 
+<br />
+GBruno = Hkbr, thus
+<br />
+GBruno(kbr) = Hkbr(kbr) = Hkbr(kbr)+1. So I can be sure that GBruno 
+<br />
+does not belong to the sequence Hi. OK? (the usual simple subtraction 
+<br />
+would lead to 0 = 1)
+<br />
+Does GTom belongs to Hi?
+<br />
+If GTom belongs to the Hi, it means there is a number kto such Gtom = 
+<br />
+Hkto, thus
+<br />
+Gtom(kto) = Hkto(kto), which is the case by definition of &quot;your&quot; Gtom. 
+<br />
+No contradiction occurs, so in principle the total function Gtom could 
+<br />
+belongs to the list, and indeed is equal to the sequence Hi, despite 
+<br />
+self-reference.
+<br />
+<br />The same could be true for the partial recursive Fi.
+<br />
+I don't see any reason why, if G(n) is defined by Fn(n), G should be 
+<br />
+necessarily undefined on its own index. Your argument could rely on the 
+<br />
+way you implement G.
+<br />
+<br />Actually I could perhaps build an ad hoc counterexample working for 
+<br />
+some particular enumeration of the Fi, but I need some time to do it, 
+<br />
+if it is possible....
+<br />
+<br />So I propose we come back on this after a while. Probably you will 
+<br />
+figure out what is happening by yourself. Actually your intuition is 
+<br />
+right: something happens with self-application (see below). If I try to 
+<br />
+explain all of it here, this could be a little confusing. What you need 
+<br />
+to be sure of is the fact that when G(n) is defined by Fn(n)+1, then 
+<br />
+G(k) will be necessarily undefined on all k such that G = Fk.
+<br />
+(Independently of the fact that you could be right that G'(k') is also 
+<br />
+undefined when G' (n) is defined by Fn(n), and k' is a code or index of 
+<br />
+G'; but your argument is not a proof because it depends on the precise 
+<br />
+way G is implemented). I must think ...
+<br />
+<br /><br /><br /><br />2) K, the Master set
+<br />
+<br />Emil Post, the founder of Recursion Theory, introduced the following 
+<br />
+set (of numbers) which will appears to be fundamental. It will 
+<br />
+correspond, in term of set, to the universal machine. K will be an 
+<br />
+universal RE set, capable of &quot;generating&quot; all RE sets.
+<br />
+<br />I recall the code of the RE sets are generable, and the RE sets are the 
+<br />
+domain Wi of the Fi.
+<br />
+<br />Definition: K is the set of numbers x such that Fx(x) is defined.
+<br />
+<br />So K is the set of natural number x such that the xth programs in the 
+<br />
+enumeration of the codes of all programs does stop when apply on 
+<br />
+itself. I prefer to talk about self-application instead of 
+<br />
+self-reference (to follow standard terminology).
+<br />
+<br /><br />I give exercises (if only because my office is an oven and my brain is 
+<br />
+boiling hot):
+<br />
+<br />1) Is K an RE set?   Answer: yes  (why?)
+<br />
+<br />2) Is N \ K an RE set?  Answer: no  (why? Hint: diagonalization)
+<br />
+<br />3) From this conclude that the halting problem is insoluble.
+<br />
+<br />4) try to justify that someone having an algorithm for generating K 
+<br />
+will be able to generate any Wi. Put in another way, from a mechanical 
+<br />
+solution to the problem &quot;does Fx(x) stop&quot; we can construct an algorithm 
+<br />
+solving the apparent more general problem &quot;does Fx(y)&quot; stop.
+<br />
+<br />5) From &quot;2)&quot; show that N \ K is productive (like the set of codes of 
+<br />
+the computable growing functions). That is N \ K is not only not-RE, 
+<br />
+but is constructively not-RE. You need to find an algorithm A such that 
+<br />
+for any Wi included in N \ K, A(i) will give an element in N \ K which 
+<br />
+is not in Wi.  If you look at that Wi as an attempt to enumerate all N 
+<br />
+\ K, you can see the algorithm A as providing a counter-example. 
+<br />
+Conclude that N \ K can be better and better approximated by iterations 
+<br />
+in the constructive transfinite (like we done with the fairy).
+<br />
+<br /><br />MAIN DEFINITION (Emil Post):
+<br />
+<br />A set E (of numbers) is called CREATIVE if
+<br />
+&nbsp;&nbsp;&nbsp;1) E is RE
+<br />
+&nbsp;&nbsp;&nbsp;2) N \  E is productive
+<br />
+<br />So the exercise can be sum up into: show that K is a creative set. 
+<br />
+There are deep relations between creative sets, universal machines, and 
+<br />
+lobian &quot;theories/machines&quot; which we will exploit soon or later.
+<br />
+<br />Take all your time, and (to all) don't hesitate to ask any question or 
+<br />
+to make any remarks.
+<br />
+<br />Bruno
+<br />
+<br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<br /><br />--~--~---------~--~----~------------~-------~--~----~
+<br />
+You received this message because you are subscribed to the Google Groups &quot;Everything List&quot; group.
+<br />
+To post to this group, send email to everything-list.domain.name.hidden
+<br />
+To unsubscribe from this group, send email to everything-list-unsubscribe.domain.name.hidden
+<br />
+For more options, visit this group at <a href="http://groups.google.com/group/everything-list">http://groups.google.com/group/everything-list</a>
+<br />
+-~----------~----~----~----~------~----~------~--~---
+<br />
+<span id="received"><dfn>Received on</dfn> Tue Jul 18 2006 - 10:07:44 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start9943">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="9944.html" title="Next message in the list">Bruno Marchal: "Re: SV: Only Existence is necessary?"</a></li>
+<li><dfn>Previous message</dfn>: <a href="9942.html" title="Previous message in the list">1Z: "Re: SV: Only Existence is necessary?"</a></li>
+<li><dfn>In reply to</dfn>: <a href="9938.html" title="Message to which this message replies">Tom Caylor: "Re: Diagonalization (solution-sequel)"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="9951.html" title="Next message in this discussion thread">George Levy: "Re: K the Master Set (+ partial answer to Tom&#0039;s Diagonalization)"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="9951.html" title="Message sent in reply to this message">George Levy: "Re: K the Master Set (+ partial answer to Tom&#0039;s Diagonalization)"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="9961.html" title="Message sent in reply to this message">John M: "Re: K the Master Set (+ partial answer to Tom&#0039;s Diagonalization)"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="9963.html" title="Message sent in reply to this message">Chen Walter: "RE: K the Master Set (+ partial answer to Tom&#0039;s Diagonalization)"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="9971.html" title="Message sent in reply to this message">John M: "Re: K the Master Set (+ partial answer to Tom&#0039;s Diagonalization)"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg9943" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg9943" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg9943" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg9943" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:11 PST
+</em></small></p>
+</body>
+</html>

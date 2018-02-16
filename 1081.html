@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>RE: Implementation from hal.domain.name.hidden on 1999-08-03 (everything)</title>
+<meta name="Author" content="hal.domain.name.hidden (hal.domain.name.hidden)" />
+<meta name="Subject" content="RE: Implementation" />
+<meta name="Date" content="1999-08-03" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>RE: Implementation</h1>
+<!-- received="Tue Aug  3 09:52:42 1999" -->
+<!-- isoreceived="19990803165242" -->
+<!-- sent="Tue, 3 Aug 1999 09:51:18 -0700" -->
+<!-- isosent="19990803165118" -->
+<!-- name="hal.domain.name.hidden" -->
+<!-- email="hal.domain.name.hidden" -->
+<!-- subject="RE: Implementation" -->
+<!-- id="199908031651.JAA23008.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- inreplyto="Implementation" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start1081" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="1082.html" accesskey="d" title="Hans Moravec: &quot;RE: Implementation&quot;">Next message</a> ]
+[ <a href="1080.html" title="Marchal: &quot;RE: Implementation&quot;">Previous message</a> ]
+[ <a href="1028.html" title="Higgo James: &quot;RE: Implementation&quot;">Maybe in reply to</a> ]
+<!-- unextthread="start" -->
+[ <a href="1082.html" accesskey="t" title="Hans Moravec: &quot;RE: Implementation&quot;">Next in thread</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1081" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1081" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1081" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1081" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:hal.domain.name.hidden?Subject=RE%3A%20Implementation">hal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Tue, 3 Aug 1999 09:51:18 -0700</span><br />
+</address>
+<br />
+To follow up on Bruno's comment, can we use a HLUT type structure to
+<br />
+implement something equivalent to a universal Turing machine?
+<br />
+<br />The TM can be thought of as implementing an algorithm, mapping from an
+<br />
+input tape to an output tape.  We can do the same thing with an HLUT,
+<br />
+using the contents of the input tape as the index to look up an entry
+<br />
+in the &quot;humongous&quot; table.  The data at that entry in the table is then
+<br />
+put out as the contents of the output tape.
+<br />
+<br />The resulting system, let's call it HLUT-TM, if considered as a &quot;black
+<br />
+box&quot;, has the same I/O behavior as the TM.  We could even include a
+<br />
+time-delay value in the HLUT if we wanted the HLUT machine to take the
+<br />
+same amount of time as the TM.
+<br />
+<br />If the HLUT-TM would be considered as an implementatino of the computation
+<br />
+executed by the TM, then if the TM was executing a conscious program,
+<br />
+perhaps the HLUT equivalent of the TM executing that same program should
+<br />
+also be considered conscious.
+<br />
+<br />As is common in philosophical paradoxes like this, we can then try
+<br />
+to find a range of cases between the two extremes (TM vs HLUT-TM).
+<br />
+Hans Moravec suggests something along these lines in Mind Children.
+<br />
+<br />Consider a variant on a TM, a cellular automaton which is performing
+<br />
+some calculation.  Many such CAs are known to be universal.  Hans notes
+<br />
+that occasionally implementations of CAs are optimized for speed by
+<br />
+incorporating local lookup tables.  The local configuration of cell
+<br />
+states is checked against the table and if the entry is found the entire
+<br />
+local set of cells is updated immediately, potentially skipping many
+<br />
+steps of computation.  Otherwise the calculation is done laboriously
+<br />
+(and perhaps it is added to the lookup table for future use).
+<br />
+<br />You could imagine doing this on larger and larger scales.  At the
+<br />
+smallest level you have a simple optimization that wouldn't seem to
+<br />
+have any significant effects, but at the highest level you essentially
+<br />
+have a HLUT.  If you want to say that the original system was conscious
+<br />
+(say, the CA is running a TM which is running a conscious program),
+<br />
+but you don't want to say that the HLUT is conscious, you have to say
+<br />
+something about at what point consciousness would go away.  You also
+<br />
+have to say whether consciousness would go away gradually or suddenly
+<br />
+as larger volumes of the CA are swept into the local lookup tables.
+<br />
+<br />Hal
+<br />
+<span id="received"><dfn>Received on</dfn> Tue Aug 03 1999 - 09:52:42 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start1081">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="1082.html" title="Next message in the list">Hans Moravec: "RE: Implementation"</a></li>
+<li><dfn>Previous message</dfn>: <a href="1080.html" title="Previous message in the list">Marchal: "RE: Implementation"</a></li>
+<li><dfn>Maybe in reply to</dfn>: <a href="1028.html" title="Message to which this message replies">Higgo James: "RE: Implementation"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="1082.html" title="Next message in this discussion thread">Hans Moravec: "RE: Implementation"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg1081" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg1081" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg1081" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg1081" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:06 PST
+</em></small></p>
+</body>
+</html>

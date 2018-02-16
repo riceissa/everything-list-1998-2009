@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>is induction unformalizable? from Wei Dai on 2005-07-13 (everything)</title>
+<meta name="Author" content="Wei Dai (weidai.domain.name.hidden)" />
+<meta name="Subject" content="is induction unformalizable?" />
+<meta name="Date" content="2005-07-13" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>is induction unformalizable?</h1>
+<!-- received="Wed Jul 13 23:14:05 2005" -->
+<!-- isoreceived="20050714061405" -->
+<!-- sent="Wed, 13 Jul 2005 20:14:53 -0700" -->
+<!-- isosent="20050714031453" -->
+<!-- name="Wei Dai" -->
+<!-- email="weidai.domain.name.hidden" -->
+<!-- subject="is induction unformalizable?" -->
+<!-- id="015401c58822$36a86b80$0200a8c0.domain.name.hidden" -->
+<!-- charset="iso-8859-1" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start7603" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="7604.html" accesskey="d" title="Ben Goertzel: &quot;RE: is induction unformalizable?&quot;">Next message</a> ]
+[ <a href="7602.html" title="Hal Finney: &quot;RE: The Time Deniers&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+[ <a href="7604.html" accesskey="t" title="Ben Goertzel: &quot;RE: is induction unformalizable?&quot;">Next in thread</a> ]
+ [ <a href="#replies">Replies</a> ]
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg7603" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg7603" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg7603" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg7603" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Wei Dai &lt;<a href="mailto:weidai.domain.name.hidden?Subject=Re%3A%20is%20induction%20unformalizable%3F">weidai.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed, 13 Jul 2005 20:14:53 -0700</span><br />
+</address>
+<br />
+One day, Earth is contacted by a highly advanced alien civilization, and they tell us that contrary to what most of us think is likely, not all of the fundamental physical laws of our universe are computable. Furthermore, they claim to be able to manufacture black boxes that work as oracles for the Halting Problem of Turing machines (one query per hour). They give us one free sample, and want to sell us more at a reasonable price. But of course we won't be allowed to open up the boxes and look inside to find out how they work.
+<br />
+<br />So our best scientists test the sample black box in every way that they can think of, but can't find any evidence that it isn't exactly what the aliens claim it is. At this point many people are ready to believe the claim and spend their hard earned money to buy these devices for their families. Fortunately, the Artificial Intelligence in charge of protecting Earth from interstellar fraud refuses to allow this. Having been programmed with UD+ASSA (see Hal Finney's 7/10/2005 post for a good explanation of what this means), it proclaims that there is zero probability that Halting Problem oracles can exist, so it must be pure chance that the sample black box has correctly answered all the queries submitted to it so far.
+<br />
+<br />The moral of this story is that our intuitive notion of induction is not fully captured by the formalization of UD+ASSA. Contrary to UD+ASSA, we will not actually refuse to believe in the non-existence of uncomputable phenomena no matter what evidence we see.
+<br />
+<br />What can we do to repair this flaw? Using a variant of UD, based on a more powerful type of computer (say an oracle TM instead of a plain TM), won't help because that just moves the problem up to a higher level of the computational hierarchy. No matter what type of computer (call it C) we base UD' on, it will always assign zero probability to the existence of even more power types of computer (e.g., ones that can solve the halting problem for C). Intuitively, this doesn't seem like a good feature.
+<br />
+<br />Earlier on this mailing list, I had proposed that we skip pass the entire computational hierarchy and jump to the top of the set theoretic hierarchy, by using a measure that is based a set theoretic notion of complexity instead of a computational one. In this notion, instead of defining the complexity of an object by the length of its shortest algorithmic description, we define its complexity by the length of its shortest description in the language of a formal set theory. The measure would be constructed in a manner analogous to UD, with each set theoretic description of an object contributing n^-l to the measure of the object, where n is the size of the alphabet of the set theory, and l is the length of the description. Lets call this STUM for set theoretic universal measure.
+<br />
+<br />STUM along with ASSA does a much better job of formalizing induction, but I recently realized that it still isn't perfect. The problem is that it still assigns zero probability to some objects that we intuitively think is very unlikely, but not completely impossible. An example would be a device that can decide the truth value of any set theoretic statement. A universe that contains such a device would exist in the set theoretic hierarchy, but would have no finite description in formal set theory, and would be assigned a measure of 0 by STUM.
+<br />
+<br />I'm not sure where this line of thought leads. Is induction unformalizable? Have we just not found the right formalism yet? Or is our intuition on the subject flawed?
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Jul 13 2005 - 23:14:05 PDT</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start7603">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="7604.html" title="Next message in the list">Ben Goertzel: "RE: is induction unformalizable?"</a></li>
+<li><dfn>Previous message</dfn>: <a href="7602.html" title="Previous message in the list">Hal Finney: "RE: The Time Deniers"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="7604.html" title="Next message in this discussion thread">Ben Goertzel: "RE: is induction unformalizable?"</a></li>
+<li><a name="replies" id="replies"></a>
+<dfn>Reply</dfn>: <a href="7604.html" title="Message sent in reply to this message">Ben Goertzel: "RE: is induction unformalizable?"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="7610.html" title="Message sent in reply to this message">Hal Finney: "RE: is induction unformalizable?"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="7620.html" title="Message sent in reply to this message">Hal Finney: "Re: is induction unformalizable?"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="7651.html" title="Message sent in reply to this message">Hal Finney: "Re: is induction unformalizable?"</a></li>
+<li><dfn>Maybe reply</dfn>: <a href="7654.html" title="Message sent in reply to this message">Brent Meeker: "Re: is induction unformalizable?"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg7603" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg7603" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg7603" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg7603" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>

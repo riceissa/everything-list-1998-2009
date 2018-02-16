@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<meta name="generator" content="hypermail 2.3.0, see http://www.hypermail-project.org/" />
+<title>COMBINATORS IX :  K and KI from Bruno Marchal on 2005-03-31 (everything)</title>
+<meta name="Author" content="Bruno Marchal (marchal.domain.name.hidden)" />
+<meta name="Subject" content="COMBINATORS IX :  K and KI" />
+<meta name="Date" content="2005-03-31" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+.period {font-weight: bold}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>COMBINATORS IX :  K and KI</h1>
+<!-- received="Thu Mar 31 09:49:01 2005" -->
+<!-- isoreceived="20050331174901" -->
+<!-- sent="Thu, 31 Mar 2005 16:39:14 +0200" -->
+<!-- isosent="20050331143914" -->
+<!-- name="Bruno Marchal" -->
+<!-- email="marchal.domain.name.hidden" -->
+<!-- subject="COMBINATORS IX :  K and KI" -->
+<!-- id="b2b635cd441b63d86d7436b180cdcb1d.domain.name.hidden" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start6123" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ More options (<a href="#options2">top</a>, <a href="#options3">bottom</a>) ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="6124.html" accesskey="d" title="Pete Carlton: &quot;John Conway, &#0034;Free Will Theorem&#0034;&quot;">Next message</a> ]
+[ <a href="6122.html" title="Bruno Marchal: &quot;Re: MWI &#0034;is&#0034; a continuum&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6123" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6123" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6123" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6123" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Bruno Marchal &lt;<a href="mailto:marchal.domain.name.hidden?Subject=Re%3A%20COMBINATORS%20IX%20%3A%20%20K%20and%20KI">marchal.domain.name.hidden</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Thu, 31 Mar 2005 16:39:14 +0200</span><br />
+</address>
+<br />
+I hope you enjoy the combinators. I will send the solution of the fixed 
+<br />
+point equation asap.
+<br />
+In the meantime let me give you a glimpse of &quot;programming&quot;.
+<br />
+<br /><br />Let me present you K and KI, the Tweedledum and Tweedledee of the 
+<br />
+Eliminators.
+<br />
+<br />You know K. Well I hope, K is the first combinator we met. It is the 
+<br />
+kestrel and it obeys the following dynamical law, where x and y are any 
+<br />
+combinators:
+<br />
+<br />Kxy = x
+<br />
+<br />So, on the two inputs xy,  K eliminates y. K can rightly be called the 
+<br />
+Elementary Right Eliminator.
+<br />
+<br />And KI ?
+<br />
+<br />Easy: KIxy = (KIx)y = Iy = y
+<br />
+<br />So KI is the left eliminator. Applied on xy it gives y. It is the 
+<br />
+Elementary Left Eliminator.
+<br />
+<br />What is the relation with programming? Well, it happens that K and KI 
+<br />
+makes it possible to implement in a incredible simple way the most 
+<br />
+important control structure in computer science: the IF...THEN...ELSE.
+<br />
+<br />We want to implement IF A THEN B ELSE C; meaning that if the condition 
+<br />
+A is true, where A is represented by some combinator, then the 
+<br />
+combinator B will be trigged, and if A is false then C will be trigged.
+<br />
+<br />For this we need to represent the constant boolean TRUE and FALSE, like 
+<br />
+in formal logic.
+<br />
+<br />Well, everybody in the field agree that one of the nicer choice 
+<br />
+consists in representing TRUE by
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K,
+<br />
+<br />and FALSE by
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KI.
+<br />
+<br />Do you see why? Well, with that representation &quot;IF A THEN B ELSE C&quot; is 
+<br />
+represented simply by
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;ABC
+<br />
+<br />Why? Because if A reduces (is equal) to TRUE, that is: is equal  to K 
+<br />
+then
+<br />
+<br />ABC = KBC = B, and so if A is true then B is trigged.
+<br />
+<br />And if A is false, that is if A = KI, obviously
+<br />
+<br />ABC = KIBC = C, so if A is false then C is trigged.
+<br />
+<br />That will be useful when we will write program. For this we need to 
+<br />
+solve the last fixed point post question, and to define numbers with 
+<br />
+those birds ... (that means two posts. Perhaps one more on 
+<br />
+&quot;curryfication&quot;). Then we will come back to the measure problem, and 
+<br />
+the question of what is an &quot;observer moment&quot;  to make (hopefully) more 
+<br />
+precise our older conversations.
+<br />
+<br />No question so far?  Someone asks me &quot;is there a COMBINATORS VII&quot;. The 
+<br />
+answer is &quot;no&quot;.
+<br />
+<br />Bruno
+<br />
+<br /><br /><a href="http://iridia.ulb.ac.be/~marchal/">http://iridia.ulb.ac.be/~marchal/</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Thu Mar 31 2005 - 09:49:01 PST</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start6123">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="6124.html" title="Next message in the list">Pete Carlton: "John Conway, &#0034;Free Will Theorem&#0034;"</a></li>
+<li><dfn>Previous message</dfn>: <a href="6122.html" title="Previous message in the list">Bruno Marchal: "Re: MWI &#0034;is&#0034; a continuum"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options3" id="options3"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#msg6123" title="Contemporary messages by date">by date</a> ] [ <a href="index.html#msg6123" title="Contemporary discussion threads">by thread</a> ] [ <a href="subject.html#msg6123" title="Contemporary messages by subject">by subject</a> ] [ <a href="author.html#msg6123" title="Contemporary messages by author">by author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">by messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail-project.org/">hypermail 2.3.0</a>
+: Fri Feb 16 2018 - 13:20:10 PST
+</em></small></p>
+</body>
+</html>
