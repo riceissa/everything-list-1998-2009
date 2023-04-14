@@ -2,7 +2,7 @@
 
 Produced using [Hypermail](http://www.hypermail-project.org/) version 2.3.0.
 
-For the hypermail config file I used, see `hypermail.rc`.
+For the hypermail config file I used, see [`hypermail.rc`](https://github.com/riceissa/everything-list-1998-2009/blob/master/hypermail.rc).
 
 To get the mbox I used, see https://groups.google.com/d/msg/everything-list/UehP0dLy8cM/8Z9yLBSlbu4J
 
