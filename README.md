@@ -1,5 +1,7 @@
 # everything-list archives, 1998–2009
 
+**To view the archives, you can visit <https://riceissa.github.io/everything-list-1998-2009/>**
+
 Produced using [Hypermail](http://www.hypermail-project.org/) version 2.3.0.
 
 For the hypermail config file I used, see [`hypermail.rc`](https://github.com/riceissa/everything-list-1998-2009/blob/master/hypermail.rc).
